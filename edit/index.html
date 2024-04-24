@@ -1,0 +1,212 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>利用者情報変更｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper _gray_">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header_members.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1 _members_"><span class="__txt">利用者情報</span></h1>
+			
+			<!-- .contents -->
+			<main class="contents mb40_sp">
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner ">
+					<ul class="edit-menu">
+						<li class="edit-menu__inner">
+							<div class="edit-menu__ttl">
+								利用者情報
+							</div>
+							<div class="edit-menu__detail">
+								<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
+
+									<table class="table _border_ mb25 _pd25_ _sp-col1_ mb0_sp">
+										<tbody class="table__body">
+											<tr>
+												<th class="_gray_ _w30_">法人名</th>
+												<td>
+													株式会社TYUSYO
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">役職（日本語）</th>
+												<td>
+													<input type="text" name="post-jp" class="form-text" value="" placeholder="役職名を入力">
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">役職（英語）</th>
+												<td>
+													<input type="text" name="post-en" class="form-text" value="" placeholder="役職名を入力">
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">お名前</th>
+												<td>
+													<input type="text" name="name" class="form-text" value="" placeholder="佐藤次郎">
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">お名前（ローマ字）</th>
+												<td>
+													<input type="text" name="roma" class="form-text" value="" placeholder="Sato Jiro">
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">メールアドレス</th>
+												<td>
+													<div class="edit-btn">
+														<p>tyusyo.yamadatarou@example.com</p>
+														<a href="" class="btn-arrow _black_ _w-s_ mt15_sp">
+															<span class="__txt">変更</span>
+															<span class="__ico">
+																<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+															</span>
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">電話番号</th>
+												<td>
+													<input type="text" name="tel" class="form-text" value="" placeholder="電話番号を入力">
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">タイムゾーン</th>
+												<td>
+													<select class="form-select wp100" name="">
+														<option value="">（UTC ＋09：00） 日本標準時</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">メールマガジン設定</th>
+												<td>
+													<ul class="list">
+														<li class="list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">
+																	ジェグテックのお知らせ
+																</span>
+															</label>
+															<p class="edit-indent edit-description_sp">ジェグテックに関する情報や中小機構の商談会、イベント情報などをメールでお知らせします。</p>
+														</li>
+														<li class="list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">
+																	新着ニーズのお知らせ
+																</span>
+															</label>
+															<p class="edit-indent edit-description_sp">新しいニーズなどをメールでお知らせします。なお、ニーズに対する提案は中小企業のみが可能です。</p>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">権限設定</th>
+												<td>
+													<label class="form-check">
+														<input type="checkbox" name="" id="" class="__elem">
+														<span class="__txt">
+															組織内の管理者権限を付与する
+														</span>
+													</label>
+													<p class="mt10 edit-description_sp">管理者権限の方は組織内のユーザ招待、代行操作を行うことが出来ます。</p>
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">運用レポート<br>参照権限設定</th>
+												<td>
+													<label class="form-check">
+														<input type="checkbox" name="" id="" class="__elem">
+														<span class="__txt">
+															運用レポートの参照権限を付与する
+														</span>
+													</label>
+													<p class="mt10 edit-description_sp">運用レポートを参照することが可能となります。</p>
+												</td>
+											</tr>
+											<tr>
+												<th class="_gray_">商談結果アンケート参照・全体状況確認一覧ダウンロード権限設定</th>
+												<td>
+													<label class="form-check">
+														<input type="checkbox" name="" id="" class="__elem">
+														<span class="__txt">
+															商談結果アンケート参照・全体状況確認一覧ダウンロードの権限を付与する
+														</span>
+													</label>
+													<p class="mt10 edit-description_sp">ニーズの発信元企業または提案企業の商談結果アンケートの参照および、全体状況確認一覧をダウンロードすることが可能となります。</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<button type="button" class="btn-arrow _red_ mb30_sp" onclick="location.href='/edit/confirm.html'">
+										<span class="__txt">確認</span>
+										<span class="__ico">
+											<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+										</span>
+									</button>
+								</form>
+							</div>
+						</li>
+						<li class="edit-menu__inner">
+							<div class="edit-menu__ttl">
+								パスワードの設定
+							</div>
+							<div class="edit-menu__detail">
+								<p class="mb10">パスワードの設定・変更を行います。</p>
+								<a href="/edit/password.html" class="btn-arrow _black_">
+									<span class="__txt">パスワードの設定・<br class="pc_view">変更</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+						</li>
+						<li class="edit-menu__inner">
+							<div class="edit-menu__ttl">
+								ジェグテックから<br class="pc_view">退会
+							</div>
+							<div class="edit-menu__detail">
+								<p class="mb10">退会の手続きを行います。</p>
+								<a href="/edit/withdrawal.html" class="btn-arrow _black_">
+									<span class="__txt">退会の手続き</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

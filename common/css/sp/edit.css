@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .login-form */
+/* ============================================================ */
+/*.login-form {
+	margin: 0 0 20px;
+}*/
+
+.login-form__table {
+	display: block;
+	width: 100%;
+	max-width: none;
+}
+.login-form__table tbody,
+.login-form__table tr,
+.login-form__table th,
+.login-form__table td {
+	display: block;
+	width: 100%;
+}
+.login-form__ttl {
+	padding: 0 0 8px;
+	font-weight: bold;
+}
+.login-form__input {
+	padding: 0 0 36px;
+}
+/*
+
+
+.login-form__input .form-text {
+	min-width: 500px;
+}
+
+.al-fc._login_ {
+	margin: 0 0 40px;
+}
+
+.al-fc._login_ .form-check {
+	margin: 0 45px 0 0;
+}
+
+.al-fc._login_ .__link {
+	margin: 0 20px;
+}
+*/
+
+
+/* ============================================================ */
+/* .edit-menu */
+/* ============================================================ */
+
+.edit-menu__inner {
+	margin-bottom: 50px;
+	border-bottom: 1px solid #D4D6DC;
+}
+
+.edit-menu__inner:last-of-type{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.edit-menu__ttl {
+	margin: 0 0 15px;
+	padding: 0 0 0 15px;
+	border-left: 5px solid #333;
+	font-weight: bold;
+	font-size: 2.0rem;
+	line-height: 1.6;
+}
+.edit-menu__inner:first-of-type .edit-menu__ttl {
+	position: relative;
+	padding: 0 0 5px;
+	margin-bottom: 30px;
+	border-left: none;
+	border-bottom: 2px solid #B7B7B7;
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+.edit-menu__inner:first-of-type .edit-menu__ttl::before {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 170px;
+	height: 2px;
+	background: #65686F;
+}
+
+.edit-description_sp{
+	padding-left: 0;
+	color: #65686F;
+	font-size: 14px;
+}
+
+/*
+.edit-menu {
+}
+
+.edit-menu__detail {
+	width: calc(100% - 21%);
+	padding: 0 0 0 40px;
+}
+
+
+.edit-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.edit-btn .btn-arrow {
+	margin: 0 0 0 10px;
+}
+*/

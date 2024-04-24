@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .registration-table */
+/* ============================================================ */
+.registration-table {
+}
+
+.registration-table__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 10px;
+}
+
+.registration-table__item:last-child {
+	margin: 0;
+}
+
+.registration-table__ttl {
+	width: 14%;
+}
+
+.registration-table__input {
+	width: 86%;
+}
+
+/* ============================================================ */
+/* .registration-btn */
+/* ============================================================ */
+.registration-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.registration-btn__form {
+	width: calc((100% - 50px) - 150px);
+}
+
+.registration-btn__send {
+	max-width: 150px;
+}
+

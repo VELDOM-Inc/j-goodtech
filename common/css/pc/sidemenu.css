@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.sideMenu{
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 9999;
+  top: 25%;
+  right: -300px;
+  transition: right 0.1s ease;
+}
+.sideMenu__flex{
+  display: flex;
+  margin-bottom: 10px;
+}
+.sideMenu__box{
+  display: flex;
+  width: 59px;
+  height: 61px;
+  padding: 10px 11.3px 6.799px 11.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6.801px;
+  border-radius: 8px 0px 0px 8px;
+  background: #E2E6E9;  
+  cursor: pointer;
+}
+.sideMenu__box_arrow{
+  width: 18px;
+  height: 18px;
+}
+.sideMenu__box_close{
+  color: #333;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  margin-top: 7px;
+}
+.sideMenu__txtbox{
+  width: 150px;
+  height: 141px;
+  padding: 0px 20px 10px;
+  background-color: #fff;
+  border-radius: 0px 0px 0px 8px;
+}
+.sideMenu__txtbox_copy{
+  border-bottom: 0.8px dotted #D0D0D0;
+  padding: 13.301px 13.8px 15.299px 5px;
+  font-size: 12px;
+  text-align: left;
+}
+.sideMenu__txtbox_copy:last-of-type{
+  border-bottom: none;
+}
+.sideMenu__btnbox{
+  width: 150px;
+  height: 195px;
+  padding: 10px 20px 10px;
+  background-color: #fff;
+  border-radius: 8px 0px 0px 8px;
+}
+.sideMenu__open{
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: 9999;
+  top: 25%;
+  right: 0;
+}
+.sideMenu__openbox_arrow{
+  width: 18px;
+  height: 18px;
+  transform: scale(-1, 1);
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* footer */
+/* ============================================================ */
+.footer {
+	background: #2C4660;
+	color: #fff;
+	padding: 25px 40px;
+	width: calc(100% - 80px);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.wrapper._gray_ .footer {
+	background: #000;
+}
+
+.wrapper._blue_ .footer {
+	background: #004DB6;
+}
+
+.support_form .footer {
+	justify-content: flex-start;
+}
+
+/* fnav-sp
+------------------------------------------------------------ */
+.fnav-sp {
+	width: 50%;
+}
+
+.fnav-sp__list {
+}
+
+.fnav-sp__item {
+	margin: 0 0 25px;
+}
+
+.fnav-sp__link {
+	color: #fff;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.support_form .footer .fnav-sp {
+	display: none;
+}
+
+
+/* fnav-language
+------------------------------------------------------------ */
+.fnav-language {
+	display: flex;
+}
+
+.fnav-language ._jp_ {
+	margin: 0 0 0 8px;
+}
+
+.fnav-language__item .__link {
+	color: #C7DDEA;
+}
+
+.wrapper._gray_ .footer .fnav-language__item .__link {
+	color: #0067B3
+}
+
+
+/* fnav
+------------------------------------------------------------ */
+.fnav {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.fnav__list {
+}
+
+.fnav__item {
+	margin: 0 0 15px;
+}
+
+.fnav__link {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.support_form .footer .fnav {
+	width: 100%;
+	align-items: flex-start;
+}
+
+
+/* footer copyright
+------------------------------------------------------------ */
+.footer-copyright small {
+	display: block;
+	font-size: 1.0rem;
+	text-align: left;
+	width: 100%;
+	margin: 25px 0 0;
+}
+
+
+/* ============================================================ */
+/* pagetop */
+/* ============================================================ */
+.pagetop {
+	position: fixed;
+	right: 25px;
+	margin: 0 0 20px;
+	z-index: 10;
+}
+
+.pagetop__link {
+	border-radius: 50px;
+	background: #000;
+	color: #fff;
+	width: 45px;
+	height: 45px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1.4rem;
+	line-height: 1.0;
+	text-decoration: none;
+}
+
+.pagetop__link .__ico {
+	margin: -5px 0 0;
+}
+

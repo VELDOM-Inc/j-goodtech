@@ -1,0 +1,1270 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>会員登録申請編集｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header_members.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1">
+					<span class="__txt">会員登録申請編集</span>
+			</h1>	
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner">
+					
+					<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
+						<input type="hidden" class="p-country-name" value="Japan">
+
+						<section class="mb40">
+							<h2 class="h5">担当者の情報</h2>
+							<table class="table _border_ _pd25_ _edit_">
+								<tbody>
+									<tr>
+										<th class="_gray_">お名前</th>
+										<td>
+											<input type="text" name="name" class="form-text _text-black2_" value="" placeholder="テスト">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">ふりがな</th>
+										<td>
+											<input type="text" name="kana" class="form-text _text-black2_" value="" placeholder="てすと">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">ローマ字</th>
+										<td>
+											<input type="text" name="romaji" class="form-text _text-black2_" value="" placeholder="Test">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">メールアドレス</th>
+										<td>
+											<input type="text" name="" class="form-text _text-black2_ _platz_" value="" placeholder="yizui@tech.softbank.co.jp">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">部署名</th>
+										<td>
+											<input type="text" name="busyo" class="form-text _text-black2_" value="" placeholder="情報システム部">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">役職</th>
+										<td>
+											<input type="text" name="yakusyoku" class="form-text _text-black2_" value="" placeholder="課長">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">連絡用電話番号</th>
+										<td>
+											<div class="al-fl mb10">
+												<div>国番号：</div>
+												<div>
+													<select class="form-select _black_ _w-l_" name="">
+														<option value="">日本（国番号:81）</option>
+													</select>
+												</div>
+											</div>
+											<input type="text" name="tel" class="form-text _text-black2_" value="" placeholder="08032048127">
+											<p class="mt5">市外局番は省略せずに全てご記入ください。</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+
+						<section>
+							<h2 class="h5">会社の情報</h2>
+							<p class="mb15"><span class="label _orange_ _w-s_ mr10">公開</span>審査通過後、ジェグテックサイトに公開される情報です。</p>
+
+							<table class="table _border_ _pd25_ mb40 _edit_">
+								<tbody>
+									<tr>
+										<th class="_gray_">法人番号<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<div class="al-fl mb10">
+												<div><input type="text" name="" class="form-text _text-black2_" value="" placeholder="1234567891111"></div>
+												<div class="ml5">
+													<a href="" class="btn-arrow _blue_ _w-xm_">
+														<span class="__txt">法人情報自動入力</span>
+														<span class="__ico">
+															<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+														</span>
+													</a>
+												</div>
+											</div>
+											<p>法人番号は13桁の半角数字です。法人番号が分からない場合は<a href="">こちら</a>で確認できます。</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">法人名<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<input type="text" name="company-name" class="form-text _text-black2_" value="" placeholder="テスト株式会社">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">ふりがな<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<input type="text" name="company-kana" class="form-text _text-black2_" value="" placeholder="てすとかぶしきがいしゃ">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">ローマ字<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<input type="text" name="company-romaji" class="form-text _text-black2_" value="" placeholder="Testkabusikigaisya">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">本社所在地：住所<span class="label _orange_ _w-s_ ml10">公開</span></th>
+										<td>
+											<div class="edit-list mb10">
+												<div class="edit-list__item _ttl_">郵便番号</div>
+												<div class="edit-list__item _detail_ _flex_">
+													<div class="mr5">
+														<input type="text" name="" class="form-text _text-black2_ _w-xxs_" value="" placeholder="123-4567">
+													</div>
+													<div class="mr5">
+														<a class="btn-arrow _blue_ _w-xm_">
+															<span class="__txt">住所自動入力</span>
+															<span class="__ico">
+																<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+															</span>
+														</a>
+													</div>
+													<div class="text14">半角数字でご入力ください。</div>
+												</div>
+											</div>
+											
+											<div class="edit-list mb10">
+												<div class="edit-list__item _ttl_">都道府県</div>
+												<div class="edit-list__item _detail_">
+													<select class="form-select _w-xm_ _text-gray_" name="">
+														<option value="">北海道</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="edit-list">
+												<div class="edit-list__item _ttl_">住所詳細</div>
+												<div class="edit-list__item _detail_">
+													<input type="text" name="" class="form-text _text-black2_ _w-xm_" value="" placeholder="テスト">
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">担当者所在地：住所<span class="label _outline_ _w-s_ ml5">任意</span></th>
+										<td>
+											<label class="form-check mb10">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt">本社所在地：住所と同じ</span>
+											</label>
+											
+											<div class="edit-list mb10">
+												<div class="edit-list__item _ttl_">郵便番号</div>
+												<div class="edit-list__item _detail_ _flex_">
+													<div class="mr5">
+														<input type="text" name="" class="form-text _text-black2_ _w-xxs_" value="" placeholder="123-4567">
+													</div>
+													<div class="mr5">
+														<a class="btn-arrow _blue_ _w-xm_">
+															<span class="__txt">住所自動入力</span>
+															<span class="__ico">
+																<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+															</span>
+														</a>
+													</div>
+													<div class="text14">半角数字でご入力ください。</div>
+												</div>
+											</div>
+											
+											<div class="edit-list mb10">
+												<div class="edit-list__item _ttl_">都道府県</div>
+												<div class="edit-list__item _detail_">
+													<select class="form-select _w-xm_ _text-gray_" name="">
+														<option value="">北海道</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="edit-list">
+												<div class="edit-list__item _ttl_">住所詳細</div>
+												<div class="edit-list__item _detail_">
+													<input type="text" name="" class="form-text _text-black2_ _w-xm_" value="" placeholder="テスト">
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">代表者氏名<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td><input type="text" name="name2" class="form-text _text-black2_" value="" placeholder="例）　中小　太郎"></td>
+									</tr>
+									<tr>
+										<th class="_gray_">ふりがな<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td><input type="text" name="kana2" class="form-text _text-black2_" value="" placeholder="例）　ちゅうしょう　たろう"></td>
+									</tr>
+									<tr>
+										<th class="_gray_">ローマ字<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td><input type="text" name="romaji2" class="form-text _text-black2_" value="" placeholder="例）　Chusyou Tarou"></td>
+									</tr>
+									<tr>
+										<th class="_gray_">代表者役職名<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td><input type="text" name="yakusyoku2" class="form-text _text-black2_" value="" placeholder="例）　代表取締役"></td>
+									</tr>
+									<tr>
+										<th class="_gray_">電話番号<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<div class="al-fl mb10">
+												<div>国番号：</div>
+												<div>
+													<select class="form-select _black_ _w-l_ _text-gray2_" name="">
+														<option value="">日本（国番号:81）</option>
+													</select>
+												</div>
+											</div>
+											<input type="text" name="tel" class="form-text _text-gray_" value="" placeholder="例）035470****">
+											<p class="mt5">市外局番は省略せずに全てご記入ください。</p>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">ホームページ<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<input type="text" name="company-hp" class="form-text _text-black2_" value="">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">業種<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<input type="text" name="company-hp" class="form-text _text-black2_" value="" placeholder="農業（農業サービス業を除く）">
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">設立年月</th>
+										<td><input type="text" name="" class="form-text _text-black2_ _w-xs_" value="" placeholder="1991">　年　&frasl;　<input type="text" name="" class="form-text _text-black2_ _w-xs_" value="" placeholder="08">　月</td>
+									</tr>
+									<tr>
+										<th class="_gray_">資本金<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<div class="edit-list">
+												<div class="edit-list__item _flex_ mr15">
+													<p class="mr10">金額</p>
+													<input type="text" name="" class="form-text _text-black2_ _w-xs_" value="" placeholder="12345">
+												</div>
+												<div class="edit-list__item _flex_">
+													<p class="mr10">通貨単価</p>
+													<select class="form-select _w-m_ _text-black_" name="">
+														<option value="">JPY（円）</option>
+													</select>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">従業員数<span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td><input type="text" name="" class="form-text _text-black2_ _w-xs_" value="" placeholder="20">（うち常用雇用者数 <input type="text" name="" class="form-text _text-black2_ _w-xs_" value="" placeholder="20"> ）</td>
+									</tr>
+									<tr>
+										<th class="_gray_">年間売上高<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+										<td>
+											<div class="edit-list">
+												<div class="edit-list__item _flex_ mr15">
+													<p class="mr10">金額</p>
+													<input type="text" name="" class="form-text _text-gray2_ _w-xs_" value="" placeholder="12345">
+												</div>
+												<div class="edit-list__item _flex_">
+													<p class="mr10">通貨単価</p>
+													<select class="form-select _w-m_ _text-gray_ _black_" name="">
+														<option value="">JPY（円）</option>
+													</select>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="_gray_">海外拠点の有無</th>
+										<td>
+											<ul class="search-list mb0">
+												<li class="search-list__item">
+													<label class="form-radio">
+														<input type="radio" name="kaigai" id="" class="__elem" checked>
+														<span class="__txt">あり</span>
+													</label>
+												</li>
+												<li class="search-list__item">
+													<label class="form-radio">
+														<input type="radio" name="kaigai" id="" class="__elem">
+														<span class="__txt">なし</span>
+													</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="mb40">
+								<div class="request-ttl">
+									<h3 class="h2 mb0 _blue_">制度の利用状況</h3>
+									<p class="__txt">※不明な場合は「無」をご選択ください</p>
+								</div>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">中小機構支援制度利用の有無</th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="chusyo" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="chusyo" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">利用したことのある中小機構支援制度名<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _gray_ _h-s_ _text-gray2_ _platz_" placeholder="例）新価値創造展（2016年）"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">ジェグテック紹介機関の有無</th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="syokai" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="syokai" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">ジェグテック紹介機関名<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _gray_ _h-s_ _text-gray2_ _platz_" placeholder="例）新価値創造展（2016年）"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">SBIR特定補助金等の<br>交付実績の有無</th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="sbir" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="sbir" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">SBIR特定補助金等の交付<br>実績<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _gray_ _h-s_ _text-gray2_ _platz_" placeholder="例）新価値創造展（2016年）"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">地域未来牽引企業の選定の<br>有無<span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="mirai" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="mirai" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">事業内容</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">事業内容・特長<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_ _text-black2_" placeholder="テスト。"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 400文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">主要製品・技術・商品・サービスの概要・活用事例<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_ _text-black2_" placeholder="テスト。"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 400文字</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">知的財産・表彰実績等</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">知的財産（特許・実用新案等）の出願・取得の有無</th>
+											<td class="_va-m_">
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="chiteki" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="chiteki" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">知的財産（特許・実用新案等）の出願・取得<br>
+												<span class="label _outline_ _w-s_">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）特許登録「自動調節型ばね（特開2013-9999号）」、特許出願公開中2件、実用新案登録1件"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">証明・許認可取得の有無</th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="syomei" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="syomei" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">証明・許認可取得<br><span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）ISO9001、OHSAS18001取得、戦略基盤技術高度化支援事業（サポイン事業）"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">表彰実績・メディア掲載実績の有無</th>
+											<td class="_va-m_">
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="media" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="media" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">表彰実績・メディア掲載実<br><span class="label _outline_ _w-s_">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）第◯回ものづくり日本大賞　経済産業大臣賞（20**年）、BSOO「元気な中小企業」（平成21年◯月◯日放映）"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">取引実績</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">大手企業との取引実績・開発実績の有無</th>
+											<td class="_va-m_">
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="ohte" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="ohte" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">大手企業との取引実績・開発実績<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）◯◯電力（△△特殊ばねの受託加工、現在）、◯◯重工業（大型機会の◇◇に搭載する特殊ばね量産、2003-現在）　ほか工作機メーカーでは国内36社に納入実績があります。"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">海外企業との取引実績・開発実績の有無</th>
+											<td class="_va-m_">
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="kaigai" id="" class="__elem">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="kaigai" id="" class="__elem" checked>
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">海外企業との取引実績・開発実績<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）当社は10年前からベトナム企業との合併企業をベトナムに設立し、ベトナムではプラスチック部品の製造を実施しております。また、専門商社を介して、各種部品を主に欧米企業に対して輸出しています。"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 250文字</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">海外取引・海外展開の意向</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">海外展開実績<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td class="_va-m_">
+												<ul class="search-list mb10">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="country" id="" class="__elem" onclick="entryChange1();">
+															<span class="__txt">実績あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="country" id="" class="__elem" onclick="entryChange1();" checked="checked">
+															<span class="__txt">実績なし</span>
+														</label>
+													</li>
+												</ul>
+
+												<div class="select-country" id="country1">
+													<a class="btn _outline_ _w-l_ js-modal-open" data-target="modal01">
+														<span class="__txt">取引実績国選択</span>
+													</a>
+													<p class="textRed">必須項目です。</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">英語対応<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="english" id="" class="__elem">
+															<span class="__txt">可</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="english" id="" class="__elem" checked>
+															<span class="__txt">不可</span>
+														</label>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">海外取引・海外展開の意向<span class="label _outline_ _w-s_ ml5">任意</span></th>
+											<td class="_va-m_">
+												<ul class="search-list mb10">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="country2" id="" class="__elem" onclick="entryChange2();">
+															<span class="__txt">あり</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="country2" id="" class="__elem" onclick="entryChange2();" checked="checked">
+															<span class="__txt">なし</span>
+														</label>
+													</li>
+												</ul>
+												
+												<div class="select-country" id="country2">
+													<a href="" class="btn _outline_ _w-l_ js-modal-open" data-target="modal02">
+														<span class="__txt">地域選択</span>
+													</a>
+													<p class="textRed">必須項目です。</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">今後の取り組み</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">代表者メッセージ（今後の販路開拓に向けた取り組み、ジェグテックの活用意向等）<span class="label _outline_ _w-s_ ml5">任意</span><span class="label _orange_ _w-s_ ml5">公開</span></th>
+											<td>
+												<textarea name="comment" cols="50" rows="4" class="form-textarea _h-s_" placeholder="例）現在、当社は開発した新製品である○○の海外展開を促進するため、特にベトナムエリアを中心に販路を拡大していくことを計画しています。ジェぐテックを活用し・・・"></textarea>
+												<p class="_al-r_">0 文字 &frasl; 400文字</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="mb40">
+								<h3 class="h2 _blue_">その他</h3>
+
+								<table class="table _border_ _pd25_ _edit_">
+									<tbody>
+										<tr>
+											<th class="_gray_">企業ページの編集希望</th>
+											<td>
+												<ul class="search-list mb0">
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="hp-edit" id="" class="__elem" checked>
+															<span class="__txt">希望する</span>
+														</label>
+													</li>
+													<li class="search-list__item">
+														<label class="form-radio">
+															<input type="radio" name="hp-edit" id="" class="__elem">
+															<span class="__txt">希望しない</span>
+														</label>
+													</li>
+												</ul>
+												<p class="mt15">審査後、ご希望があれば中小機構にて御社HPなどから情報を確認し、<br>
+												御社の企業ページを無料で充実化することが可能です。<br>
+												※状況によっては対応できない場合もあります。</p>
+											</td>
+										</tr>
+										<tr>
+											<th class="_gray_">J-GoodTechの紹介を受けた課支社のコードをご教示ください。</th>
+											<td>
+												<input type="text" name="" class="form-text _text-gray3_" value="" placeholder="例）12345">
+											</td>
+										</tr>	
+										<tr>
+											<th class="_gray_">J-GoodTechの紹介を受けた三井住友海上の部署名または代理店名</th>
+											<td>
+												<input type="text" name="" class="form-text _text-gray3_" value="" placeholder="例）営業部">
+											</td>
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _outline_ _m30_ _w-l_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">戻る</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _w-l_ _m30_" onclick="location.href='/registration/confirm.html'">
+								<span class="__txt">確認</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal01">
+				<div class="modal__inner _small_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">取引実績国選択</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>		
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">取引実績国選択</h3>
+						
+						<p class="mb55">「選択」ボタンをクリックして、取引実績国・地域をご選択ください。<br>
+						<span class="textBold">取引実績のある国を一つ以上ご選択ください。<br>
+						該当する国が存在しない場合は、「その他」をご選択ください。</span></p>
+						
+						<ul class="request-list">
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">中国（日系企業）</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">アメリカ合衆国</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">日本</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">韓国</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">タイ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">台湾</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">インドネシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ベトナム</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ドイツ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">マレーシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">インド</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">シンガポール</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">フィリピン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">イギリス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">フランス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">香港</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">メキシコ（日系企業）</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">イタリア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ロシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">オーストラリア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">カナダ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ブラジル</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スイス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スペイン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">オランダ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スウェーデン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">アラブ首長国連邦</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ニュージーランド</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">チェコ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">サウジアラビア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ミャンマー</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">その他</span>
+								</label>
+							</li>
+						</ul>
+						
+						<div class="al-fc modal-btn">
+							<button type="button" class="btn-arrow _outline_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_">
+								<span class="__txt">選択</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal02">
+				<div class="modal__inner _small_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">国・地域選択</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>		
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">国・地域選択</h3>
+						
+						<p class="mb55">「選択」ボタンをクリックして、意向国・地域をご選択ください。<br>
+						<span class="textBold">意向のある国を一つ以上ご選択ください。<br>
+						該当する国が存在しない場合は、「その他」をご選択ください。</span></p>
+						
+						<ul class="request-list">
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">中国（日系企業）</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">アメリカ合衆国</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">日本</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">韓国</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">タイ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">台湾</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">インドネシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ベトナム</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ドイツ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">マレーシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">インド</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">シンガポール</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">フィリピン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">イギリス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">フランス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">香港</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">メキシコ（日系企業）</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">イタリア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ロシア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">オーストラリア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">カナダ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ブラジル</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スイス</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スペイン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">オランダ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">スウェーデン</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">アラブ首長国連邦</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ニュージーランド</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">チェコ</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">サウジアラビア</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">ミャンマー</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">その他</span>
+								</label>
+							</li>
+						</ul>
+						
+						<div class="al-fc modal-btn">
+							<button type="button" class="btn-arrow _outline_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_">
+								<span class="__txt">選択</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+						
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+		<script src="/common/js/modal.js"></script>
+		
+		<script>		
+			function entryChange1(){
+				radio = document.getElementsByName('country') 
+				if(radio[0].checked) {
+					document.getElementById('country1').style.display = "";
+				}else if(radio[1].checked) {
+					document.getElementById('country1').style.display = "none";
+				}
+			}			
+			
+			function entryChange2(){
+				radio = document.getElementsByName('country2') 
+				if(radio[0].checked) {
+					document.getElementById('country2').style.display = "";
+				}else if(radio[1].checked) {
+					document.getElementById('country2').style.display = "none";
+				}
+			}
+			
+			function init(){
+					entryChange1();
+					entryChange2();
+			}
+			window.onload = init;
+
+		</script>
+	</body>
+</html>

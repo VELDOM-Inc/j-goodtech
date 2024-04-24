@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .snav */
+/* ============================================================ */
+.snav {
+	margin: 0 0 20px;
+}
+
+.snav-ttl {
+	font-weight: 400;
+	font-size: 2.0rem;
+	padding: 20px;
+	line-height: 1.6;
+	background: #333;
+	text-align: center;
+	color: #fff;
+	margin: 0 0 5px;
+}
+
+.snav-inner__link {
+	padding: 10px 15px;
+	display: block;
+	color: #333;
+	text-decoration: none;
+	line-height: 1.4;
+	position: relative;
+}
+
+.snav-inner__link:hover ,
+.snav-inner__link._active_ ,
+.snav-inner__link.current {
+	background: #efefef;
+}
+
+.setup ._index_>a ,
+.info1 ._info1_>a ,
+.info2 ._info2_>a ,
+.client ._client_>a ,
+.appeal ._appeal_>a ,
+.link-setup ._link-setup_>a ,
+.keyword ._keyword_>a ,
+.sdgs ._sdgs_>a ,
+.image ._image_>a ,
+.service ._service_>a ,
+.outline ._outline_>a ,
+.menu-setup ._menu_>a ,
+.person ._person_>a {
+	background: #efefef;
+}
+
+.snav-inner__link::after {
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	transform: translate(0, -50%);
+	width: 10px;
+	height: 12px;
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url("/common/img/common/ico_arrow_snav.svg") center center no-repeat;
+	background-size: 100%;
+}
+
+.snav-btn {
+}
+
+.snav-btn__item {
+	margin: 0 0 10px;
+}
+
+.snav-btn__item .btn-arrow {
+	width: calc(100% - 24px);
+}
+
+
+
+
+

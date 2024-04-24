@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .dashboard-search */
+/* ============================================================ */
+.dashboard-search {
+	margin: 0 0 30px;
+}
+
+.dashboard-search__item {
+	margin: 0 0 15px;
+}
+
+.dashboard-search__item .__ttl {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+
+
+/* ============================================================ */
+/* .table-dashboard-sp */
+/* ============================================================ */
+.table-dashboard-sp {
+}
+
+.table-dashboard-sp .table__head {
+	display: none;
+}
+
+.table-dashboard-sp .table__body td ,
+.table-dashboard-sp .table__body tr {
+	display: block;
+}
+
+.table-dashboard-sp .table__body td {
+	margin: 0 0 10px;
+	font-size: 1.4rem;
+}

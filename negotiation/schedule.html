@@ -1,0 +1,826 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>確定済商談日程一覧｜ジェグテック｜J-GoodTech</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--============================================== html_head -->
+	<!--#include virtual="/common/inc/html_head.html" -->
+	<!--============================================== /html_head -->
+</head>
+
+<body>
+	<div class="wrapper _gray_">
+		<!--============================================== header -->
+		<!--#include virtual="/common/inc/header_members.html" -->
+		<!--============================================== /header -->
+
+		<h1 class="h1 _members_">
+			<span class="__txt">予定している商談日程一覧</span>
+		</h1>
+		
+		<!-- .contents -->
+		<main class="contents">
+
+			<!-- .contents__inner -->
+			<div class="contents__inner _negotiation_">
+			
+				<div class="mb60 mb25_sp">
+					<p class="text20 text14_sp textBold">現在予定している商談日程は以下となります。</p>
+					<p class="text18 text14_sp textBold">※企業情報には商談相手を表示しています。</p>
+				</div>
+				<table class="table _base_ text14 mb50 mb45_sp table-block_sp table-negotiation">
+					<thead class="table__head">
+						<tr>
+							<th class="_gray_ _pd8_" colspan="2">ニーズ情報</th>
+							<th class="_gray_ _pd8_" colspan="2">企業情報</th>
+							<th class="_gray_ _pd8_" colspan="3">商談情報</th>
+						</tr>
+						<tr>
+							<th class="_gray_ _pd8_">ニーズID</th>
+							<th class="_gray_ _pd8_">ニーズタイトル</th>
+							<th class="_gray_ _pd8_">発信者 &frasl; 提案者</th>
+							<th class="_gray_ _pd8_">企業名</th>
+							<th class="_gray_ _pd8_">商談日</th>
+							<th class="_gray_ _pd8_">商談開始時刻</th>
+							<th class="_gray_ _pd8_">商談終了時刻</th>
+						</tr>
+					</thead>
+					<tbody class="table__body">
+						<tr class="mb30_sp">
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">ニーズ情報</td>
+							<td class="_id_">NExxxx1</td>
+							<td class="_title_">A技術の募集</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">企業情報</td>
+							<td class="_shinjya_">発信者</td>
+							<td class="_company_">株式会社佐藤</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">商談情報</td>
+							<td class="_syodanbi_">2023 &frasl; 6 &frasl; 11</td>
+							<td class="_start-time_">10:00</td>
+							<td class="_end-time_">11:00</td>
+						</tr>
+						<tr class="mb30_sp">
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">ニーズ情報</td>
+							<td class="_id_">NExxxx2</td>
+							<td class="_title_">B技術の募集</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">企業情報</td>
+							<td class="_shinjya_">提案者</td>
+							<td class="_company_">株式会社田中</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">商談情報</td>
+							<td class="_syodanbi_">2023 &frasl; 6 &frasl; 11</td>
+							<td class="_start-time_">11:00</td>
+							<td class="_end-time_">12:00</td>
+						</tr>
+						<tr>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">ニーズ情報</td>
+							<td class="_id_">NExxxx3</td>
+							<td class="_title_">C技術の募集</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">企業情報</td>
+							<td class="_shinjya_">提案者</td>
+							<td class="_company_">株式会社山田</td>
+							<td class="sp_view _no-border-sp_ text20_sp textBold_sp">商談情報</td>
+							<td class="_syodanbi_">2023 &frasl; 6 &frasl; 11</td>
+							<td class="_start-time_">12:00</td>
+							<td class="_end-time_">13:00</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="al-fc">
+					<a href="" class="btn-arrow _outline_ _w-xl_">
+						<span class="__ico"><img src="/common/img/common/ico_arrow.svg" class="lazyload" alt=""></span>
+						<span class="__txt">戻る</span>
+					</a>
+				</div>
+				
+				<p class="mt30_sp"><a class="js-modal-open" data-target="modal01">商談候補日登録</a><br>
+					<a class="js-modal-open" data-target="modal02">個別日程調整</a><br>
+					<a class="js-modal-open" data-target="modal03">商談キャンセルコメント入力</a><br>
+					<a class="js-modal-open" data-target="modal04">商談日程確定</a><br>
+					<a class="js-modal-open" data-target="modal05">商談日程の再調整依頼</a><br>
+					<a class="js-modal-open" data-target="modal06">商談日程回答前確認</a></p>
+			</div><!-- /.contents__inner -->
+
+		</main>
+		<!-- /.contents -->
+		
+		
+		<!-- modal01 -->
+		<div class="modal" id="modal01">
+			<div class="modal__inner">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程調整</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程調整</h3>
+					<p class="mb25 mb30_sp">商談相手企業と商談日程の調整を行います。<br>
+					以下の項目へ入力を行い、「確認」ボタンを押下してください。<br>
+					<span class="textDarkRed">※は入力必須項目です。</span></p>
+					
+					<h4 class="h5 _black_ mb15_sp">商談相手企業</h4>
+					<div class="mb25 mb30_sp">
+						<p class="text16_sp">株式会社　田中</p>
+						<p class="text16_sp">株式会社　たろう</p>
+					</div>
+					
+					<h4 class="h5 _black_ mb15_sp">商談候補日時<span class="textDarkRed">※</span></h4>
+					<p class="mb10 mb15_sp text16_sp">商談候補日時を指定してください。（最大30件指定可能）<br>
+					※円滑な商談を行うため、目安として２週間後以降の日程を指定してください。</p>
+					<table class="table-top _pd25_ _border_ mb40 _sp-col1_ text16 text14_sp mb0_sp">
+						<tbody>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第1候補<span class="textDarkRed textBold_sp">※</span></th>
+								<td class="_w30_ _va-m_ _inline_"><input type="date" name="date" class="form-text _w-xs_"></td>
+								<td class="_va-m_ _inline_">
+									<div class="negotiation-schedule_counter">
+										<span class="counter-block mr15 mr0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+										～
+										<span class="counter-block ml15 ml0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+									</div><!-- negotiation-schedule_counter -->
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第2候補<span class="textDarkRed textBold_sp">※</span></th>
+								<td class="_w30_ _va-m_ _inline_"><input type="date" name="date" class="form-text _w-xs_"></td>
+								<td class="_va-m_ _inline_">
+									<div class="negotiation-schedule_counter">
+										<span class="counter-block mr15 mr0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+										～
+										<span class="counter-block ml15 ml0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+									</div><!-- negotiation-schedule_counter -->
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第3候補<span class="textDarkRed textBold_sp">※</span></th>
+								<td class="_w30_ _va-m_ _inline_"><input type="date" name="date" class="form-text _w-xs_"></td>
+								<td class="_va-m_ _inline_">
+									<div class="negotiation-schedule_counter">
+										<span class="counter-block mr15 mr0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+										～
+										<span class="counter-block ml15 ml0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+									</div><!-- negotiation-schedule_counter -->
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第4候補<span class="textDarkRed textBold_sp">※</span></th>
+								<td class="_w30_ _va-m_ _inline_"><input type="date" name="date" class="form-text _w-xs_"></td>
+								<td class="_va-m_ _inline_">
+									<div class="negotiation-schedule_counter">
+										<span class="counter-block mr15 mr0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+										～
+										<span class="counter-block ml15 ml0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+									</div><!-- negotiation-schedule_counter -->
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第5候補<span class="textDarkRed textBold_sp">※</span></th>
+								<td class="_w30_ _va-m_ _inline_"><input type="date" name="date" class="form-text _w-xs_"></td>
+								<td class="_va-m_ _inline_">
+									<div class="negotiation-schedule_counter">
+										<span class="counter-block mr15 mr0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+										～
+										<span class="counter-block ml15 ml0_sp">
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												10
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+											:
+											<span class="counter-box">
+												<button><img src="/common/img/common/ico_arrow_up_black.svg" alt="" class="lazyload"></button>
+												00
+												<button><img src="/common/img/common/ico_arrow_down_black.svg" alt="" class="lazyload"></button>
+											</span>
+										</span><!-- counter-block -->
+									</div><!-- negotiation-schedule_counter -->
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h4 class="h5 _black_ mb15_sp">連絡事項等<span class="textDarkRed">※</span></h4>
+					<p class="mb20 mb15_sp">商談相手企業へ連絡事項などのコメントを入力してください。</p>
+					<div class="al-fr mb10 mb20_sp">
+						<select class="form-select _text-gray3_ _text-black-sp_ _w-l_" name="">
+							<option value="">テンプレートを選択する</option>
+						</select>
+					</div><!-- al-fr -->
+					<textarea name="comment" rows="4" class="form-textarea _sp-black01_ mb30" placeholder="コメントを入力してください。"></textarea>
+					
+					<div class="al-fb file-links">
+						<p><a href="" target="_blank">添付資料.pdf</a></p>
+						<a href="" class="btn-arrow _outline_ _w-xs_ pc_view">
+							<span class="__ico">
+								<img src="/common/img/common/ico_close.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">削除</span>
+						</a>
+					</div>
+					<a href="" class="btn-arrow _black_ mb25 mb15_sp">
+						<span class="__ico">
+							<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+						</span>
+						<span class="__txt">資料を添付する</span>
+					</a>
+					<a href="" class="btn-arrow _outline_ _w-xs_ sp_view mb35_sp">
+						<span class="__ico">
+							<img src="/common/img/common/ico_close.svg" alt="" class="lazyload">
+						</span>
+						<span class="__txt">削除</span>
+					</a>
+					
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ js-modal-open btn-next _order1_" data-target="modal01-check">
+							<span class="__txt">確認</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal01 -->
+		
+		<!-- modal01-check -->
+		<div class="modal" id="modal01-check">
+			<div class="modal__inner">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程調整</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程調整</h3>
+					<p class="mb25 mb15_sp">以下の内容を商談相手企業へ送信してよろしいでしょうか。</p>
+					
+					<h4 class="h5 _black_ mb15_sp">商談相手企業</h4>
+					<div class="mb25 mb30_sp">
+						<p class="text16_sp">株式会社　田中</p>
+						<p class="text16_sp">株式会社　たろう</p>
+					</div>
+					
+					<h4 class="h5 _black_ mb15_sp">商談候補日時</h4>
+					<table class="table-top _pd25_ wp90 wp100_sp mb40 text16 _sp-col1_ text14_sp mb0_sp _border_">
+						<tbody>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第1候補</th>
+								<td class="_va-m_">2023 &frasl; 04 &frasl; 01 13:00～14:00</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第2候補</th>
+								<td class="_va-m_">2023 &frasl; 04 &frasl; 01 13:00～14:00</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第3候補</th>
+								<td class="_va-m_">2023 &frasl; 04 &frasl; 01 13:00～14:00</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第4候補</th>
+								<td class="_va-m_">2023 &frasl; 04 &frasl; 01 13:00～14:00</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w20_ _va-m_">第5候補</th>
+								<td class="_va-m_">2023 &frasl; 04 &frasl; 01 13:00～14:00</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h4 class="h5 _black_ mb15_sp">連絡事項等</h4>
+					<div class="file-links">
+						<p>弊社にて商談実施させていただければと存じます。<br>よろしくお願いいたします。</p>
+					</div>
+					<p class="mb30">添付資料.pdf</p>
+					
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_ js-modal-open btn-next" data-target="modal01">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_">
+							<span class="__txt">送信</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal01-check -->
+		
+		<!-- modal02 -->
+		<div class="modal" id="modal02">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程個別調整確認</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents pb60 pb15_sp">
+					<h3 class="modal-ttl">商談日程個別調整確認</h3>
+					<p class="mb30">商談日程を個別で調整します。</p>
+					<h4 class="h5 _black_ mb15_sp">商談日程調整の連絡を発信先企業に送信します。</h4>
+					<div class="mb25 mb30_sp">
+						<p class="text16_sp">株式会社　田中</p>
+						<p class="text16_sp">株式会社　たろう</p>
+					</div>
+					<div class="al-fb _block_ mb20">
+						<h5 class="h2 _black_">コメント入力</h5>
+						<select class="form-select _text-gray3_ _w-l_ _text-black-sp_" name="">
+							<option value="">テンプレートを選択する</option>
+						</select>
+					</div><!-- al-fb -->
+					<div class="mb10"><textarea name="comment"  rows="3" class="form-textarea _h130_ _sp-black01_" placeholder="コメントを入力してください。"></textarea></div>
+					<p class="mb40">※入力可能文字数は最大4000文字です</p>
+					
+					<div class="mb45">
+						<p class="file-links">管理用_提案書詳細.pdf</p>
+						<div class="al-fr">
+							<a href="" class="btn-arrow _black_">
+							<span class="__ico"><img src="/common/img/common/ico_file.svg" alt="" class="lazyload"></span>
+							<span class="__txt">資料を添付する</span>
+						</a>
+						</div>
+					</div>
+					
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_ js-modal-open btn-next" data-target="modal02-check">
+							<span class="__txt">確認</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal02 -->
+		
+		<!-- modal02-check -->
+		<div class="modal" id="modal02-check">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程個別調整確認</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents pb60 pb15_sp">
+					<h3 class="modal-ttl">商談日程個別調整確認</h3>
+					<p class="mb30 mb15_sp">以下の内容で個別調整しますか。</p>
+					<h4 class="h2 _black_ mb15_sp">コメント</h4>
+					<p>6/11に商談お願いいたします。<br>
+					<br>
+					<br>
+					</p>
+					
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_ btn-next js-modal-open" data-target="modal02">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_" data-target="modal02-check">
+							<span class="__txt">送信</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal03-check -->
+		
+		<!-- modal03 -->
+		<div class="modal" id="modal03">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談キャンセルコメント入力</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談キャンセル</h3>
+					<p class="mb40 mb15_sp">商談をキャンセルいたします。</p>
+					<div class="al-fb _block_ mb20">
+						<h4 class="h2 _black_">コメント入力</h4>
+						<select class="form-select _text-gray3_ _w-l_ _text-black-sp_" name="">
+							<option value="">テンプレートを選択する</option>
+						</select>
+					</div><!-- al-fb -->
+					<div class="mb45">
+						<textarea name="comment"  rows="4" class="form-textarea _h130_ _sp-black01_" placeholder="商談をキャンセルする理由など入力してください。"></textarea>
+						<p class="mt10">※入力可能文字数は最大4000文字です</p>
+					</div>
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_ js-modal-open btn-next" data-target="modal03-check">
+							<span class="__txt">確認</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal03 -->
+		
+		<!-- modal03-check -->
+		<div class="modal" id="modal03-check">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談キャンセルコメント入力</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談キャンセル</h3>
+					<p class="mb40 mb15_sp">商談をキャンセルいたします。</p>
+					<h4 class="h2 _black_ mb30 mb15_sp">コメント入力</h4>
+					<p class="mb80_sp mb80">誠に残念ではありますが、今回商談をキャンセルさせていただければと存じます。</p>
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_ js-modal-open btn-next" data-target="modal03">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_ js-modal-open btn-next" data-target="modal03-check">
+							<span class="__txt">商談キャンセル</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal03-check -->
+		
+		<!-- modal04 -->
+		<div class="modal" id="modal04">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程確定</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程確定</h3>
+					<p class="mb20 mb15_sp">商談日程を確定します。<br>
+					以下内容を入力し、確認ボタンを押下してください。</p>
+					<table class="table _border_ mb20 _sp-col1_ text14_sp mb0_sp">
+						<tbody>
+							<tr>
+								<th>法人名</th>
+								<td class="_white2_">株式会社A</td>
+							</tr>
+							<tr>
+								<th>商談日時</th>
+								<td class="_white2_">2023/06/11 10:00～12:00</td>
+							</tr>
+							<tr>
+								<th>開催場所</th>
+								<td class="_white2_"><textarea name="comment"  rows="4" class="form-textarea _text-gray4-sp_ _h80_" placeholder="開催場所をご入力ください。"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_ js-modal-open btn-next" data-target="modal04-check">
+							<span class="__txt">確認</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal04 -->
+		
+		<!-- modal04-check -->
+		<div class="modal" id="modal04-check">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程確定</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程確定</h3>
+					<p class="mb20 mb15_sp">以下内容で送信します。</p>
+					<table class="table _border_ mb20 _sp-col1_ text14_sp mb0_sp">
+						<tbody>
+							<tr>
+								<th>法人名</th>
+								<td class="_white2_">株式会社A</td>
+							</tr>
+							<tr>
+								<th>商談日時</th>
+								<td class="_white2_">2023 &frasl; 06 &frasl; 11 10:00～12:00</td>
+							</tr>
+							<tr>
+								<th>開催場所</th>
+								<td class="_white2_">株式会社A　会議室03<br>
+								<br>
+								<br>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="al-fc">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_ js-modal-open btn-next" data-target="modal04">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_" data-target="modal04-check">
+							<span class="__txt">確定</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal04-check -->
+		
+		<!-- modal05 -->
+		<div class="modal" id="modal05">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程の再調整依頼</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程の再調整依頼</h3>
+					<p class="mb40 mb15_sp">貴社が希望した商談日程をニーズ発信者が確認中です。<br>
+					商談日程を再調整するため、ニーズ発信者へ商談日程の再提示の依頼を行います。</p>
+					
+					<div class="al-fb _block_ mb20">
+						<h4 class="h2 _black_">コメント入力</h4>
+						<select class="form-select _text-gray3_ _w-l_ _text-black-sp_" name="">
+							<option value="">テンプレートを選択する</option>
+						</select>
+					</div><!-- al-fb -->
+					<div class="mb45">
+						<textarea name="comment" cols="50" rows="5" class="form-textarea _sp-black01_ _h130_" placeholder="商談日程の再調整を依頼する理由などを入力してください。"></textarea>
+					</div>
+					<div class="al-fc mt40">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_ js-modal-open btn-next" data-target="modal05-check">
+							<span class="__txt">確認</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal05 -->
+		
+		<!-- modal05-check -->
+		<div class="modal" id="modal05-check">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程の再提示依頼</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents">
+					<h3 class="modal-ttl">商談日程の再提示依頼</h3>
+					<p class="mb40 mb15_sp">貴社が希望した商談日程をニーズ発信者が確認中です。<br class="pc_view">
+					ニーズ発信者へ商談日程の候補日再提示依頼を行います。<br class="pc_view">
+					以下の内容で送信しますか。</p>
+					
+					<h4 class="h2 _black_ mb15_sp">コメント入力</h4>
+					<div class="mb45 mb15_sp">
+						<p>提示していただいた日程では都合を付けるのは難しいため、恐れ入りますが再度日程のご提示お願いできますか。</p>
+					</div>
+					<div class="al-fc mt40 mt0_sp">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_ btn-next js-modal-open" data-target="modal05">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_" data-target="modal05-check">
+							<span class="__txt">送信</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal05-check -->
+		
+		<!-- modal06 -->
+		<div class="modal" id="modal06">
+			<div class="modal__inner _h-auto_">
+				<div class="modal-bar">
+					<div class="modal-bar__inner _small_">
+						<div class="modal-bar__txt">商談日程回答前確認</div><span class="modal-bar__btn"><span class="__ico">×</span></span>
+					</div>
+				</div><!-- modal-bar -->
+				<div class="modal__contents _pd-m_ pb60 pb15_sp">
+					<h3 class="modal-ttl">商談日程回答前確認</h3>
+					<p class="mb45 mb15_sp">以下の内容で送信しますか。</p>
+					
+					<h4 class="h5 mb20 _gray-sp_ mb15_sp">商談日程候補</h4>
+					<table class="table-top mb45 text16 _sp-col1_ text14_sp mb0_sp _border_">
+						<tbody>
+							<tr>
+								<th class="_gray_ _w25_">第1候補</th>
+								<td>
+									<div class="al-fb">
+										<p>2023 &frasl; 04 &frasl; 01 13:00~14:00</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w25_">第2候補<span class="textDarkRed textBold_sp sp_view ml10_sp">選択済み</span></th>
+								<td>
+									<div class="al-fb">
+										<p>2023 &frasl; 04 &frasl; 01 13:00~14:00</p>
+										<p class="al_right textDarkRed pc_view">選択済み</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w25_">第3候補<span class="textDarkRed textBold_sp sp_view ml10_sp">選択済み</span></th>
+								<td>
+									<div class="al-fb">
+										<p>2023 &frasl; 04 &frasl; 01 13:00~14:00</p>
+										<p class="al_right textDarkRed pc_view">選択済み</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w25_">第4候補</th>
+								<td>
+									<div class="al-fb">
+										<p>2023 &frasl; 04 &frasl; 01 13:00~14:00</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w25_">第5候補</th>
+								<td>
+									<div class="al-fb">
+										<p>2023 &frasl; 04 &frasl; 01 13:00~14:00</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="_gray_ _w25_">その他</th>
+								<td>
+									<div class="al-fb">
+										<p>上記以外の日程で再度候補日提示依頼を行う。</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h4 class="h5 mb20 _gray-sp_">ニーズ発信元企業へコメント</h4>
+					<p>コメントコメント</p>
+					<p class="file-link">添付資料.pdf</p>
+					
+					<div class="al-fc mt40">
+						<a class="btn-arrow _outline_ _w-l_ _m20_ _order2_">
+							<span class="__ico"><img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload"></span>
+							<span class="__txt">戻る</span>
+						</a>
+						<button class="btn-arrow _red_ _w-l_ _m20_ _order1_">
+							<span class="__txt">送信</span>
+							<span class="__ico"><img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload"></span>
+						</button>
+					</div><!-- al-fc -->
+					
+				</div><!-- modal_contents -->
+			</div><!-- modal__inner -->
+			<div class="modal__bg"></div>
+		</div><!-- modal06 -->
+
+		<!--============================================== footer -->
+		<!--#include virtual="/common/inc/footer.html" -->
+		<!--============================================== /footer -->
+	</div>
+
+	<!--============================================== html_foot -->
+	<!--#include virtual="/common/inc/html_foot.html" -->
+	<!--============================================== /html_foot -->
+	<script src="/common/js/modal.js"></script>
+</body>
+
+</html>

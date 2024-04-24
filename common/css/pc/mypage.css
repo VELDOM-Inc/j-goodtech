@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .mypage-nav */
+/* ============================================================ */
+.mypage-nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.mypage-nav__item {
+	width: calc((100% - 66px) / 3);
+	margin: 0 10px 20px;
+	display: flex;
+  flex-direction: column;
+}
+
+.mypage-nav__ttl {
+	background: #333;
+}
+
+.mypage-nav__link {
+	padding: 15px 25px;
+	color: #fff;
+	font-size: 1.7rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	/*min-height: 45px;*/
+	line-height: 1.4;
+}
+
+.mypage-nav__link .__ico {
+	position: absolute;
+  top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+}
+
+.mypage-nav__link .__txt {
+	font-weight: bold;
+}
+
+.mypage-nav__detail {
+	border: 1px solid #D0D0D0;
+	background: #FBF8F8;
+	padding: 20px 20px 50px;
+	flex-grow: 1;
+}
+
+.mypage-nav._manager_ .mypage-nav__detail {
+	padding: 20px 20px 100px;
+}
+
+.mypage-nav__detail._dashboard_ {
+	background: url("/common/img/mypage/bg_dashboard.png") center center no-repeat #FBF8F8;
+	background-size: 80%;
+}
+
+.mypage-nav__detail._service_ {
+	background: url("/common/img/mypage/bg_service.png") center center no-repeat #FBF8F8;
+	background-size: 80%;
+}
+
+.mypage-nav__detail._suisen_ {
+	background: url("/common/img/mypage/bg_suisen.png") center center no-repeat #FBF8F8;
+	background-size: 70%;
+}
+
+.mypage-nav__detail._user_ {
+	background: url("/common/img/mypage/bg_user.png") center center no-repeat #FBF8F8;
+	background-size: 90%;
+}
+
+.mypage-nav__detail._user_ {
+	background: url("/common/img/mypage/bg_user.png") center center no-repeat #FBF8F8;
+	background-size: 90%;
+}
+
+.mypage-nav__detail._english_ {
+	background: url("/common/img/mypage/bg_english.png") center center no-repeat #FBF8F8;
+	background-size: 90%;
+}
+
+.mypage-nav__detail._mail_ {
+	background: url("/common/img/mypage/bg_mail.png") center center no-repeat #FBF8F8;
+	background-size: 90%;
+}
+
+.mypage-nav__detail._invitation_ {
+	background: url("/common/img/mypage/bg_invitation.png") center center no-repeat #FBF8F8;
+	background-size: 85%;
+}
+
+.mypage-nav__detail._info_ {
+	background: url("/common/img/mypage/bg_info.png") center center no-repeat #FBF8F8;
+	background-size: 70%;
+}
+
+.mypage-nav__detail._negotiation_ {
+	background: url("/common/img/mypage/bg_negotiation.png") center center no-repeat #FBF8F8;
+	background-size: 60%;
+}
+
+.mypage-upload {
+	margin: 40px 0 0;
+}
+
+.mypage-upload__ttl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.4rem;
+}
+
+.mypage-upload__ttl .__percent {
+	color: #E12800;
+	font-size: 1.6rem;
+}
+
+.mypage-upload__ttl .__number {
+	font-size: 2.0rem;
+}
+
+.mypage-upload .__bar {
+	border: 1px solid #C3C3C3;
+	background: linear-gradient(180deg, #F5F5F5 0%, #F9F9F9 100%);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	border-radius: 2px;
+}
+
+.mypage-upload .__bar::before {
+	/*width: 70%;　数字があった場合 */ 
+	width: 0;
+	height: 20px;
+	background: #2C4660;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* ============================================================ */
+/* .contents__inner._mypage_ */
+/* ============================================================ */
+.contents__inner._mypage_ .btn-arrow {
+	width: 100%;
+}
+.contents__inner._mypage_ .btn-arrow .__ico:last-child {
+	right: 15px;
+}
+
+.contents__inner._mypage_ .accordion__hide {
+	padding: 40px;
+}
+
+/* ============================================================ */
+/* .mypage-table */
+/* ============================================================ */
+.mypage-table ,
+.mypage-table__inner {
+	border: 4px solid #BEBEBE;
+}
+
+
+

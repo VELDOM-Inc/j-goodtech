@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .needs-btn */
+/* ============================================================ */
+.needs-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 1195px) {
+	.needs-btn {
+		flex-direction: column;
+	}
+}
+
+.needs-btn__item._flex_ {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@media screen and (max-width: 1195px) {
+	.needs-btn__item {
+		margin: 0 0 15px;
+	}
+}
+

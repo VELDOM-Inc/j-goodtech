@@ -1,0 +1,413 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>ダッシュボード｜ジェグテック｜J-GoodTech</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--============================================== html_head -->
+	<!--#include virtual="/common/inc/html_head.html" -->
+	<!--============================================== /html_head -->
+	<link rel="stylesheet" href="/common/lib/slick/slick.css">
+	<link rel="stylesheet" href="/common/lib/slick/slick-theme.css">
+</head>
+
+<body>
+	<div class="wrapper _gray_">
+		<!--============================================== header -->
+		<!--#include virtual="/common/inc/header_members.html" -->
+		<!--============================================== /header -->
+
+		<h1 class="h1 _members_">
+			<span class="__txt">ダッシュボード</span>
+		</h1>
+
+		<!-- .contents -->
+		<main class="contents">
+
+			<!-- .contents__inner -->
+			<div class="contents__inner">
+
+				<div class="dashboard">
+					<ul class="tab _black_ mb40 mb30_sp">
+						<li class="tab__item">
+							<a href="index.html" class="tab__link">
+								推薦企業
+							</a>
+						</li>
+						<li class="tab__item active">
+							<a href="index_company.html" class="tab__link">
+								貴社
+							</a>
+						</li>
+					</ul>
+
+					<div class="search-result__inner">
+						<section class="mb40">
+							<h2 class="h5 _black_ _mb_ text16_sp">プロフィール充実度</h2>
+							<p class="mb30 mb15_sp text14_sp">現在の貴社のプロフィール充実度です。<br class="pc_view">
+								積極的に情報を充実・最新化し他社から検索・問合せされやすい内容にしましょう。</p>
+
+							<div class="graph">
+								<div class="graph__item">
+									<div class="graph__img">
+										<p class="__lang">日本語</p>
+										<div class="pie-chart _red_">
+											<div class="pie-chart__percent">
+												<svg>
+													<circle class="pie-chart__base" cx="75" cy="75" r="70"></circle>
+													<circle class="pie-chart__line" cx="75" cy="75" r="70"></circle>
+												</svg>
+												<div class="pie-chart__number">
+													<p class="pie-chart__ttl">65<span>%</span></p>
+												</div>
+											</div>
+										</div>
+										<p class="__date pc_view">更新日時：2023 &frasl; 05 &frasl; 01</p>
+									</div>
+									<div class="graph__txt">
+										<p>プロフィール充実度が80%を超えると英訳サービスが利用できるようになります。</p>
+									</div>
+									<p class="sp_view text12_sp al_right_sp">更新日時：2023 &frasl; 05 &frasl; 01</p>
+								</div>
+								<div class="graph__item">
+									<div class="graph__img">
+										<p class="__lang">英語</p>
+										<div class="pie-chart">
+											<div class="pie-chart__percent">
+												<svg>
+													<circle class="pie-chart__base" cx="75" cy="75" r="70"></circle>
+												</svg>
+												<div class="pie-chart__number">
+													<p class="pie-chart__ttl">0<span>%</span></p>
+												</div>
+											</div>
+										</div>
+										<p class="__date pc_view">更新日時：2023 &frasl; 05 &frasl; 01</p>
+									</div>
+									<div class="graph__txt">
+										<p>英語の法人情報ページを作成すると海外企業からも検索されるようになります。</p>
+									</div>
+									<p class="sp_view text12_sp al_right_sp">更新日時：2023 &frasl; 05 &frasl; 01</p>
+								</div>
+							</div>
+
+							<div class="al-fc">
+								<a href="" class="btn-arrow _black_ _w-l_">
+									<span class="__txt">法人情報を編集する</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+						</section>
+
+						<section class="mb40">
+							<h2 class="h5 _black_ _mb_ text16_sp">ページビュー数</h2>
+							<p class="mb15_sp text14_sp">前日時点の貴社の法人情報ページを他社が閲覧した回数です。<br class="pc_view">
+								日本語ページ、英語ページそれぞれの閲覧数を確認することができます。</p>
+							<p class="mb30 text14_sp">（2019年1月以降の閲覧数です）</p>
+
+							<div class="view-graph" data-tabs>
+								<ul class="tab _black_ _view_ tab-sp">
+									<li class="tab__item active" data-tab>
+										<a href="" class="tab__link">
+											日本語
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											英語
+										</a>
+									</li>
+								</ul>
+
+								<div class="view-graph__item active" data-tab-content>
+									<div class="section__inner _m15_"><canvas id="ex_chart"></canvas></div>
+								</div>
+								<div class="view-graph__item" data-tab-content>
+									<div class="section__inner _m15_">英語コンテンツ</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="mb40">
+							<h2 class="h5 _black_ _mb_ text16_sp">前月閲覧数 ランキング</h2>
+							<p class="text14_sp mb15_sp">前月にジェグテックで閲覧された回数が多い企業のランキングです。ランキングは毎月月末に集計します。</p>
+							<p class="mb30 text14_sp">（2019年1月以降のランキングです）</p>
+							
+							<table class="table _border_ _dashboard_ mb25 _sp-col1_ mb0_sp">
+								<tbody>
+									<tr class="pc_view">
+										<th class="_gray_ _w30_ _al-c_">貴社順位（前月）</th>
+										<th class="_gray_ _w30_ _al-c_">閲覧回数（前月）</th>
+										<th class="_gray_ _w30_ _al-c_">閲覧回数（前々月）</th>
+									</tr>
+									<tr class="pc_view">
+										<td colspan="3" class="_al-c_">ランキングに表示できる企業情報がありません。</td>
+									</tr>
+									<tr class="sp_view">
+										<th>貴社順位（前月）</th>
+										<td class="pb25_sp text14_sp">
+											ランキングに表示できる企業情報がありません。
+										</td>
+									</tr>
+									<tr class="sp_view">
+										<th>閲覧回数（前月）</th>
+										<td class="pb25_sp text14_sp">
+											ランキングに表示できる企業情報がありません。
+										</td>
+									</tr>
+									<tr class="sp_view">
+										<th>閲覧回数（前々月）</th>
+										<td class="text14_sp">
+											ランキングに表示できる企業情報がありません。
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<select class="form-select _w-s_ mb25 mb30_sp _text-black-sp_" name="">
+								<option value="">1~10件</option>
+							</select>
+
+							<div class="corporate-dashboard__table table-slide _w100_ _no-border_ mb15 table-dashboard-sp">
+								<table class="table _w100_ _dashboard_">
+									<thead class="table__head">
+										<tr>
+											<th class="_gray_ _w15_">順位</th>
+											<th class="_gray_">法人名</th>
+											<th class="_gray_ _w20_">閲覧回数（前月）</th>
+											<th class="_gray_ _w20_">閲覧回数（前々月）</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_ranking_">1位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000013235/appeal/jpn" target="_blank">株式会社ティーアールシィー高田</a></td>
+											<td class="_kaisu1_">6,427</td>
+											<td class="_kaisu2_">5,447</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">2位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000029416/appeal/jpn" target="_blank">深江特殊鋼株式会社</a></td>
+											<td class="_kaisu1_">6,141</td>
+											<td class="_kaisu2_">5,272</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">3位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000033735/appeal/jpn" target="_blank">AMITE株式会社</a></td>
+											<td class="_kaisu1_">6,062</td>
+											<td class="_kaisu2_">1,453</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">4位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000013061/appeal/jpn" target="_blank">AMITE株式会社</a></td>
+											<td class="_kaisu1_">1,455</td>
+											<td class="_kaisu2_">1,060</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">5位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000003897/appeal/jpn" target="_blank">国際科学工業株式会社</a></td>
+											<td class="_kaisu1_">1,165</td>
+											<td class="_kaisu2_">1,053</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">6位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000034622/appeal/jpn" target="_blank">丸大鐵工株式会社</a></td>
+											<td class="_kaisu1_">1,161</td>
+											<td class="_kaisu2_">1,120</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">7位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000023912/appeal/jpn" target="_blank">中島プレス工業有限会社</a></td>
+											<td class="_kaisu1_">1,139</td>
+											<td class="_kaisu2_">1,102</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">8位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000004447/appeal/jpn" target="_blank">株式会社アイ電子工業</a></td>
+											<td class="_kaisu1_">1,091</td>
+											<td class="_kaisu2_">1,172</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">9位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000001481/appeal/jpn" target="_blank">株式会社栄精機製作所</a></td>
+											<td class="_kaisu1_">1,053</td>
+											<td class="_kaisu2_">1,114</td>
+										</tr>
+										<tr>
+											<td class="_ranking_">10位</td>
+											<td class="_hojin_"><a href="https://jgoodtech.smrj.go.jp/web/page/corp/-/info/JC0000000001584/appeal/jpn" target="_blank">太洋塗料株式会社</a></td>
+											<td class="_kaisu1_">1,032</td>
+											<td class="_kaisu2_">1,385</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="al-fb _block_">
+								<p class="text14_sp mb15_sp">閲覧数ランキングがダウンロードできます。</p>
+								<a href="" class="btn-arrow _black_">
+									<span class="__ico pc_view">
+										<img src="/common/img/common/ico_download.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">CSVダウンロード</span>
+									<span class="__ico sp_view">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+						</section>
+
+						<section class="mb30">
+							<h2 class="h5 _black_ _mb_ text16_sp">ニーズ実績</h2>
+							<p class="mb15_sp text14_sp">他社のニーズに対して提案した実績数、貴社が発信したニーズの実績数、それぞれで商談受入まで至った実績数です。</p>
+							<p class="mb30 text14_sp">（2018年10月以降の実績数です）</p>
+							<select class="form-select _w-s_ mb25 mb15_sp _text-black-sp_" name="">
+								<option value="">2023年</option>
+							</select>
+
+							<div class="needs">
+								<div class="needs__item">
+									<h3 class="needs__ttl">提案</h3>
+									<ul class="needs-list">
+										<li class="needs-list__item">
+											<p class="__ttl">ニーズに対して提案した件数</p>
+											<p class="__txt"><span class="__number">0</span>件</p>
+										</li>
+										<li class="needs-list__item">
+											<p class="__ttl">商談受入まで至った提案件数</p>
+											<p class="__txt"><span class="__number">0</span>件</p>
+										</li>
+									</ul>
+								</div>
+								<div class="needs__item">
+									<h3 class="needs__ttl">発信</h3>
+									<ul class="needs-list">
+										<li class="needs-list__item">
+											<p class="__ttl">ニーズを発信した件数</p>
+											<p class="__txt"><span class="__number">0</span>件</p>
+										</li>
+										<li class="needs-list__item">
+											<p class="__ttl">商談受入まで至った発信件数</p>
+											<p class="__txt"><span class="__number">0</span>件</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="h5 _black_ _mb_ text16_sp">ジェグテック利用実績</h2>
+							<p class="mb15_sp text14_sp">ジェグテックの各サービスを利用した前日時点の実績数です。<br class="pc_view">
+								タブに表示されている件数は当月の実績数です。</p>
+							<p class="mb30 text14_sp">（2018年10月以降の実績数です）</p>
+
+							<div class="results-graph" data-tabs>
+								<ul class="tab _black_ _view_ tab-sp slider_sp">
+									<li class="tab__item active" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">ログイン回数</span>
+											<span class="results-graph__number">23</span>
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">問合せ発信数</span>
+											<span class="results-graph__number">0</span>
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">問合せ受信数</span>
+											<span class="results-graph__number">1</span>
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">ニーズ提案数</span>
+											<span class="results-graph__number">0</span>
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">ニーズ発信数</span>
+											<span class="results-graph__number">0</span>
+										</a>
+									</li>
+									<li class="tab__item" data-tab>
+										<a href="" class="tab__link">
+											<span class="results-graph__txt">トピック起票数</span>
+											<span class="results-graph__number">0</span>
+										</a>
+									</li>
+								</ul>
+
+								<div class="results-graph__item active" data-tab-content>
+									<div class="section__inner _m15_"><canvas id="login_chart"></canvas></div>
+								</div>
+								<div class="results-graph__item" data-tab-content>
+									<div class="section__inner _m15_">問合せ発信数コンテンツ</div>
+								</div>
+								<div class="results-graph__item" data-tab-content>
+									<div class="section__inner _m15_">問合せ受信数コンテンツ</div>
+								</div>
+								<div class="results-graph__item" data-tab-content>
+									<div class="section__inner _m15_">ニーズ提案数コンテンツ</div>
+								</div>
+								<div class="results-graph__item" data-tab-content>
+									<div class="section__inner _m15_">ニーズ発信数コンテンツ</div>
+								</div>
+								<div class="results-graph__item" data-tab-content>
+									<div class="section__inner _m15_">トピック起票数コンテンツ</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.contents__inner -->
+
+		</main>
+		<!-- /.contents -->
+
+		<!--============================================== footer -->
+		<!--#include virtual="/common/inc/footer.html" -->
+		<!--============================================== /footer -->
+	</div>
+
+	<!--============================================== html_foot -->
+	<!--#include virtual="/common/inc/html_foot.html" -->
+	<!--============================================== /html_foot -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+	<script src="/common/js/graph.js"></script>
+	<script src="/common/js/login_graph.js"></script>
+	
+	<script src="../common/lib/slick/slick.min.js"></script>
+	<script>
+			if (window.matchMedia('(max-width: 767px)').matches) {
+				$(function() {
+					$('.slider_sp').slick({
+						dots: false,
+						infinite: false,
+						arrows: true,
+						speed: 500,
+						slidesToShow: 2.3,
+						autoplay: false,
+						slidesToScroll: 1
+					});
+				});
+			} else if (window.matchMedia('(min-width:768px)').matches) {
+			}
+		</script>
+		
+	<script src="/common/js/dashboard_slider.js"></script>
+</body>
+
+</html>

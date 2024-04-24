@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.contents__inner._after-negotiation_ p._note_ {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+/* ============================================================ */
+/* title */
+/* ============================================================ */
+.contents__inner._after-negotiation_ .ttl {
+	padding: 0 13px;
+	border-left: 5px solid #004DB6;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}

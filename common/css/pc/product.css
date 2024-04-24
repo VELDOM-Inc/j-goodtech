@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .product-select */
+/* ============================================================ */
+.product-select {
+	padding: 15px 25px;
+}
+
+.product-select__txt {
+	margin: 0 0 5px;
+}
+
+.product-select__inner {
+	/*display: flex;
+	justify-content: center;
+	align-content: center;*/
+	width: 100%;
+}
+
+.product-select__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.product-select__input {
+	width: 46%;
+}
+
+.product-select__input .form-select {
+	width: 100%;
+}
+
+.product-select__arrow {
+	width: calc(100% - 92%);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-select__arrow .__ico {
+	width: 20px;
+	height: 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #2C2F32;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.product-select__arrow .__ico._left_ {
+	left: 0;
+}
+
+.product-select__arrow .__ico._right_ {
+	right: 0;
+}
+
+.product-select__arrow .__ico ._up_ {
+	transform: translate(0, 0) rotate(180deg);
+}
+
+.product-select__btn {
+	/*width: 46%;*/
+	display: flex;
+	justify-content: flex-end;
+}
+
+.product-select__btn .btn {
+	margin: 0 0 0 10px;
+}
+
+.product-select__btn .btn ,
+.product-select__btn .btn-arrow {
+	min-width: 120px;
+}
+
+
+/* ============================================================ */
+/* .product-label */
+/* ============================================================ */
+.product-label {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0 0 30px;
+}
+
+.product-label._fl-l_ {
+	justify-content: flex-start;
+}
+
+.product-label__ttl {
+	margin: 0 10px 0 0;
+}
+
+.product-label__item {
+	margin: 0 5px;
+}
+
+.product-label__link ,
+.product-label__nolink {
+	display: flex;
+	justify-content: center;
+	border-radius: 17px;
+	background: #D0D0D0;
+	border: 1px solid #D0D0D0;
+	color: #fff;
+	text-decoration: none;
+}
+
+span.product-label__link {
+	cursor: default;
+}
+
+.product-label__link._on_ ,
+.product-label__nolink._on_ {
+	border: 1px solid #CA0813;
+	color: #fff;
+	background: #CA0813;
+}
+
+.product-label__lang {
+	color: #333;
+	background: #fff;
+	border-radius: 17px 0 0 17px;
+	font-size: 1.4rem;
+	padding: 5px 10px;
+}
+
+.product-label__txt {
+	border-radius: 0 17px 17px 0;
+	font-size: 1.4rem;
+	padding: 5px 10px;
+}
+
+

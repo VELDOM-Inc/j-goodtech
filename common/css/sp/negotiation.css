@@ -1,0 +1,354 @@
+@charset "shift_jis";
+
+/* ============================================================ */
+/* table-negotiation */
+/* ============================================================ */
+.table-negotiation td {
+}
+
+.table-negotiation ._id_::before {
+	content: "ニーズID";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._title_::before {
+	content: "ニーズタイトル";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._shinjya_::before {
+	content: "発信者/提案者";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._company_::before {
+	content: "企業名";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._syodanbi_::before {
+	content: "商談日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._start-time_::before {
+	content: "商談開始時刻";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-negotiation ._end-time_::before {
+	content: "商談終了時刻";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+/* ============================================================ */
+/* negotiation-schedule_counter */
+/* ============================================================ */
+.negotiation-schedule_counter {
+	display: flex;
+	align-items: center;
+}
+
+.negotiation-schedule_counter .counter-block {
+	display: flex;
+	align-items: center;
+}
+
+.negotiation-schedule_counter .counter-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.negotiation-schedule_counter .counter-box button {
+	-webkit-appearance: none;
+	appearance:none;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+.negotiation-schedule_counter .counter-box button img {
+	width: 24px;
+	height: 24px;
+}
+
+
+.file-links {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #555;
+}
+
+.file-link {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px dotted #555;
+}
+
+
+/* ============================================================ */
+/* negotiation-table */
+/* ============================================================ */
+.negotiation-table._sp-col1_ {
+	display: block;
+}
+
+.negotiation-table._sp-col1_ thead,
+.negotiation-table._sp-col1_ tbody,
+.negotiation-table._sp-col1_ tr,
+.negotiation-table._sp-col1_ th,
+.negotiation-table._sp-col1_ td {	
+	display: block;
+}
+
+.negotiation-table._sp-col1_ th {
+	padding: 0 0 10px;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.negotiation-table._sp-col1_ td {
+	padding: 0 0 30px;
+	font-size: 1.6rem;
+}
+
+
+/* ============================================================ */
+/* negotiation-box */
+/* ============================================================ */
+.negotiation-box {
+	background: none !important;
+	padding: 0;
+}
+
+
+/* ============================================================ */
+/* table-slide_negotiation_ */
+/* ============================================================ */
+.table-slide_negotiation_ tr {
+	display: flex;
+	flex-direction: column;
+}
+
+.table-slide_negotiation_ ._id_::before {
+	content: "提案ID";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._name2_::before {
+	content: "企業名";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._pref_::before {
+	font-weight: normal;
+}
+
+.table-slide_negotiation_ ._teiansya_::before {
+	content: "提案者名";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._yakusyoku_::before {
+	content: "所属/役職";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._tel_::before {
+	content: "電話番号";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._mail_::before {
+	content: "メールアドレス";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._date2_::before {
+	content: "ニーズ発信者の商談申し入れ日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._status_::before {
+	content: "商談ステータス";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._date3_::before {
+	content: "提案者の商談受入日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._date4_::before {
+	content: "商談候補日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._date5_::before {
+	content: "商談実施日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._needs-id_::before {
+	content: "ニーズID";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._needs-ttl_::before {
+	content: "ニーズタイトル";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._company_::before {
+	content: "企業名（発信側）";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._honbu_::before {
+	content: "担当地域本部（発信側）";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._teianbi_::before {
+	content: "提案日";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.table-slide_negotiation_ ._teian-status_::before {
+	content: "提案書作成ステータス";
+	display: block;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+/* ============================================================ */
+/* .toggle_contents（スマホページ用） */
+/* ============================================================ */
+.negotiation-box .toggle__section {
+	margin: 0 0 20px;
+}
+
+.negotiation-box .toggle__section:last-child {
+	margin: 0;
+}
+
+.negotiation-box .toggle__txt {
+	padding: 0;
+}
+
+.negotiation-box .toggle__title.form-radio {
+	padding: 0;
+}
+
+.negotiation-box .toggle__title.form-radio::after {
+	background: none;
+}
+
+.negotiation-box .toggle__title.selected.form-radio .__txt::after {
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	transform: translate(0, -50%);
+	border-radius: 50%;
+	background: #004DB6;
+	content: "";
+	opacity: 1;
+}

@@ -1,0 +1,705 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* table-dashboard-sp */
+/* ============================================================ */
+.table-dashboard-sp {
+}
+
+.table-dashboard-sp tr {
+	border-bottom: 1px solid #D0D0D0;
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+}
+
+.table-dashboard-sp td {
+	margin: 0 0 5px !important;
+	padding: 0 15px;
+}
+
+.table-dashboard-sp ._name_ {
+	font-size: 1.6rem !important;
+}
+
+.table-dashboard-sp ._name_::before {
+	content: "法人名";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._login_::before {
+	content: "ログイン回数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._profile-jp_::before {
+	content: "日本語";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 15px;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._profile-en_::before {
+	content: "英語";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 15px;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._info-date_::before {
+	content: "法人情報最終更新日時";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._page_::before {
+	content: "法人情報ページ閲覧数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._needs_::before {
+	content: "おすすめニーズ数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._contact_::before {
+	content: "問合わせ受信数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._teian_::before {
+	content: "ニーズ提案数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 10px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._syodan_::before {
+	content: "商談数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._hassin_::before {
+	content: "問合わせ発信数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._needs-hassin_::before {
+	content: "ニーズ発信数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._topics_::before {
+	content: "トピック起票数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._ranking_::before {
+	content: "順位";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._hojin_::before {
+	content: "法人名";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._kaisu1_::before {
+	content: "閲覧回数（前月）";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.table-dashboard-sp ._kaisu2_::before {
+	content: "閲覧回数（前々月）";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+
+/* ============================================================ */
+/* dashboard-table-sp */
+/* ============================================================ */
+.dashboard-table-sp .table__head {
+	display: none;
+}
+
+.dashboard-table-sp td {
+	display: block;
+}
+
+.dashboard-table-sp tr {
+	border-bottom: 1px solid #D0D0D0;
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	display: block;
+}
+
+.dashboard-table-sp td {
+	margin: 0 0 5px !important;
+	padding: 0 15px;
+	font-size: 1.4rem;
+}
+
+.dashboard-table-sp.list-needs__table td {
+	padding: 0 30px;
+}
+
+.dashboard-table-sp ._needs-id_::before {
+	content: "ニーズID";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._title_::before {
+	content: "件名";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._start-day_::before {
+	content: "開始日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._end-day_::before {
+	content: "終了日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._status_::before {
+	content: "ステータス";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._teiansu_::before {
+	content: "提案数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._syodansu_::before {
+	content: "商談数";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp .__ttl {
+	padding: 10px 15px 5px !important;
+}
+
+.dashboard-table-sp ._id_::before {
+	content: "提案ID";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._company_::before {
+	content: "企業名";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._pref_::before {
+	content: "都道府県";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._teianbi_::before {
+	content: "提案日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._status2_::before {
+	content: "提案書作成ステータス";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._needs-title_::before {
+	content: "ニーズタイトル";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._name_::before {
+	content: "企業名（発信側）";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._teiansya_::before {
+	content: "提案者名";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._syozoku_::before {
+	content: "所属/役職";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._tel_::before {
+	content: "電話番号";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._mail_::before {
+	content: "メールアドレス";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._status3_::before {
+	content: "商談ステータス";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._mousiire_::before {
+	content: "商談申入れ日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._kouho_::before {
+	content: "商談候補日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.dashboard-table-sp ._jisshi_::before {
+	content: "商談実施日";
+	display: inline-block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 5px 0 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+
+/* ============================================================ */
+/* .graph */
+/* ============================================================ */
+.graph {
+}
+
+.graph__item {
+	margin: 0 0 30px;
+}
+
+.graph__img {
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.graph__img .__lang {
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin: 0 0 5px;
+}
+
+.pie-chart {
+  position: relative;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0 10px;
+}
+
+.pie-chart__percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.pie-chart__percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+	transform: rotate(-90deg);
+}
+
+.pie-chart__percent svg circle {
+  position: relative;
+  fill: none;
+  stroke-width: 10;
+  stroke: #cacaca;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 0;
+}
+
+.pie-chart__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8043c;
+}
+
+.pie-chart__ttl {
+  font-size: 50px;
+}
+
+.pie-chart__ttl span {
+  font-size: 22px;
+}
+
+.pie-chart__line {
+	animation: circleAnim 1s forwards;
+}
+
+.pie-chart._red_ .pie-chart__percent .pie-chart__line {
+  stroke-dashoffset: 154;
+  stroke: #c8043c;
+}
+
+.graph__txt {
+	border-radius: 8px;
+	background: #F5DEE4;
+	padding: 15px;
+	margin: 0 0 10px;
+	font-size: 1.4rem;
+}
+
+
+/* ============================================================ */
+/* .tab-sp */
+/* ============================================================ */
+._view_.tab-sp {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin: 0 0 15px;
+}
+
+._view_.tab-sp::before {
+	display: none;
+}
+
+._view_.tab-sp .tab__item {
+	width: calc(100% / 2);
+	text-align: center;
+	margin: 0;
+}
+
+._view_.tab-sp .tab__link {
+	display: block;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 2px solid rgba(36, 113, 168, 0.1);
+	background: #fff;
+	padding: 8px 16px;
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: #2D3748;
+	font-weight: normal;
+}
+
+._view_.tab-sp .tab__link._on_ ,
+._view_.tab-sp .tab__item.active .tab__link {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: #2B6CB0;
+	position: relative;
+	padding: 8px 16px;
+}
+
+._view_.tab-sp .tab__link._on_::after ,
+._view_.tab-sp .tab__item.active .tab__link::after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid #2B6CB0;
+	content: "";
+	z-index: 2;
+}
+
+._view_.tab-sp .tab__item.active .tab__link::before {
+	display: none;
+}
+
+
+/* ============================================================ */
+/* .needs */
+/* ============================================================ */
+.needs {
+	margin: 0 0 45px;
+}
+
+.needs__item {
+	margin: 0 0 15px;
+}
+
+.needs__ttl {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.6rem;
+	line-height: 1.0;
+	font-weight: bold;
+}
+
+.needs-list {
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.needs-list__item {
+	border: 1px solid #D0D0D0;
+	border-bottom: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+
+.needs-list__item .__number {
+	font-size: 2.4rem;
+	line-height: 1.0;
+	margin: 0 2px;
+}
+
+
+/* ============================================================ */
+/* スマホ用タブスライダー */
+/* ============================================================ */
+.results-graph .slick-prev {
+	position: absolute;
+	left: -11px;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+.results-graph .slick-prev::before {
+	content: "";
+	display: block;
+	background-image: url("/common/img/common/ico_arrow.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	opacity: 1 !important;
+}
+
+.results-graph .slick-next {
+	position: absolute;
+	right: -11px;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+.results-graph .slick-next::before {
+	content: "";
+	display: block;
+	background-image: url("/common/img/common/ico_arrow_black.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	opacity: 1 !important;
+}
+
+.results-graph__txt {
+}
+
+.results-graph__number {
+	display: block;
+}
+
+.slider_sp .tab__item {
+}
+
+.slider_sp .tab__link {
+}
+
+

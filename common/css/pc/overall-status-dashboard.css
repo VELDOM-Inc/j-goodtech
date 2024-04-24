@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .table-dashboard */
+/* ============================================================ */
+.table-dashboard._overall-status_ th,
+.table-dashboard._overall-status_ td {
+	padding: 15px 8px;
+	line-height: 1.75;
+}
+
+.table-dashboard._overall-status_ th {
+	border-left: none;
+	border-right: none;
+}
+
+/* ============================================================ */
+/* .table */
+/* ============================================================ */
+.table._overall-status_ {
+	width:62.5%;
+}
+
+.table._overall-status_ ._w-s_ {
+	width: 24.5%;
+}
+
+.table._overall-status_ ._w-m_ {
+	width: 25.8%;
+}

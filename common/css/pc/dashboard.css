@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .dashboard-search */
+/* ============================================================ */
+.dashboard-search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 20px;
+}
+
+.dashboard-search._csv_ {
+	justify-content: flex-start;
+}
+
+.dashboard-search__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.dashboard-search__item._btn_ {
+	margin: 0 0 0 25px;
+}
+
+
+.dashboard-search__item .__ttl {
+	font-size: 1.5rem;
+	margin: 0 20px 0 0;
+}
+
+.dashboard-search__item .__text {
+	margin: 0 10px;
+}
+
+.dashboard-search__item .form-text {
+	max-width: 200px;
+}
+
+
+/* ============================================================ */
+/* .table-dashboard */
+/* ============================================================ */
+.table-dashboard {
+	height: auto !important;
+	font-size: 1.4rem;
+}
+
+.table-dashboard th {
+	border: 1px solid #c7c7c8;
+	padding: 8px;
+	vertical-align: middle;
+	line-height: 1.4;
+}
+
+.table-dashboard td {
+	vertical-align: middle;
+	padding: 8px 60px 8px 8px;
+	/*white-space: nowrap;*/
+	border: none;
+	line-height: 1.4;
+}
+
+
+/* ============================================================ */
+/* .graph */
+/* ============================================================ */
+.graph {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 25px;
+}
+
+.graph__item {
+	width: calc((100% - 25px) / 2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.graph__img {
+	width: calc(50% - 12px);
+	text-align: center;
+}
+
+.pie-chart {
+  position: relative;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0 10px;
+}
+
+.pie-chart__percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.pie-chart__percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+	transform: rotate(-90deg);
+}
+
+.pie-chart__percent svg circle {
+  position: relative;
+  fill: none;
+  stroke-width: 10;
+  stroke: #cacaca;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 0;
+}
+
+.pie-chart__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8043c;
+}
+
+.pie-chart__ttl {
+  font-size: 50px;
+}
+
+.pie-chart__ttl span {
+  font-size: 22px;
+}
+
+.pie-chart__line {
+	animation: circleAnim 1s forwards;
+}
+.pie-chart._red_ .pie-chart__percent .pie-chart__line {
+  stroke-dashoffset: 154;
+  stroke: #c8043c;
+}
+
+/*
+@-webkit-keyframes circleAnim {
+  0% {
+    stroke-dasharray: 0 440;
+  }
+  99.9%, to {
+    stroke-dasharray: 440 440;
+  }
+}
+ 
+@keyframes circleAnim {
+  0% {
+    stroke-dasharray: 0 440;
+  }
+  99.9%, to {
+    stroke-dasharray: 440 440;
+  }
+}
+*/
+
+.graph__txt {
+	border-radius: 15px;
+	background: #F5DEE4;
+	padding: 20px;
+	width: calc(50% - 52px);
+}
+
+
+/* ============================================================ */
+/* .needs */
+/* ============================================================ */
+.needs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.needs__item {
+	width: calc((100% - 21px) / 2);
+}
+
+.needs__ttl {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: bold;
+}
+
+.needs-list {
+	border-bottom: 1px solid #D0D0D0;
+}
+
+.needs-list__item {
+	border: 1px solid #D0D0D0;
+	border-bottom: none;
+	padding: 15px 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.needs-list__item .__number {
+	font-size: 2.8rem;
+	line-height: 1.0;
+	margin: 0 2px;
+}
+
+
+
+/* ============================================================ */
+/* .results-graph */
+/* ============================================================ */
+.results-graph .tab__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.results-graph__txt {
+	font-size: 1.4rem;	
+}
+
+.results-graph__number {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+

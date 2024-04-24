@@ -1,0 +1,815 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>会員情報管理（承認済会員）｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1"><span class="__txt">会員情報管理 （承認済会員）</span></h1>
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__flow -->
+				<div class="contents__flow">
+					<div class="al_right mb40">
+						<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">管理メニューに戻る</span>
+						</a>
+					</div>
+					
+					<div class="box _gray_ mb20 search-box">
+						<h2 class="h4 _blue_">検索条件</h2>
+						<ul class="search-list">
+							<li class="search-list__item">
+								<label class="form-radio">
+									<input type="radio" name="search" class="__elem" checked>
+									<span class="__txt">法人情報を検索する</span>
+								</label>
+							</li>
+							<li class="search-list__item">
+								<label class="form-radio">
+									<input type="radio" name="search" class="__elem">
+									<span class="__txt">利用者情報を検索する</span>
+								</label>
+							</li>
+						</ul>
+						<ul class="search-list">
+							<li class="search-list__item">
+								<label class="form-radio">
+									<input type="radio" name="taikai" class="__elem" checked>
+									<span class="__txt">退会情報を除外する</span>
+								</label>
+							</li>
+							<li class="search-list__item">
+								<label class="form-radio">
+									<input type="radio" name="taikai" class="__elem">
+									<span class="__txt">退会情報を含める</span>
+								</label>
+							</li>
+						</ul>
+						<ul class="search-list mb20">
+							<li class="search-list__item _last_">
+								<label class="form-radio">
+									<input type="radio" name="honyaku" class="__elem" checked>
+									<span class="__txt">翻訳済みを含める</span>
+								</label>
+							</li>
+							<li class="search-list__item">
+								<label class="form-radio">
+									<input type="radio" name="honyaku" class="__elem">
+									<span class="__txt">翻訳済を除外する</span>
+								</label>
+							</li>
+						</ul>
+						
+						<div class="search-member">
+							<div class="search-member__item">
+								<table class="search-member__table">
+									<tbody>
+										<tr>
+											<th class="search-member__ttl">会員種別</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">国</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">都道府県</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">業種（日本）</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">業種（海外）</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">担当地域本部</th>
+											<td class="search-member__input">
+												<select class="form-select" name="">
+													<option value="">---</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">グループ名称</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="search-member__item">
+								<table class="search-member__table">
+									<tbody>
+										<tr>
+											<th class="search-member__ttl">JGT法人管理番号</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="">
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">法人番号</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="">
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">法人名</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="">
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">JGT利用者管理番号</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="" disabled>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">利用者名</th>
+											<td class="search-member__input">
+												<input type="text" name="group" class="form-text" value="" disabled>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">メールアドレス</th>
+											<td class="search-member__input">
+												<input type="text" name="mail" class="form-text" value="" disabled>
+											</td>
+										</tr>
+										<tr>
+											<th class="search-member__ttl">&nbsp;</th>
+											<td colspan="2">
+												<label class="form-check">
+													<input type="checkbox" name="" id="" class="__elem">
+													<span class="__txt">
+														代行追加登録のみを表示する
+													</span>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="al-fc">
+						<button type="button" class="btn-arrow _red_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">検索</span>
+						</button>
+					</div>
+				</div>
+				<!-- /.contents__flow -->
+				
+				<div class="al-fr contents__bg">
+					<button type="button" class="btn-arrow _black_ _m12_ _w-m_">
+						<span class="__ico">
+							<img src="/common/img/common/ico_download.svg" alt="" class="lazyload">
+						</span>
+						<span class="__txt">メール送信情報出力</span>
+					</button>
+					<button type="button" class="btn-arrow _black_ _m12_ _w-m_ js-modal-open" data-target="modal01">
+						<span class="__ico">
+							<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+						</span>
+						<span class="__txt">メール送信情報更新</span>
+					</button>
+				</div>
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner _mt0_ _management_">
+					
+					<div class="table-slide _w100_ table-search">
+						<table class="table _slide_ _base_ _clear-fix_">
+							<thead class="table__head">
+								<tr>
+									<th class="_gray_ _postion_" colspan="2">編集</th>
+									<th class="_gray_ _postion_">代理</th>
+									<th class="_gray_ _postion_">利用</th>
+									<th class="_gray_ _postion_">履歴</th>
+									<th class="_gray_ _postion_">会員種別</th>
+									<th class="_gray_ _postion_">都道府県</th>
+									<th class="_gray_ _postion_">JGT法人管理番号</th>
+									<th class="_gray_ _postion_">法人名</th>
+									<th class="_gray_ _postion_">ホームページ</th>
+									<th class="_gray_ _postion_">電話番号（法人）</th>
+									<th class="_gray_ _postion_">国</th>
+									<th class="_gray_ _postion_">業種</th>
+									<th class="_gray_ _postion_">担当地域本部</th>
+									<th class="_gray_ _postion_">法人番号</th>
+									<th class="_gray_ _postion_">グループ名称</th>
+									<th class="_gray_ _postion_">ステータス</th>
+									<th class="_gray_ _postion_">ユーザー数</th>
+									<th class="_gray_ _postion_">最終ログイン日時</th>
+									<th class="_gray_ _postion_">ログイン回数</th>
+									<th class="_gray_ _postion_">作成日時</th>
+									<th class="_gray_ _postion_">更新日時</th>
+									<th class="_gray_ _postion_">ジェグテック運営事務局管理</th>
+								</tr>
+							</thead>
+							<tbody class="table__body">
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="" class="js-modal-open" data-target="modal02">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+								<tr>
+									<td><a href="">編集</a></td>
+									<td><a href="">製品</a></td>
+									<td><a href="/management/invitation.html">招待</a></td>
+									<td><a href="">閲覧</a></td>
+									<td><a href="">あり</a></td>
+									<td>中小企業A</td>
+									<td>福島県</td>
+									<td>STC201703310004</td>
+									<td><a href="">テストNo1-4会社</a></td>
+									<td><a href="">https://translate.google.com</a></td>
+									<td>0937534881</td>
+									<td>日本</td>
+									<td>武器製造業</td>
+									<td>東北本部</td>
+									<td>1234567890123</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>2018 &frasl; 08 &frasl; 24 10:01:33</td>
+									<td>1</td>
+									<td>2017 &frasl; 03 &frasl; 31 11:59:59</td>
+									<td>2023 &frasl; 04 &frasl; 17 18:07:29</td>
+									<td><a href="">企業退会</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /.contents__inner -->
+				
+				<div class="contents__bg mt60">
+					<div class="mb15 al-fl">
+						<select class="form-select _w-s_ mr10 _text-gray_" name="">
+							<option value="">ページ1 &frasl; 1,030</option>
+						</select>
+						<select class="form-select _w-m_ mr10 _text-gray_" name="">
+							<option value="">ページごとの項目数20</option>
+						</select>
+						<p>該当件数: 20,584 件中 1 - 20</p>
+					</div>
+					
+					<ul class="pagination mb40">
+						<li class="pagination__item">
+							<a href="" class="pagination__link btn-arrow _gray_ _w-s_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_back.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">最初へ</span>
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="" class="pagination__link btn _gray_ _w-s_">
+								<span class="__txt">前へ</span>
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="" class="pagination__link btn _blue_ _w-s_">
+								<span class="__txt">次へ</span>
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="" class="pagination__link btn-arrow _blue_ _w-s_">
+								<span class="__txt">最後へ</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_next.svg" alt="" class="lazyload">
+								</span>
+							</a>
+						</li>
+					</ul>
+					
+					<div class="al-fc">
+						<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">管理メニューに戻る</span>
+						</a>
+					</div>
+				</div>
+				
+			</main>
+			<!-- /.contents -->
+			
+			<!-- .modal -->
+			<div class="modal _management_" id="modal01">
+				<div class="modal__inner _h-auto_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">メール送信情報更新</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>		
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">メール送信情報更新</h3>
+						<p class="mb10">メール送信情報を登録してください。</p>
+						<p class="textDarkRed mb10">アップロード実行日： 2023 &frasl; 05 &frasl; 02 15:54:32</p>
+						<p class="textDarkRed mb40">エラーレコード件数： 1,000 件</p>
+
+						<div class="al-fc mb40">
+							<a href="" class="btn-arrow _blue_ _w-l_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_download.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">エラーファイルダウンロード</span>
+							</a>
+						</div>
+						
+						<input type="text" name="file" class="form-text" value="" placeholder="test1.csv" disabled>
+						<button type="button" class="btn-arrow _black_ mt20 mb45">
+							<span class="__ico">
+								<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">ファイルを選択</span>
+						</button>
+						
+						<div class="al-fc modal-btn">
+							<button type="button" class="btn-arrow _outline_ btn-cancel">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_blue.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">戻る</span>
+							</button>
+							<button type="button" class="btn-arrow _red_">
+								<span class="__txt">更新する</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!-- .modal -->
+			<div class="modal _management_ _rireki_" id="modal02">
+				<div class="modal__inner">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">コンタクト履歴 テストNo1-4会社</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>	
+					
+					<div class="modal__contents">
+						<div class="box _white_ mb40">
+							<div class="al-fc">
+								<a href="" class="btn-arrow _blue_ _w-l_">
+									<span class="__txt">新規追加</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_down.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+						</div>
+						
+						<div class="box _white_">
+							<table class="table _border_ mb60">
+								<tbody class="table__body">
+									<tr>
+										<th class="_gray_">対応日時 &frasl; 分類</th>
+										<th class="_gray_">
+											<div class="rireki-btn">
+												<p>登録者 &frasl; 業務</p>
+													<a href="" class="btn _blue_ _w-s_">
+														<span class="__txt">編集</span>
+													</a>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<td><input type="text" name="name" class="form-text" value="" placeholder="2023/01/19 18:37"></td>
+										<td>
+											<textarea name="comment" cols="50" rows="4" class="form-textarea _h-xs_" placeholder="事務局会社idx1（デフォルト事務局）開発環境事務局_管理者20220201"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<select class="form-select" name="">
+												<option value="">ヒアリング全般</option>
+											</select>
+										</td>
+										<td>
+											<select class="form-select" name="">
+												<option value="">海外展開支援</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2"><textarea name="comment" cols="50" rows="4" class="form-textarea _black_" placeholder="">佐伯さんお疲れ様です。吉川です。
+トップページのHTMLファイルの編集の件、了解いたしました。</textarea></td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>添付資料</p>
+											<a href="">新しいテキストドキュメント.txt</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="al-fc">
+								<a href="" class="btn-arrow _blue-outline_ _w-l_ btn-cancel">
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_blue.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">キャンセル</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+		<script src="/common/js/modal.js"></script>
+	</body>
+</html>

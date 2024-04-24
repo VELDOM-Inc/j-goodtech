@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* needsInfo */
+/* ============================================================ */
+.needsInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.needsInfo__item {
+	width: 40%;
+	text-align: left;
+}
+
+.needsInfo__item .form-textarea {
+	height: 250px;
+	overflow-x: scroll;
+}
+
+.needsInfo__center {
+	width: 15%;
+}
+
+.needsInfo__center .btn-arrow {
+	min-width: auto;
+	width: calc(100% - 12px);
+	margin: 5px 0;
+}

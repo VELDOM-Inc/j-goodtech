@@ -1,0 +1,372 @@
+@charset "Shift_JIS";
+
+/* ============================================================ */
+/* .setup-bar */
+/* ============================================================ */
+.setup-bar {
+	position: relative;
+	/*display: flex;
+	justify-content: space-between;*/
+}
+
+.setup-bar__name {
+}
+
+.setup-bar__ttl {
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 0 0 15px;
+}
+
+.setup-bar-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.setup-bar-btn__link {
+	width: 100%;
+}
+
+/* アニメーション前のメニューの状態 */
+.setup-bar__menu {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.setup-bar__menu.is-active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.setup-bar__menu {
+	position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  min-width: 200px;
+	padding: 5px 5px 10px 10px;
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;
+  justify-content: flex-start;*/
+	text-align: left;
+  border-radius: 4px;
+	background: #FFF;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.setup-bar-close {
+	text-align: right;
+}
+
+.setup-bar-close .__ico {
+	width: 30px;
+}
+
+.setup-bar__help {
+	margin: 0 8px 10px;
+}
+
+.setup-bar__list {
+}
+
+.setup-bar__item {
+	margin: 0 8px 10px;
+}
+
+.setup-bar__comment {
+	margin: 0 8px 10px;
+}
+
+
+/* ============================================================ */
+/* .setup-btn */
+/* ============================================================ */
+.setup-btn {
+	display: flex;
+	flex-direction: column;
+}
+
+.setup-btn .order1_ {
+	order: 1;
+}
+
+.setup-btn .order2_ {
+	order: 2;
+}
+
+.setup-btn .order3_ {
+	order: 3;
+}
+
+.setup-btn__item {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* ============================================================ */
+/* .address-list */
+/* ============================================================ */
+.address-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.address-list._block_ {
+	display: block;
+}
+
+.address-list._sp-jc-fs_ {
+	justify-content: flex-start !important;
+}
+
+.address-list__item {
+}
+
+.address-list__item:last-child {
+	margin: 0;
+}
+
+.address-list__item ._inline_ {
+	display: inline-block;
+}
+
+.address-list__item._ttl_ {
+	width: 25%;
+}
+
+.address-list._block_ .address-list__item._ttl_ {
+	width: 100%;
+	margin: 0 0 5px;
+}
+
+.address-list__item._detail_ {
+	width: 75%;
+}
+
+.address-list._block_ .address-list__item._detail_ {
+	width: 100%;
+}
+
+.address-list__item._flex_ {
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* ============================================================ */
+/* .setup-list */
+/* ============================================================ */
+.setup-list {
+}
+
+.setup-list__item {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+}
+
+.setup-list__ttl {
+	font-size: 1.4rem;
+	color: #65686F;
+	margin: 0 0 5px;
+}
+
+/* ============================================================ */
+/* .setup-table */
+/* ============================================================ */
+.setup-table .table__head ,
+.setup-table-kaigai .table__head ,
+.user-table .table__head {
+	display: none !important;
+}
+
+.setup-table .table__body td:first-child::before {
+	content: "グループ";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.setup-table .table__body td:last-child::before {
+	content: "公開範囲";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.setup-table-kaigai .table__body td:first-child::before {
+	content: "設定項目";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.setup-table-kaigai .table__body td:last-child::before {
+	content: "設定内容";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._name_::before {
+	content: "お名前";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._mail_::before {
+	content: "メールアドレス";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._login_::before {
+	content: "最終ログイン日時";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._status_::before {
+	content: "ステータス";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._kigen_::before {
+	content: "招待有効期限";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+.user-table .table__body ._kanrisya_::before {
+	content: "管理者";	
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+}
+
+
+/* ============================================================ */
+/* .toggle_contents（スマホページ用） */
+/* ============================================================ */
+.toggle__section {
+	margin: 0 0 15px;
+}
+
+.toggle__txt {
+	display: none;
+}
+
+.toggle__contents .selected {
+	display: block;
+}
+
+.toggle__title ,
+.toggle__title-link {
+	padding: 15px 40px 20px 15px;
+	position: relative;
+}
+
+.toggle__title::after ,
+.toggle__title-link::after {
+	position: absolute;
+	top: 50%;
+	right: 7px;
+	transform: translate(0, -50%);
+	width: 25px;
+	height: 24px;
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	background: url("/common/img/common/ico_select_s.svg") center center no-repeat;
+	background-size: 100%;
+}
+
+.toggle__title.selected::after {
+	transform: translate(0, -50%) rotate(180deg);
+}
+
+.toggle__title-link .__link {
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+
+.toggle__txt {
+	padding: 0 15px 15px;
+}
+
+
+/* ============================================================ */
+/* .setup-ttl */
+/* ============================================================ */
+.setup-ttl {
+	font-weight: 400;
+	font-size: 2.0rem;
+	padding: 20px;
+	line-height: 1.6;
+	background: #333;
+	text-align: center;
+	color: #fff;
+	margin: 0 0 15px;
+}
+
+/* ============================================================ */
+/* .list-none */
+/* ============================================================ */
+.list-none__item._setup_ {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ============================================================ */
+/* .menu-box */
+/* ============================================================ */
+.menu-box {
+	background: #EDEDED;
+	padding: 15px 8px;
+	margin: 0 0 35px;
+}
+
+

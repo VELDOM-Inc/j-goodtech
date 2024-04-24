@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .contact-flow */
+/* ============================================================ */
+.contact-flow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-flow__list {
+	width: calc(100% / 3);
+	position: relative;
+}
+
+.contact-flow._col2_ .contact-flow__list {
+	width: calc(100% / 2);
+}
+
+.contact-flow._col4_ .contact-flow__list {
+	width: calc(100% / 4);
+}
+
+.contact-flow__list:after {
+	position: absolute;
+	top: 35%;
+	right: -40px;
+	transform: translate(0, -50%);
+	display: inline-block;
+	background: url("/common/img/common/ico_arrow_contact.png");
+	background-size: cover;
+	width: 74px;
+	height: 28px;
+	content: "";
+}
+
+.contact-flow__list:last-of-type:after {
+	display: none;
+}
+
+.contact-flow__list._on_:after {
+	background: url("/common/img/common/ico_arrow_contact_on.png");
+}
+
+.contents__flow._blue_ .contact-flow__list._on_:after {
+	background: url("/common/img/common/ico_arrow_contact_blue.png");
+}
+
+.contents__flow._members_ .contact-flow__list._on_:after {
+	background: url("/common/img/common/ico_arrow_contact_black.png");
+}
+
+.contents__flow._invitation_ .contact-flow__list._off_:after {
+	background: url("/common/img/common/ico_arrow_contact_gray.png");
+}
+
+.contact-flow__list._on_ .contact-flow__number {
+	background: #2C4660;
+	color: #fff;
+	border: 1px solid #2C4660;
+}
+
+.contents__flow._members_ .contact-flow__list._on_ .contact-flow__number {
+	background: #333;
+	color: #fff;
+	border: 1px solid #333;
+}
+
+.contents__flow._blue_ .contact-flow__list._on_ .contact-flow__number {
+	background: #004DB6;
+	color: #fff;
+	border: 1px solid #004DB6;
+}
+
+.contact-flow__list._off_ .contact-flow__number {
+	background: #666;
+	color: #fff;
+	border: 1px solid #666;
+}
+
+.contact-flow__number {
+	background: #fff;
+	color: #D0D0D0;
+	border: 1px solid #D0D0D0;
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto 30px;
+	line-height: 1.0;
+	font-weight: bold;
+}
+
+.contact-flow__number__step {
+	font-size: 1.0rem;
+	margin: 0 0 5px;
+}
+
+.contact-flow__number__txt {
+	font-size: 3.6rem;
+	font-weight: bold;
+}
+
+.contact-flow__detail {
+	font-weight: bold;
+	color: #bbb;
+}
+
+.contact-flow__list._on_ .contact-flow__detail {
+	color: #2C4660;
+}
+
+.contents__flow._members_ .contact-flow__list._on_ .contact-flow__detail {
+	color: #333;
+}
+
+.contents__flow._blue_ .contact-flow__list._on_ .contact-flow__detail {
+	color: #004DB6;
+}
+
+.contact-flow__list._off_ .contact-flow__detail {
+	color: #666;
+}
+
+/* ============================================================ 
+/* .transceiver */
+/* ============================================================ */
+.transceiver-bottom {
+	border-top: 1px solid #e5e6e6;
+	padding: 30px 0 0;
+	margin: 50px 0 0;
+}
+
+.transceiver-send {
+	margin: 20px 0 0;
+}
+
+.transceiver-send__ttl {
+	font-size: 1.5rem;
+	margin: 0 0 20px;
+}
+
+.transceiver-send__tenpu {
+	border-bottom: 1px dashed #000;
+	margin: 0 0 20px;
+	padding: 0 0 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.transceiver-send__name {
+	font-size: 1.5rem;
+}
+
+.transceiver-send__btn {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 20px;
+}
+
+.transceiver-send__modal {
+	margin: 0 0 0 40px;
+	color: #004DB6;
+	text-decoration: underline;
+}
+
+.transceiver-send__modal .js-modal-open {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.transceiver-send__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.transceiver-send__info .__txt {
+	font-weight: bold;
+	font-size: 2.2rem;
+}
+
+.transceiver-send__info .__link {
+	font-size: 1.8rem;
+}
+

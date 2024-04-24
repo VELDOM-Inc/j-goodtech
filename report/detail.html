@@ -1,0 +1,139 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>詳細ページ：各種運用レポート｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1"><span class="__txt">各種運用レポート</span></h1>
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner">
+					
+					<section>
+						<h2 class="h2">月別×会員種別のフリーワード検索回数</h2>
+						
+						<section class="mb40">
+							<h3 class="h3">詳細説明</h3>
+							<div class="section__inner">
+								<p class="mb40">月別×会員種別のフリーワード検索回数を出力します。</p>
+
+								<div class="al-fc">
+									<a href="/report/" class="btn-arrow _black_ _m12_">
+										<span class="__ico">
+											<img src="/common/img/common/ico_arrow_white.svg" alt="" class="lazyload">
+										</span>
+										<span class="__txt">戻る</span>
+									</a>
+									<a href="" class="btn-arrow _blue_ _m12_">
+										<span class="__txt">画面出力</span>
+										<span class="__ico">
+											<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+										</span>
+									</a>
+									<a href="" class="btn-arrow _blue_ _m12_">
+										<span class="__txt">CSVダウンロード</span>
+										<span class="__ico">
+											<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+										</span>
+									</a>
+								</div>
+							</div>
+						</section>
+						
+						<section class="mb40">
+							<h3 class="h3">出力結果</h3>
+							<div class="section__inner">
+								<div class="table-slide">
+									<table class="table _slide_">
+										<thead class="table__head">
+											<tr>
+												<th class="_gray_ _w25_">年月</th>
+												<th class="_gray_ _w25_">会員種別</th>
+												<th class="_gray_ _w25_">検索回数（企業検索）</th>
+												<th class="_gray_ _w25_">検索回数（製品検索）</th>
+											</tr>
+										</thead>
+										<tbody class="table__body">
+											<tr>
+												<td>2017年11月</td>
+												<td>中小企業A</td>
+												<td>43</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>2017年11月</td>
+												<td>中小企業B</td>
+												<td>19</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>2017年11月</td>
+												<td>中小企業C</td>
+												<td>1</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td>2017年11月</td>
+												<td>海外企業A</td>
+												<td>2</td>
+												<td>0</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section>
+
+
+						<section>
+							<h3 class="h3 accordion">集計条件</h3>
+							<div class="section__inner accordion__hide">
+								<div class="pre">
+									<pre><code>ー国・第種別の登録企業数
+WITH industry_per_country as
+SELECT 'JP' as country,ic.* FROM jgt_m_ind_cls ic WHERE ic.jgt_ind_cls_kind = 1 and ic.HIERARCHY_NUM in (10,20)
+UNION ALL
+SELECT cih0.country,ic0.・FROM
+(SELECT * FROM jgt_m_ind_cls WHERE jgt_ind_cls_kind = 2 and HIRARCHY_NUM in (10.20)) ic0
+cross join
+(SELECT distinct country FROM jgt_m_corp_info_header WHERE country &amp;lt;&amp;gt; ‘JP’)cih0)
+</code></pre>
+								</div>
+							</div>
+						</section>
+						
+					</section>
+					
+					
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

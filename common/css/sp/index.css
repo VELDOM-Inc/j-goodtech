@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* .index-visual */
+/* ============================================================ */
+.index-visual {
+	margin: 105px 0 0;
+	padding: 15px 0 0;
+	width: 100%;
+}
+
+.index-visual__inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.index-visual__item {
+}
+
+.index-visual__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.index-visual__item .__img {
+	width: 100%;
+}
+
+.index-visual .slick-dots {
+	bottom: -20px;
+}
+
+.index-visual .slick-dots li button {
+	width: 10px;
+	height: 10px;
+}
+
+.index-visual .slick-dots li button:before {
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.index-visual .slick-dotted.slick-slider {
+	margin-bottom: 30px;
+}
+
+.index-visual__bg::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	background: url("/common/img/index/bg_index.jpg") center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 128px;
+	content: "";
+	z-index: -1;
+}
+
+/* ============================================================ */
+/* .index-box */
+/* ============================================================ */
+.index-box {
+	margin: 0 11px 25px;
+	background: #fff;
+}
+
+.index-ttl {
+	position: relative;
+	padding: 15px;
+	background: #333;
+	line-height: 1;
+	text-align: center;
+	color: #fff;
+	font-size: 2.0rem;
+}
+
+/* ============================================================ */
+/* .index-topics */
+/* ============================================================ */
+.index-topics .index-box__inner {
+	padding: 24px 8px;
+	background: #fff;
+}
+
+.index-topics .box {
+	padding: 0;
+	background: transparent;
+}
+
+.index-topics__item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 24px;
+}
+
+.index-topics__item .index-topics__link {
+	width: 100%;
+	margin: 8px 0;
+	text-align: left;
+}
+
+.index-topics__txt {
+	font-size: 1.2rem;
+}
+
+.index-topics__date {
+	margin-left: auto;
+	font-size: 1.2rem;
+}
+
+/* ============================================================ */
+/* .index-needs */
+/* ============================================================ */
+.index-needs .index-box__inner {
+	background: #fff;
+}
+
+.index-needs .needs-index__list {
+	width: 100%;
+	margin: 0;
+}
+
+.index-needs .needs-index__item {
+	width: 100%;
+	margin: 24px 0 0;
+}
+
+.index-needs .needs-index__item:last-child {
+	margin: 24px 0 0;
+}
+
+.index-needs .needs-index__item .needs-recommend__link {
+	/*height: 36.5vw;
+	min-height: auto;*/
+}
+
+.index-needs .needs-recommend__label {
+	align-self: flex-start;
+}
+
+/* ============================================================ */
+/* .index-attend */
+/* ============================================================ */
+.index-attend .index-box__inner {
+	padding: 24px 8px;
+	background: #fff;
+	text-align: left;
+}
+
+.index-attend .box {
+	padding: 0;
+	background: transparent;
+}
+
+.index-attend__item {
+	margin-bottom: 8px;
+}
+
+.index-attend__list {
+	margin:0 0 24px;
+}
+.index-attend__ttl {
+	background: #004DB6;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	font-size: 1.4rem;
+}
+
+.index-attend__link {
+	display: block;
+	padding: 16px 10px;
+	border-right: 1px solid #D0D0D0;
+	border-left: 1px solid #D0D0D0;
+	text-decoration: none;
+}
+
+.index-attend__link .__ttl {
+	line-height: 1;
+	text-decoration: underline;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.index-attend__link .__sub {
+	font-size: 1.4rem;
+	text-decoration: underline;
+	margin: 8px 0 16px;
+}
+
+.index-attend__link .__user {
+	color: #BBB;
+	font-size: 1.4rem;
+}
+
+.index-attend__date {
+	background: #F3F3F3;
+	border: 1px solid #D0D0D0;
+	border-top: none;
+	padding: 10px;
+	color: #7A7A7A;
+	font-size: 1.4rem;
+}
+
+/* ============================================================ */
+/* .index-search */
+/* ============================================================ */
+.index-search .index-box__inner {
+	background: #fff;
+	padding: 0 10px 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.index-search .index-box__inner .h2 {
+	order: 1;
+}
+
+.index-search .index-box__inner .index-search__list {
+	order: 3;
+}
+
+.index-search ._search-input_ {
+	padding: 15px 0 25px;
+}
+
+.index-search ._search-input_ .box {
+	background: none;
+}
+
+.index-search .request-search {
+	display: flex;
+}
+
+.index-search .request-search .form-text {
+	flex: 1;
+	left: auto;
+	margin-right: 10px;
+}
+
+.index-search .request-search .btn-arrow {
+	width: 48px;
+}
+
+.index-search .request-search .btn-arrow .__ico {
+	left: auto !important;
+}
+
+.index-search ._search {
+	padding: 0 10px 24px;
+}
+
+.index-search__list {
+	display: flex;
+}
+
+.index-search__item {
+	position: relative;
+}
+
+.index-search__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.index-search__link:hover {
+	text-decoration: none;
+}
+
+.index-search__link .__img {
+	height: 225px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.index-search__link .__img .__thumbnail {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	object-position: center;
+}
+
+.index-search__item .__ttl {
+	padding: 15px 10px;
+	background: #333;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.index-search__item .__txt {
+	padding: 15px 35px;
+	border: 1px solid #D0D0D0;
+	border-top: none;
+	text-align: left;
+	position: relative;
+}
+
+.index-search__item .__txt._bg-comment_::after {
+	position: absolute;
+	display: inline-block;
+	content: "";
+	background: url("/common/img/index/bg_comment.svg");
+	background-size: cover;
+	width: 40px;
+	height: 60px;
+	top: 0;
+	right: 42px;
+	z-index: 1;
+}
+
+.index-search__item .__txt .__inner {
+	position: relative;
+	z-index: 2;
+}
+
+.index-search__comment {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	font-size: 1.6rem;
+	order: 2;
+	background: url("/common/img/index/ico_comment.png") 0 center no-repeat;
+	padding: 0 0 0 40px;
+	margin: 0 0 25px;
+}
+
+.index-search__list .slick-dots {
+	bottom: -30px;
+}
+
+.index-search__list .slick-dots li button {
+	width: 10px;
+	height: 10px;
+}
+
+.index-search__list .slick-dots li button:before {
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.index-search__list .slick-dotted.slick-slider {
+	margin-bottom: 15px;
+}

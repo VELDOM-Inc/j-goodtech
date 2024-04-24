@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .batch-file */
+/* ============================================================ */
+.batch-file {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 50px;
+}
+
+.batch-file__txt {
+	font-size: 2.0rem;
+}
+
+.batch-file__btn .btn-arrow {
+	min-width: 280px;
+	margin: 0 15px;
+}
+
+.batch-file__btn .btn-arrow._m15_ {
+	margin: 0 7px;
+}
+
+.batch-txt {
+	margin: 0 90px 40px;
+}
+
+.batch-txt._red_ {
+	margin: 0 70px 40px;
+	color: #CA0813;
+}
+
+
+/* ============================================================ */
+/* .batch-btn */
+/* ============================================================ */
+.batch-btn .btn-arrow {
+	margin-right: 15px;
+}
+
+.batch-btn .btn-arrow:last-child {
+	margin-right: 0;
+}
+
+
+/* ============================================================ */
+/* .request-search */
+/* ============================================================ */
+.request-search {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 20px;
+}
+
+.request-search .form-text {
+	width: calc(100% - 160px);
+}
+
+/* ============================================================ */
+/* .request-ttl */
+/* ============================================================ */
+.request-ttl {
+	display: flex;
+	align-items: center;
+	margin: 0 0 15px;
+}
+
+.request-ttl .h2 {
+	margin: 0 20px 0 0;
+}
+
+.request-ttl .__txt {
+	font-size: 1.4rem;
+}
+
+/* ============================================================ */
+/* .edit-list */
+/* ============================================================ */
+.edit-list {
+	display: flex;
+	align-items: center;
+}
+
+.edit-list__item {
+	/*margin: 0 10px 0 0;*/
+}
+
+.edit-list__item:last-child {
+	margin: 0;
+}
+
+.edit-list__item._ttl_ {
+	width: 11%;
+}
+
+.edit-list__item._detail_ {
+	width: 89%;
+}
+
+.edit-list__item._flex_ {
+	display: flex;
+	align-items: center;
+}
+
+
+/* ============================================================ */
+/* .select-country  */
+/* ============================================================ */
+.select-country {
+}
+
+.select-country .btn {
+	margin: 0 0 10px;
+}
+
+
+/* ============================================================ */
+/* .table  */
+/* ============================================================ */
+.table._edit_ th {
+	width: 27%;
+}
+
+.table._edit_ td {
+	width: 73%;
+}
+
+
+/* ============================================================ */
+/* .request-list  */
+/* ============================================================ */
+.request-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 0 40px;
+}
+
+.request-list__item {
+	width: 50%;
+	margin: 0 0 20px;
+}
+
+
+

@@ -1,0 +1,144 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>商談結果アンケート入力｜ジェグテック｜J-GoodTech</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--============================================== html_head -->
+	<!--#include virtual="/common/inc/html_head.html" -->
+	<!--============================================== /html_head -->
+</head>
+
+<body>
+	<div class="wrapper _gray_">
+		<!--============================================== header -->
+		<!--#include virtual="/common/inc/header_members.html" -->
+		<!--============================================== /header -->
+
+		<h1 class="h1 _members_">
+			<span class="__txt">商談結果アンケート入力</span>
+		</h1>
+
+		<!-- .contents -->
+		<main class="contents">
+
+			<!-- .contents__inner -->
+			<div class="contents__inner _after-negotiation_">
+				<h2 class="h2 _blue_ textNormal textBold_sp text18 text16_sp mb20 mb15_sp">商談相手情報</h2>
+				<table class="table _border_ mb40 _pd25_ _sp-col1_ text14_sp mb0_sp">
+					<tbody class="table__body">
+						<tr>
+							<th class="_gray_ wd245">ニーズタイトル</th>
+							<td><a href="">試作品Aの資材募集</a></td>
+						</tr>
+						<tr>
+							<th class="_gray_ wd245">商談相手企業名</th>
+							<td>株式会社はなこ</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<h2 class="h2 _blue_ textNormal textBold_sp text18 text16_sp mb20 mb15_sp">商談結果アンケート</h2>
+				<p class="mb20 pc_view"><span class="textLightRed">※</span>印は入力必須項目です</p>
+				<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
+						<input type="hidden" class="p-country-name" value="Japan">
+						
+						<table class="table _border_ _tl-f_ mb40 _pd25_ text16 _sp-col1_ text14_sp mb50_sp">
+							<tbody class="table__body">
+								<tr>
+									<th class="_gray_ wd245">所属</th>
+									<td><input type="text" name="affiliation" class="form-text" value="" placeholder="テキストを入力"></td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">氏名<span class="textDarkRed pc_view ml5">※</span><br class="sp_view"><span class="label _must_ _w-s_ sp_view">必須</span></th>
+									<td><input type="text" name="name" class="form-text" value="" placeholder="テキストを入力"></td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">メールアドレス</th>
+									<td><input type="email" name="email" class="form-text" value="" placeholder="テキストを入力"></td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">電話番号</th>
+									<td><input type="tel" name="phone" class="form-text" value="" placeholder="テキストを入力"></td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245"><span class="textDarkRed pc_view mr5">※</span>商談実施日<br class="sp_view"><span class="label _must_ _w-s_ sp_view">必須</span></th>
+									<td><input type="date" name="date" class="form-text _w-xm_" value="2023/05/01"></td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245"><span class="textDarkRed pc_view mr5">※</span>取引形態<br class="sp_view"><span class="label _must_ _w-s_ sp_view">必須</span></th>
+									<td>
+										<div class="al-fl _sp-c_ _sp-fs_ mb15 mb0_sp">
+											<label class="form-check mr15 mr0_sp mb10_sp">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt _gray_">加工・業務受注</span>
+											</label>
+											<label class="form-check mr15 mr0_sp mb10_sp">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt _gray_">加工・業務発注</span>
+											</label>
+											<label class="form-check mb10_sp">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt _gray_">研究開発・技術連携</span>
+											</label>
+										</div>
+										<div class="al-fl _sp-c_ _sp-fs_">
+											<label class="form-check mr15 mr0_sp mb10_sp">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt _gray_">事業連携</span>
+											</label>
+											<label class="form-check">
+												<input type="checkbox" name="" id="" class="__elem">
+												<span class="__txt _gray_">その他</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">成約見込み状況<span class="textDarkRed pc_view ml5">※</span><br class="sp_view"><span class="label _must_ _w-s_ sp_view">必須</span></th>
+									<td>
+										<select class="form-select _w100_ normal _text-gray3_" name="">
+											<option value="">(3)一定の合意有（無償サンプル供与、ソリューション提案合意、守秘義務契約、見積もり、図面送付、次回面談等今後の継続鉄器なやりとりなど）</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">成約見込み額<span class="textDarkRed pc_view ml5">※</span><br class="sp_view"><span class="label _must_ _w-s_ sp_view">必須</span>
+									<p class="text14 indent"><span class="indent__item">※</span>この商談が成約した場合の今後一年間の成約見込み額をご記入ください。</p></th>
+									<td class="_va-m_">
+										<input type="number" name="price" class="form-text _w-xm_ wp48_sp" value="" placeholder="テキストを入力"><span class="ml10">万円（半角数字のみ）</span>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_ wd245">その他</th>
+									<td><input type="text" name="price" class="form-text" value="" placeholder="テキストを入力"></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _red_ _w-l_"  onclick="location.href='/after-negotiation/confirm.html'">
+								<span class="__txt text18">入力内容を確認する</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</form>
+			</div><!-- /.contents__inner -->
+		</main>
+		<!-- /.contents -->
+
+		<!--============================================== footer -->
+		<!--#include virtual="/common/inc/footer.html" -->
+		<!--============================================== /footer -->
+	</div>
+
+	<!--============================================== html_foot -->
+	<!--#include virtual="/common/inc/html_foot.html" -->
+	<!--============================================== /html_foot -->
+</body>
+
+</html>

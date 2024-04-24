@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* table */
+/* ============================================================ */
+.contents__inner._email-notice_ .email-notice_table {
+	height: 620px;
+}
+
+.contents__inner._email-notice_ .email-notice_label {
+	padding: 5px 15px;
+	margin-right: 10px;
+	border-radius: 7px;
+	border: 1px solid #D0D0D0;
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.contents__inner._email-notice_ .email-notice_txt p {
+	margin-bottom: 1em;
+}

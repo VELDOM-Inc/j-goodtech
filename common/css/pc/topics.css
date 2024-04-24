@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .topics-detail */
+/* ============================================================ */
+.topics-detail {
+}
+
+.topics-detail__ttl {
+	font-size: 2.8rem;
+	margin: 0 0 15px;
+}
+
+.topics-detail-bar {
+	margin: 0 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topics-detail-bar__list {
+	display: flex;
+	align-items: center;
+}
+
+.topics-detail-bar__item {
+	margin: 0 20px 0 0;
+}
+
+.topics-detail-bar__item:last-child {
+	margin: 0;
+}
+
+.topics-detail-bar__item .__ico {
+	margin: 0 3px 0 0;
+}
+
+.topics-detail-bar__item .__txt {
+	margin: 0 3px;
+}
+
+.topics-detail__txt {
+	margin: 0 0 15px;
+}
+
+
+/* ============================================================ */
+/* .topics-bottom */
+/* ============================================================ */
+.topics-bottom {
+}
+
+
+/* ============================================================ */
+/* .topics-side */
+/* ============================================================ */
+.topics-side__txt {
+	margin: 0 0 35px;
+}
+
+
+/* ============================================================ */
+/* .topics-list */
+/* ============================================================ */
+.topics-list {
+	margin: 25px 0 0;
+}
+
+.topics-list__item {
+	background: #EAEAEA;
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topics-list__item:nth-child(2n) {
+	background: #F3F3F3;
+}
+
+.topics-list__left {
+	width: 65%;
+	padding: 15px 25px 15px 0;
+}
+
+.topics-list__right {
+	width: 35%;
+	text-align: center;
+	border-left: 1px solid #D0D0D0;
+	padding: 15px 0 15px 25px;
+}
+
+.topics-list__label {
+	display: flex;
+	grid-column-gap: 8px;
+	margin: 0 0 10px;
+}
+.topics-list__label .label._right_ {
+	margin-left: auto;
+}
+
+.topics-list__ttl {
+	margin: 0 0 10px;
+	padding: 0 0 0 25px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.4;
+	background: url("/common/img/common/ico_star_s.svg") 0 center no-repeat;
+}
+
+.topics-list__txt {
+	margin: 0 0 15px;
+}
+
+.topics-list__detail {
+	font-size: 1.4rem;
+}
+
+.topics-list__detail .__item {
+	display: flex;
+}
+
+.topics-list__detail .__ttl {
+	margin: 0 10px 0 0;
+	overflow: hidden;
+}
+
+.topics-list__detail .__txt {
+	overflow: hidden;
+}
+
+.topics-list__category {
+}
+
+.topics-list__category .__item {
+	margin: 0 0 10px;
+}
+
+.topics-bottom {
+	border-top: 2px solid #DDD;
+	padding: 30px 0 0;
+	margin: 30px 0 0;
+}

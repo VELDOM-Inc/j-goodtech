@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .recommendation-table */
+/* ============================================================ */
+.recommendation-table {
+	margin: 0 0 30px;
+	width: 100%;
+}
+
+.recommendation-table__ttl {
+	width: 25%;
+	font-weight: bold;
+	padding: 0 0 10px;
+}
+
+.recommendation-table__input {
+	width: 75%;
+	padding: 0 0 10px;
+}
+
+/* ============================================================ */
+/* .recommendation-table-slide */
+/* ============================================================ */
+.recommendation-table-slide {
+	background: #fff;
+}

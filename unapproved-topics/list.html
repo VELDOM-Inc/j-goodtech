@@ -1,0 +1,434 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>トピックス一覧（管理用）｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1">
+				<span class="__txt">トピックス一覧（管理用）</span>
+			</h1>	
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<form method="post">
+					<!-- .contents__inner -->
+					<div class="contents__inner">
+						<div class="al_right mb20">
+							<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">管理メニューに戻る</span>
+							</a>
+						</div>
+						
+						<div class="section__inner _m0_">
+							<div class="request-search">
+								<input type="text" name="" class="form-text _black_ _text-black4_ _flex1_" value="" placeholder="キーワードを入力">
+								<button type="button" class="btn-arrow _black_ wd150 wdMinInt ml10">
+									<span class="__ico">
+										<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">検索</span>
+								</button>
+							</div>
+							
+							<div class="box _gray_ search-box _form_ _pd-s_">
+								<h2 class="h6">検索ワード</h2>
+								<div class="search-member__item">
+									<table class="search-member__table">
+										<tbody>
+											<tr>
+												<th class="search-member__ttl">地域本部</th>
+												<td class="search-member__input">
+													<select class="form-select _text-gray_" name="">
+														<option value="">---</option>
+													</select>
+												</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div class="search-member mb20">
+									<div class="search-member__item">
+										<table class="search-member__table">
+											<tbody>
+												<tr>
+													<th class="search-member__ttl">申請日<br>（FROM）</th>
+													<td class="search-member__input">
+														<input type="text" name="" class="form-text" value="">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="search-member__item">
+										<table class="search-member__table">
+											<tbody>
+												<tr>
+													<th class="search-member__ttl">申請日<br>（TO）</th>
+													<td class="search-member__input">
+														<input type="text" name="" class="form-text" value="">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="search-member _topics_">
+									<table class="search-member__table _topics_">
+										<tbody>
+											<tr>
+												<th class="search-member__ttl _al-l_">トピックスカテゴリ</th>
+												<td class="search-member__input">
+													<ul class="search-list _needs_">
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">告知</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">プレスリリース</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">イベント情報</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">ノウハウ</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">相談・アドバイス</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">その他・フリートーク</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">事務局からのお知らせ</span>
+															</label>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th class="search-member__ttl _al-l_">ステータス</th>
+												<td class="search-member__input">
+													<ul class="search-list _needs_">
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">承認済</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">未承認</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">差戻</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">却下</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">非公開</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">一時保存</span>
+															</label>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th class="search-member__ttl _al-l_">公開種別</th>
+												<td class="search-member__input">
+													<ul class="search-list _needs_">
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">全公開</span>
+															</label>
+														</li>
+														<li class="search-list__item">
+															<label class="form-check">
+																<input type="checkbox" name="" id="" class="__elem">
+																<span class="__txt">限定公開</span>
+															</label>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="al_right mt10 mb20">
+									<a href="" class="btn-arrow _black_ wd150 wdMinInt">
+										<span class="__ico">
+											<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+										</span>
+										<span class="__txt">検索</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.contents__inner -->
+
+					<!-- .contents__inner -->
+					<div class="contents__inner mt20 _topics_ _mt0_">
+						<div class="table-slide _w100_ table-batch _h-a_ textGray2 mb10">
+							<table class="table _base_ _clear-fix_ _slide_">
+								<thead class="table__head">
+									<tr>
+										<th class="_gray_">編集</th>
+										<th class="_gray_">管理番号</th>
+										<th class="_gray_">カテゴリ</th>
+										<th class="_gray_">タイトル</th>
+										<th class="_gray_">起票者</th>
+										<th class="_gray_">公開種別</th>
+										<th class="_gray_">ステータス</th>
+										<th class="_gray_">申請日時</th>
+										<th class="_gray_">編集日時</th>
+										<th class="_gray_">参加企業数</th>
+									</tr>
+								</thead>
+								<tbody class="table__body">
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="_pd8_"><a href="/unapproved-topics/detail2.html">編集</a></td>
+										<td>TP0000000002526</td>
+										<td>事務局からのお知らせ</td>
+										<td><a href="detail.html">ロシア限定</a></td>
+										<td>ロシア太郎</td>
+										<td>公開</td>
+										<td>承認済み</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>2023 &frasl; 05 &frasl; 01 21:06:31</td>
+										<td>1</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="mb80 al-fl">
+							<select class="form-select _text-gray3_ _arrow2_ _w-s_ mr10" name="">
+								<option value="">ページ1 &frasl; 19</option>
+							</select>
+							<select class="form-select _text-gray3_ _arrow2_ _w-m_ mr10" name="">
+								<option value="">ページごとの項目数20</option>
+							</select>
+							<p class="text13">該当件数: 365 件中 1 - 20</p>
+						</div>
+
+						<ul class="pagination mb40">
+							<li class="pagination__item">
+								<a href="" class="pagination__link btn-arrow _blue-outline_ _w-s_">
+									<span class="__ico">
+										<img src="/common/img/common/ico_back.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">最初へ</span>
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link btn _blue-outline_ _w-s_">
+									<span class="__txt">前へ</span>
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link btn _blue_ _w-s_">
+									<span class="__txt">次へ</span>
+								</a>
+							</li>
+							<li class="pagination__item">
+								<a href="" class="pagination__link btn-arrow _blue_ _w-s_">
+									<span class="__txt">最後へ</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_next.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</li>
+						</ul>
+						
+						<div class="al-fc">
+							<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">管理メニューに戻る</span>
+							</a>
+						</div>
+					</div>
+					<!-- /.contents__inner -->
+					
+				</form>
+				
+			</main>
+			<!-- /.contents -->
+			
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

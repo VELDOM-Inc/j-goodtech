@@ -1,0 +1,368 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>お問合せ｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1"><span class="__txt">お問合せ</span></h1>
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__flow -->
+				<div class="contents__flow">
+					<div class="contact-flow">
+						<div class="contact-flow__list _on_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">1</span>
+							</div>
+							<p class="contact-flow__detail">お問合わせ内容入力</p>
+						</div>
+						<div class="contact-flow__list _off_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">2</span>
+							</div>
+							<p class="contact-flow__detail">入力内容の確認</p>
+						</div>
+						<div class="contact-flow__list _off_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">3</span>
+							</div>
+							<p class="contact-flow__detail">送信完了</p>
+						</div>
+					</div>
+					
+				</div>
+				<!-- /.contents__flow -->
+				
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner _contact_">
+					<h2 class="h2 _contact_">お問合せ内容入力</h2>
+					
+					<div class="al_right mb40">
+						<a href="/menu/" class="btn-arrow _blue-outline_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow_blue.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">管理メニューに戻る</span>
+						</a>
+					</div>
+					<p class="mb25">お問合せ先との直接のやり取りになります。<br>
+						中小機構がやりとりの内容を閲覧し、ご連絡する場合があります。</p>
+					
+					<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
+						<input type="hidden" class="p-country-name" value="Japan">
+						
+						<table class="table _border_ mb80 _pd25_">
+							<tbody class="table__body">
+								<tr>
+									<th class="_gray_ _w25_">起票者</th>
+									<td>株式会社TYUSYO<br>山田　太郎</td>
+								</tr>
+								<tr>
+									<th class="_gray_">お問合せ先</th>
+									<td>
+										<a class="btn _outline_ js-modal-open" data-target="modal01">
+											<span class="__txt">お問合せ先を選択する</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">お問合せ種別</th>
+									<td>
+										<span class="label _blue_">お問合せ</span>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">選定した企業へ<br>表示されるタイトル</th>
+									<td>
+										<input type="text" name="email" class="form-text" value="" placeholder="テキストを入力">
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">選定した企業への<br>一括送信内容</th>
+									<td>
+										<textarea name="comment" cols="50" rows="4" class="form-textarea _w-m_" placeholder="テキストを入力"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">添付資料</th>
+									<td>
+										<a href="" class="btn-arrow _black_">
+											<span class="__ico">
+												<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+											</span>
+											<span class="__txt">ファイルを添付する</span>
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _blue-outline_ _m12_ _w-l_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_blue.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">戻る</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _m12_ _w-l_" onclick="location.href='/contact/confirm.html'">
+								<span class="__txt">確認</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal01">
+				<div class="modal__inner _wide_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">お問合せ先選択</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">お問合せ先選択</h3>
+
+						<div class="modal-search">
+							<div class="modal-search__input">
+								<div class="modal-search__ttl">検索条件：</div>
+								<label class="form-radio mr50">
+									<input type="radio" name="search" id="" class="__elem">
+									<span class="__txt">JGT管理番号</span>
+								</label>
+								<label class="form-radio">
+									<input type="radio" name="search" id="" class="__elem">
+									<span class="__txt">法人名</span>
+								</label>
+							</div>
+							
+							<div class="modal-search-btn">
+								<div class="modal-search-btn__inner">
+									<input type="text" name="email" class="form-text _w-l_" value="" placeholder="テキストを入力">
+									<a class="btn-arrow _black_ _w-s_">
+										<span class="__ico">
+											<img src="/common/img/common/ico_plus.svg" alt="" class="lazyload">
+										</span>
+										<span class="__txt">追加</span>
+									</a>
+								</div>
+								
+								<div class="al_right">
+									<a href="" class="btn-arrow _black_">
+										<span class="__ico">
+											<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+										</span>
+										<span class="__txt">CSVアップロード</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal-error">
+							<p class="mb20"><span class="textRed">登録処理実行日：2019 &frasl; 03 &frasl; 08 10:57:15<br>
+								エラーコード件数：１件</span></p>
+							<div class="al_center">
+								<a href="" class="btn-arrow _black_ _w-l_">
+									<span class="__ico">
+										<img src="/common/img/common/ico_download.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">エラーファイルダウンロード</span>
+								</a>
+							</div>
+						</div>
+						
+						<h4 class="h2">選択中企業一覧</h4>
+						<div class="section__inner _m0_ mb60">
+							<div class="table-slide _h210_ _w100_">
+								<table class="table _slide_ _base_ _no-border-top_ _clear-fix_">
+									<thead class="table__head _thead-sticky_">
+										<tr>
+											<th>JGT管理番号</th>
+											<th>会員種別</th>
+											<th>法人名</th>
+											<th>法人番号</th>
+											<th>都道府県</th>
+											<th class="_w20_">操作</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+											<td class="_white2_ _no-border-top_">
+												<a href="" class="btn _outline_ _w-s_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+											<td class="_white2_ _no-border-top_">
+												<a href="" class="btn _outline_ _w-s_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+											<td class="_white2_ _no-border-top_">
+												<a href="" class="btn _outline_ _w-s_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="modal__btn">
+							<a class="btn-arrow _blue-outline_ _w-l_ btn-cancel">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_blue.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</a>
+							<a class="btn-arrow _red_ _w-l_ btn-next js-modal-open" data-target="modal02">
+								<span class="__txt">確認</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			
+			<!-- .modal -->
+			<div class="modal" id="modal02">
+				<div class="modal__inner _h-auto_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">お問合せ先選択</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">お問合せ先選択</h3>
+						<p class="mb20">以下の企業にお問合せ先を設定いたします。よろしいですか。</p>
+
+						<h4 class="h2">選択中企業一覧</h4>
+						<div class="section__inner _m10_ mb60">
+							<div class="table-slide _h210_ _w100_">
+								<table class="table _slide_ _base_ _no-border-top_ _clear-fix_">
+									<thead class="table__head _thead-sticky_">
+										<tr>
+											<th class="_w20_">JGT管理番号</th>
+											<th class="_w20_">会員種別</th>
+											<th class="_w20_">法人名</th>
+											<th class="_w20_">法人番号</th>
+											<th class="_w20_">都道府県</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+										</tr>
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+										</tr>
+										<tr>
+											<td class="_white2_ _no-border-top_">JGTXXXXXXXXX</td>
+											<td class="_white2_ _no-border-top_">中小企業A</td>
+											<td class="_white2_ _no-border-top_">株式会社A</td>
+											<td class="_white2_ _no-border-top_">000000000001</td>
+											<td class="_white2_ _no-border-top_">東京都</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="modal__btn">
+							<a class="btn-arrow _outline_ _w-l_ btn-cancel">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</a>
+							<a class="btn-arrow _red_ _w-l_">
+								<span class="__txt">次へ</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+		<script src="/common/js/modal.js"></script>
+	</body>
+</html>

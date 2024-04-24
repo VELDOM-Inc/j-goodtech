@@ -1,0 +1,282 @@
+@charset "shift_jis";
+
+/* ============================================================ */
+/* .topics-detail */
+/* ============================================================ */
+.topics-detail {
+}
+
+.topics-detail-bar {
+	margin: 0 0 15px;
+}
+
+.topics-detail-bar__list {
+	margin: 0 0 15px;
+}
+
+.topics-detail-bar__item {
+	margin: 0 0 10px;
+}
+
+.topics-detail-bar__item:last-child {
+	margin: 0;
+}
+
+.topics-detail-bar__item .__ico {
+	margin: 0 5px 0 0;
+}
+
+.topics-detail-bar__item .__txt {
+	margin: 0 10px 0 0;
+}
+
+
+/* ============================================================ */
+/* .topics-list */
+/* ============================================================ */
+.topics-list {
+	margin: 15px 0 0;
+}
+
+.topics-list__item {
+	background: #EAEAEA;
+	padding: 16px 12px;
+	margin: 0 0 25px;
+	border: 1px solid #D0D0D0;
+}
+
+.topics-list__left {
+}
+
+.topics-list__right {
+	border-top: 1px solid #D0D0D0;
+	padding: 15px 0 0;
+	margin: 15px 0 0;
+}
+
+.topics-list__label {
+	margin: 0 0 15px;
+}
+
+.topics-list__ttl {
+	margin: 0 0 10px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.topics-list__txt {
+	margin: 0 0 10px;
+}
+
+.topics-list__detail {
+	font-size: 1.4rem;
+}
+
+.topics-list__detail .__item {
+	display: flex;
+}
+
+.topics-list__detail .__ttl {
+	margin: 0 10px 0 0;
+	overflow: hidden;
+}
+
+.topics-list__detail .__txt {
+	overflow: hidden;
+}
+
+.topics-list__category {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.topics-list__category .__item {
+	margin: 0 10px 10px 0;
+}
+
+.topics-bottom {
+	margin: 15px 0 0;
+}
+
+.topics-list__number {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.topics-list__number .__item {
+	margin: 0 40px 0 0;
+}
+
+
+/* ============================================================ */
+/* .topics-side__ttl */
+/* ============================================================ */
+.topics-side__ttl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 15px;
+}
+
+.topics-side__ttl .btn-arrow {
+	width: 40%;
+	height: 20px;
+	font-size: 1.4rem;
+	padding: 8px;
+}
+
+.topics-side__ttl .btn-arrow .__txt {
+	margin: 0 0 0 10px;
+}
+
+.topics-side__ttl .btn-arrow .__ico img {
+	width: 85%;
+}
+
+.topics-side__ttl .h9 {
+	width: 50%;
+}
+
+
+/* ============================================================ */
+/* .topics-side */
+/* ============================================================ */
+.topics-side__txt {
+	margin: 0 0 15px;
+}
+
+
+/* ============================================================ */
+/* .topics-top */
+/* ============================================================ */
+.topics-top {
+	display: flex;
+	flex-direction: column;
+}
+
+.topics-top .topics-detail__ttl {
+	order: 1;
+	color: #333;
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin: 0 0 15px;
+	line-height: 1.4;
+}
+
+.topics-top .box._gray_ {
+	order: 2;
+	border-radius: 4px;
+}
+
+.topics-top .topics-detail-bar {
+	order: 3;
+}
+
+.topics-top .topics-detail__txt {
+	order: 4;
+	margin: 0 0 15px;
+}
+
+.topics-top .al-fr.mb40 {
+	order: 5;
+}
+
+.topics-top .al-fr.mb40 ._edit_ {
+	order: 1;
+	margin: 0 0 15px;
+}
+
+.topics-top .al-fr.mb40 ._delete_ {
+	order: 2;
+	margin: 0 0 15px;
+}
+
+.topics-top .al-fr.mb40 ._back_ {
+	order: 3;
+}
+
+.topics-top .transceiver-bar {
+	order: 6;
+}
+
+.topics-top .transceiver-talk {
+	order: 7;
+}
+
+
+/* ============================================================ */
+/* .table-block_sp */
+/* ============================================================ */
+.topics .table-block_sp {
+	border-bottom: 1px solid #D0D0D0;
+	padding: 0 0 15px;
+}
+
+.topics .table-block_sp._group_ {
+	padding: 0 15px 15px;
+	width: calc(100% - 30px) !important;
+}
+
+.topics .table-block_sp._kensaku_ ._order1_ ,
+.topics .table-block_sp._group_ ._order1_ {
+	color: #004DB6;
+	font-weight: bold;
+	text-decoration-line: underline;
+	font-size: 1.6rem;
+}
+
+.topics .table-block_sp._kensaku_ ._order2_::before ,
+.topics .table-block_sp._group_ ._order2_::before {
+	content: "JGT法人管理番号";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.topics .table-block_sp._kensaku_ ._order3_::before {
+	content: "国";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.topics .table-block_sp._kensaku_ ._order4_::before {
+	content: "業種（日本）";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.topics .table-block_sp._kensaku_ ._order5_::before {
+	content: "業種（海外）";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.topics .table-block_sp._kensaku_ ._order6_::before {
+	content: "住所";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #65686F;
+}
+
+.topics .table-block_sp .btn {
+	height: 48px;
+}
+

@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* check__table */
+/* ============================================================ */
+.check__table {
+	width: 100%;
+}
+
+.check__table .table__head {
+	display: none;
+}
+
+.check__table .table__body td {
+	display: block;
+}
+
+.check__table .table__body tr {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid rgba(44, 47, 50, 0.2);
+	margin: 0 0 30px;
+}
+
+.check__table .table__body td {
+	margin: 0 0 15px;
+}
+
+.check__table ._number_ {
+	order: 2;
+}
+
+.check__table ._number_::before {
+	content: "JGT法人管理番号";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table ._name_ {
+	order: 1;
+}
+
+.check__table ._name_ a {
+	text-decoration-line: underline;
+	font-size: 1.8rem;
+	line-height: 1.4;
+}
+
+.check__table ._pref_ {
+	order: 3;
+}
+
+.check__table ._pref2_ {
+	order: 4;
+}
+
+.check__table ._pref_::before ,
+.check__table ._pref2_::before {
+	content: "都道府県";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table ._date_ {
+	order: 4;
+}
+
+.check__table ._date_::before {
+	content: "追加日";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table ._product_ {
+	order: 5;
+}
+
+.check__table ._product_::before {
+	content: "該当製品・技術";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table ._job_ {
+	order: 3;
+}
+
+.check__table ._job_::before {
+	content: "業種";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table ._address_ {
+	order: 5;
+}
+
+.check__table ._address_::before {
+	content: "住所詳細";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+
+/* ============================================================ */
+/* check__table_wrap */
+/* ============================================================ */
+.check__table_wrap ,
+.check__table_scroll {	
+	width: 100%;
+}
+
+.check__table_wrap .table__head {
+	display: none;
+}
+
+.check__table_wrap .table__body td {
+	display: block;
+}
+
+.check__table_wrap .table__body tr {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid rgba(44, 47, 50, 0.2);
+	margin: 0 0 30px;
+}
+
+.check__table_wrap .table__body td {
+	margin: 0 0 15px;
+}
+
+.check__table_wrap ._number_::before {
+	content: "JGT法人管理番号";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._pref_::before {
+	content: "都道府県";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._honbu_::before {
+	content: "担当地域本部";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._sagyosya_::before {
+	content: "作業者";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._date_::before {
+	content: "追加日";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._needs_::before {
+	content: "ニーズ確認状況";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._status_::before {
+	content: "ステータス";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._detail_::before {
+	content: "提案詳細";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._job_::before {
+	content: "業種";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._address_::before {
+	content: "住所詳細";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.check__table_wrap ._comment_::before {
+	content: "コメント";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+
+/* ============================================================ */
+/* needsInfo */
+/* ============================================================ */
+.needsInfo__center {
+  display: flex;
+	justify-content: space-between;
+	margin: 7px -8px 15px;
+}
+
+.needsInfo__center .btn-arrow {
+  margin: 0 8px;
+	width: calc((100% - 16px) / 2);
+}
+
+.needsInfo__center ._order1_ {
+  order: 1;
+}
+
+.needsInfo__center ._order1_ .__ico {
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+.needsInfo__center ._order2_ {
+  order: 2;
+}
+
+.needsInfo__center ._order2_ .__ico {
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+/* ============================================================ */
+/* agency */
+/* ============================================================ */
+.need__flex_box {
+	font-weight: 400;
+	font-size: 2.0rem;
+	margin: 0 -12px 25px;
+	padding: 15px;
+	line-height: 1.4;
+	background: #333;
+	text-align: center;
+	color: #fff;
+}
+
+/* ============================================================ */
+/* modal */
+/* ============================================================ */
+._modal__textarea_ {
+	height: 135px;
+}
+
+.modal__flex p {
+	border-bottom: 1px dotted #2C2F32;
+	padding: 0 0 10px;
+	margin: 0 0 15px;
+}
+
+
+/* ============================================================ */
+/* .needs-form-btn */
+/* ============================================================ */
+.needs-form-btn {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin: 15px -5px 0;
+}
+
+.needs-form-btn__item {
+	margin: 0 5px !important;
+	width: calc((100% - 20px) / 2);
+}
+
+

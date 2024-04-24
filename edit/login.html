@@ -1,0 +1,90 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>ログイン｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper _blue_">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header_validity.html" -->
+			<!--============================================== /header -->
+
+			<div class="h1 _validity_">
+				<h1 class="__inner _pd300_">
+					<span class="__txt">ログイン</span>
+				</h1>
+			</div>
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner _login_">
+					
+					<div class="login-form">
+						<table class="login-form__table _sp-col1_">
+							<tbody>
+								<tr>
+									<th class="login-form__ttl">メールアドレス</th>
+									<td class="login-form__input">
+										<input type="text" name="mail" class="form-text" value="" placeholder="@example.com">
+									</td>
+								</tr>
+								<tr>
+									<th class="login-form__ttl">パスワード</th>
+									<td class="login-form__input">
+										<input type="text" name="pass" class="form-text" value="">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+						
+					<div class="al-fc _login_">
+						<label class="form-check mb30_sp mt30_sp wp100_sp">
+							<input type="checkbox" name="" id="" class="__elem">
+							<span class="__txt">
+								ログイン情報を記憶する
+							</span>
+						</label>
+						<button type="button" class="btn-arrow _red_ _w-l_" onclick="location.href='/'">
+							<span class="__txt">ログイン</span>
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+							</span>
+						</button>
+					</div>
+					
+					<div class="al-fc _login_ mt30_sp text14_sp">
+						<a href="/password/reissue.html" class="__link textBold mr30_sp">
+							パスワード再発行
+						</a>
+						<a href="https://jgoodtech.smrj.go.jp/pub/ja/deal/" target="_blank" class="__link textBold">
+							ジェグテックに登録する
+						</a>
+					</div>
+					
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer_login.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+	</body>
+</html>

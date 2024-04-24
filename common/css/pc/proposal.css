@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .proposal-flow */
+/* ============================================================ */
+.proposal-flow {
+	padding: 12px;
+	margin: 0 0 40px;
+}
+
+.proposal-flow__list {
+	display: flex;
+	margin: 0 -7.5px;
+}
+
+.proposal-flow__item {
+	border: 2px solid #D0D0D0;
+	background: #FFF;
+	width: calc((100% - 45px) / 4);
+	margin: 0 7.5px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.proposal-flow__top {
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+	padding: 40px 20px 0;
+	margin-bottom: 100px;
+}
+
+.proposal-flow__txt {
+}
+
+.proposal-flow__ttl {
+	color: #E12800;
+	text-align: center;
+	margin: 0 0 30px;
+	position: relative;
+}
+
+.proposal-flow__ttl::after {
+	content: '1';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);	
+	color: #F3F3F3;
+	text-align: center;
+	font-size: 8.0rem;
+	line-height: 1.0;
+}
+
+.proposal-flow__ttl._flow2_::after {
+	content: '2';
+}
+
+.proposal-flow__ttl._flow3_::after {
+	content: '3';
+}
+
+.proposal-flow__ttl._flow4_::after {
+	content: '4';
+}
+
+.proposal-flow__ttl .__txt {
+	font-weight: bold;
+	position: relative;
+	z-index: 2;
+}
+
+.proposal-flow__txt {
+}
+
+.proposal-flow__img {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.proposal-flow__arrow {
+	position: relative;
+	background: #E12800;
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 10px 11px 15px 0;
+}
+
+.proposal-flow__arrow::after {
+	content: '';
+	border-top: 32px solid transparent;
+	border-bottom: 32px solid transparent;
+	border-left: 32px solid #E12800;
+	position: absolute;
+	top: 50%;
+	right: -18px;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+
+.proposal-flow__bottom {
+	background: #F3F3F3;
+	padding: 20px 15px 40px;
+	color: #E12800;
+	text-align: center;
+}
+
+/* ============================================================ */
+/* .proposal-step */
+/* ============================================================ */
+.proposal-step {
+	border: 8px solid #333;
+	margin: 0 0 40px;
+}
+
+.proposal-step__inner {
+	padding: 25px 25px 40px;
+	text-align: center;
+}
+
+.proposal-step__ttl {
+	color: #333;
+	font-size: 1.8rem;
+	position: relative;
+	margin: 30px 0;
+}
+
+.proposal-step__ttl .__txt {
+	border-bottom: 2px solid #333;
+	font-weight: bold;
+	padding: 0 0 5px;
+}
+
+.proposal-step .contents__flow {
+	background: none;
+	padding: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.proposal-step__botom {
+	background: #F3F3F3;
+	padding: 30px;
+}
+
+.proposal-step__botom .contact-flow__list:after {
+	background: url("/common/img/common/ico_arrow_contact_gray.png");
+	background-size: cover;
+	width: 48px;
+	height: 18px;
+	right: -25px;
+}
+

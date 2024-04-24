@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .mypage-nav */
+/* ============================================================ */
+.mypage-nav {
+}
+
+.mypage-nav__item {
+	margin: 0 0 25px;
+}
+
+.mypage-nav__ttl {
+	background: #333;
+}
+
+.mypage-nav__link {
+	padding: 10px 35px;
+	color: #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	min-height: 35px;
+	line-height: 1.4;
+}
+
+.mypage-nav__link:hover {
+	text-decoration: none;
+}
+
+.mypage-nav__link .__ico {
+	position: absolute;
+  top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+}
+
+.mypage-nav__link .__txt {
+	font-weight: bold;
+}
+
+.mypage-nav__detail {
+	border: 1px solid #D0D0D0;
+	background: #FBF8F8;
+	padding: 25px 40px 80px;
+}
+
+.mypage-nav__detail._profile_ {
+	padding: 25px 40px;
+}
+
+.mypage-nav__detail._dashboard_ {
+	background: url("/common/img/mypage/bg_dashboard.png") center center no-repeat #FBF8F8;
+	background-size: 45%;
+}
+
+.mypage-nav__detail._service_ {
+	background: url("/common/img/mypage/bg_service.png") center center no-repeat #FBF8F8;
+	background-size: 60%;
+}
+
+.mypage-nav__detail._suisen_ {
+	background: url("/common/img/mypage/bg_suisen.png") center center no-repeat #FBF8F8;
+	background-size: 40%;
+}
+
+.mypage-nav__detail._user_ {
+	background: url("/common/img/mypage/bg_user.png") center center no-repeat #FBF8F8;
+	background-size: 50%;
+}
+
+.mypage-nav__detail._english_ {
+	background: url("/common/img/mypage/bg_english.png") center center no-repeat #FBF8F8;
+	background-size: 55%;
+}
+
+.mypage-nav__detail._mail_ {
+	background: url("/common/img/mypage/bg_mail.png") center center no-repeat #FBF8F8;
+	background-size: 50%;
+}
+
+.mypage-nav__detail._invitation_ {
+	background: url("/common/img/mypage/bg_invitation.png") center center no-repeat #FBF8F8;
+	background-size: 55%;
+}
+
+.mypage-nav__detail._info_ {
+	background: url("/common/img/mypage/bg_info.png") center center no-repeat #FBF8F8;
+	background-size: 40%;
+}
+
+.mypage-nav__detail._negotiation_ {
+	background: url("/common/img/mypage/bg_negotiation.png") center center no-repeat #FBF8F8;
+	background-size: 40%;
+}
+
+.mypage-upload {
+	margin: 15px 0 0;
+}
+
+.mypage-upload__ttl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.4rem;
+}
+
+.mypage-upload__ttl .__percent {
+	color: #E12800;
+	font-size: 1.8rem;
+}
+
+.mypage-upload__ttl .__number {
+}
+
+.mypage-upload .__bar {
+	border: 1px solid #C3C3C3;
+	background: linear-gradient(180deg, #F5F5F5 0%, #F9F9F9 100%);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	border-radius: 2px;
+}
+
+.mypage-upload .__bar::before {
+	width: 0;
+	height: 20px;
+	background: #2C4660;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* ============================================================ */
+/* .contents__inner._mypage_ */
+/* ============================================================ */
+.contents__inner._mypage_ .accordion__hide {
+	background: #fff;
+	padding: 25px 12px;
+}
+
+/* ============================================================ */
+/* .mypage-table */
+/* ============================================================ */
+.mypage-table__inner .table__head ,
+._mypage_ .table-dashboard .table__head {
+	display: none;
+}
+
+.mypage-table__inner .table__body td ,
+.mypage-table__inner .table__body tr ,
+._mypage_ .table-dashboard .table__body td ,
+._mypage_ .table-dashboard .table__body tr {
+	display: block;
+}
+
+.mypage-table__inner .table__body td ,
+._mypage_ .table-dashboard .table__body td {
+	margin: 0 0 30px;
+}
+
+.mypage-table__inner ._name_::before ,
+._mypage_ .table-dashboard ._name_::before {
+	content: "ニーズ件名";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.mypage-table__inner ._renraku_::before {
+	content: "提案者への結果連絡が終わっていない件数";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.mypage-table__inner ._syodan_::before {
+	content: "提案者に対して商談日程をまだ提示していない件数";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.mypage-table__inner ._saisyu_::before {
+	content: "商談日程の最終決定が終わっていない件数";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.mypage-table__inner ._minyuryoku_::before ,
+._mypage_ .table-dashboard ._minyuryoku_::before {
+	content: "商談結果アンケート未入力";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+._mypage_ .table-dashboard ._kakunin_::before {
+	content: "ニーズ発信元企業確認中";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+._mypage_ .table-dashboard ._saiteian_::before {
+	content: "ニーズ発信元から差戻があり御社が再提案していない";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+._mypage_ .table-dashboard ._jitai_::before {
+	content: "ニーズ発信元が商談を希望し、御社が商談受入若しくは辞退を行っていない";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+._mypage_ .table-dashboard ._kaitou_::before {
+	content: "ニーズ発信元が商談候補日を提示したのち御社が商談可能日を回答していない";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+
+

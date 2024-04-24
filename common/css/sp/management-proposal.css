@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* table */
+/* ============================================================ */
+.table-syodan-sp ._date_::before {
+	content: "日時";
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 5px;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.table-syodan-sp .__ico img {
+	width: 25px;
+	height: 24px;
+}
+
+/* ============================================================ */
+/* file link */
+/* ============================================================ */
+.file-link {
+	display: block;
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: dotted 2px #555;
+}
+.file-links {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: dotted 1px #555;
+}
+
+.modal__contents .file-links {
+	border-bottom: dotted 1px #000;
+}
+
+#modal01-check .modal__contents .file-links ,
+#modal02-check .modal__contents .file-links ,
+#modal03-check .modal__contents .file-links {
+	border-bottom: 1px dashed #2C2F32;
+}
+
+.modal__contents .file-links .btn-arrow {
+	width: 100px;
+}
+
+/* ============================================================ */
+/* comment area */
+/* ============================================================ */
+.comment-area {
+	display: flex;
+	margin: 15px 11px 0;
+	padding: 16px 12px;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	text-align: left;
+	width: calc(100% - 46px);
+}
+
+.comment-area .ttl {
+	font-weight: 400;
+	font-size: 2.0rem;
+	margin: -16px -12px 25px;
+	padding: 15px;
+	line-height: 1.4;
+	background: #333;
+	text-align: center;
+	color: #fff;
+	border-left: none;
+}
+
+

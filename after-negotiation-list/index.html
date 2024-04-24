@@ -1,0 +1,341 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>商談結果アンケート一覧｜ジェグテック｜J-GoodTech</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--============================================== html_head -->
+	<!--#include virtual="/common/inc/html_head.html" -->
+	<!--============================================== /html_head -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!--============================================== header -->
+		<!--#include virtual="/common/inc/header.html" -->
+		<!--============================================== /header -->
+
+		<h1 class="h1"><span class="__txt">商談結果アンケート一覧</span></h1>
+
+		<!-- .contents -->
+		<main class="contents">
+
+			<!-- .contents__inner -->
+			<div class="contents__inner _negotiation_">
+
+				<div class="al-fr mb25">
+					<a href="/menu/" class="btn-arrow _outline_ _w-xl_">
+						<span class="__ico"><img src="/common/img/common/ico_arrow.svg" class="lazyload" alt=""></span>
+						<span class="__txt">管理メニューに戻る</span>
+					</a>
+				</div><!-- al-fr -->
+
+				<div class="box _gray_ negotiation-box">
+					<h2 class="h6 mb20">検索条件</h2>
+					<div class="mb20">
+						<h3 class="h6 mb15">商談結果アンケート情報から検索</h3>
+						<table class="negotiation-table">
+							<tbody>
+								<tr>
+									<th class="negotiation-table__ttl">入力状況</th>
+									<td class="negotiation-table__input" colspan="3">
+										<div class="radiobox">
+											<label class="form-radio mr10">
+												<input type="radio" name="search" id="" class="__elem"><span class="__txt pl20">発信者/提案者入力済み</span>
+											</label>
+											<label class="form-radio mr10">
+												<input type="radio" name="search" id="" class="__elem"><span class="__txt pl20">発信者/提案者未入力</span>
+											</label>
+											<label class="form-radio mr10">
+												<input type="radio" name="search" id="" class="__elem"><span class="__txt pl20">発信者未入力</span>
+											</label>
+											<label class="form-radio">
+												<input type="radio" name="search" id="" class="__elem"><span class="__txt pl20">提案者未入力</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl">入力者</th>
+									<td class="negotiation-table__input" colspan="3">
+										<div class="checkbox">
+											<label class="form-check mr20">
+												<input type="checkbox" name="" id="" class="__elem"><span class="__txt">発信者</span>
+											</label>
+											<label class="form-check">
+												<input type="checkbox" name="" id="" class="__elem"><span class="__txt">提案者</span>
+											</label>
+										</div><!-- checkbox -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- mb20 -->
+					
+					<div class="mb20">
+						<h3 class="mb15 pl20 textBold">商談情報から検索</h3>
+						<table class="negotiation-table">
+							<tbody>
+								<tr>
+									<th class="negotiation-table__ttl _va-m_">商談実施日<br>
+										（FROM）</th>
+									<td class="negotiation-table__input _va-m_">
+										<input type="date" name="" class="form-text _text-black2_ _w240_" value="">
+									</td>
+									<th class="negotiation-table__ttl _va-m_">商談実施日<br>
+										（TO）</th>
+									<td class="negotiation-table__input _va-m_">
+										<input type="date" name="" class="form-text _text-black2_ _w240_" value="">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- mb20 -->
+					
+					<div class="mb10">
+						<h4 class="mb15 pl20 textBold">ニーズから検索</h4>
+						<table class="negotiation-table">
+							<tbody>
+								<tr>
+									<th class="negotiation-table__ttl">ニーズ情報検索ワード</th>
+									<td class="negotiation-table__input"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl">発信種別</th>
+									<td class="negotiation-table__input">
+										<select class="form-select _text-gray3_ _w240_" name="">
+											<option value=""></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl">法人名(発信側)</th>
+									<td class="negotiation-table__input"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl">担当地域本部(発信側)</th>
+									<td class="negotiation-table__input"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl">JGT法人管理番号(発信側)</th>
+									<td class="negotiation-table__input"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl">ニーズID</th>
+									<td class="negotiation-table__input"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl">利用者種別</th>
+									<td class="negotiation-table__input">
+										<select class="form-select _text-gray3_ _w240_" name="">
+											<option value=""></option>
+										</select>
+									</td>
+									<th class="negotiation-table__ttl">管理用フラグ</th>
+									<td class="negotiation-table__input">
+										<select class="form-select _text-gray3_ _w240_" name="">
+											<option value=""></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl">ニーズステータス</th>
+									<td class="negotiation-table__input">
+										<select class="form-select _text-gray3_ _w240_" name="">
+											<option value=""></option>
+										</select>
+									</td>
+									<th class="negotiation-table__ttl">ニーズカテゴリ</th>
+									<td class="negotiation-table__input">
+										<select class="form-select _text-gray3_ _w240_" name="">
+											<option value=""></option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- mb10 -->
+					<div class="al_right mb15">
+						<a href="" class="btn-arrow _black_ _w-s_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">検索</span>
+						</a>
+					</div><!-- al_right -->
+					
+					<div class="mb10">
+						<h4 class="mb15 pl20 textBold">企業の提案情報から検索</h4>
+						<table class="negotiation-table">
+							<tbody>
+								<tr>
+									<th class="negotiation-table__ttl">企業の提案内容からの検索</th>
+									<td class="negotiation-table__input" colspan="3"><input type="text" name="" class="form-text _text-black2_" value=""></td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl _va-m_">法人名(提案側)</th>
+									<td class="negotiation-table__input _va-m_"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl _va-m_">担当地域本部(提案側)</th>
+									<td class="negotiation-table__input _va-m_"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl _va-m_">JGT法人管理番号(提案側)</th>
+									<td class="negotiation-table__input _va-m_"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl _va-m_">提案ID</th>
+									<td class="negotiation-table__input _va-m_"><input type="text" name="" class="form-text _text-black2_ _w240_" value=""></td>
+								</tr>
+								<tr>
+									<th class="negotiation-table__ttl _va-m_">提案日<br>
+										(FROM)</th>
+									<td class="negotiation-table__input _va-m_"><input type="date" name="" class="form-text _text-black2_ _w240_" value=""></td>
+									<th class="negotiation-table__ttl _va-m_">提案日<br>
+										(TO)</th>
+									<td class="negotiation-table__input _va-m_"><input type="date" name="" class="form-text _text-black2_ _w240_" value=""></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="al-fr">
+						<button type="button" class="btn-arrow _black_ _w-s_">
+							<span class="__ico"><img src="/common/img/common/ico_search.svg" alt="" class="lazyload"></span>
+							<span class="__txt">検索</span>
+						</button>
+					</div><!-- al-fr -->
+
+				</div><!-- negotitation-list_box -->
+			</div><!-- /.contents__inner -->
+			
+			<!-- .contents__inner -->
+			<div class="contents__inner _bg-transparent_ mt40">
+				<div class="al_right mb20">
+				<a href="" class="btn-arrow _black_ _w-l_">
+					<span class="__ico"><img src="/common/img/common/ico_download.svg" class="lazyload" alt=""></span>
+					<span class="__txt">CSVダウンロード</span>
+				</a>
+			</div><!-- al_right -->
+			</div><!-- /.contents__inner -->
+			
+			<!-- .contents__inner -->
+			<div class="contents__inner mt10 _negotiation_">
+				<div class="al-fb mb25">
+					<h2 class="text18 textBold">検索結果</h2>
+					<select class="form-select _w-s_" name="">
+						<option value="">50件表示</option>
+					</select>
+				</div><!-- al-fb -->
+				
+				<div class="table-slide _negotiation_ _w100_ mb20">
+					<table class="table _base_">
+						<tr class="">
+							<th class="ttl _gray_ _border_" colspan="4">ニーズ情報</th>
+							<th class="ttl _gray_ _border_">提案情報</th>
+							<th class="ttl _gray_ _border_" colspan="2">企業情報</th>
+							<th class="ttl _gray_ _border_" colspan="4">商談結果アンケート情報</th>
+						</tr>
+						<tr class="">
+							<th class="ttl _gray_ _border_">ニーズID</th>
+							<th class="ttl _gray_ _border_">ニーズカテゴリ</th>
+							<th class="ttl _gray_ _border_">ニーズタイトル</th>
+							<th class="ttl _gray_ _border_">ニーズ担当者</th>
+							<th class="ttl _gray_ _border_">提案ID</th>
+							<th class="ttl _gray_ _border_">発信者/提案者</th>
+							<th class="ttl _gray_ _border_">企業名</th>
+							<th class="ttl _gray_ _border_">取引形態</th>
+							<th class="ttl _gray_ _border_">成約見込み状況</th>
+							<th class="ttl _gray_ _border_">成約見込み額（万円）</th>
+							<th class="ttl _gray_ _border_">アンケート回答</th>
+						</tr>
+						<tr class="">
+							<td class="content" rowspan="2"><a href="">NE000001</a></td>
+							<td class="content" rowspan="2">量産</td>
+							<td class="content _wrap_" rowspan="2">【ニーズ】試作品Aの素材ABCの少量生産について・・・</td>
+							<td class="content" rowspan="2">XXX</td>
+							<td class="content" rowspan="2"><a href="">PR00000001</a></td>
+							<td class="content">発信者</td>
+							<td class="content"><a href="">株式会社B</a></td>
+							<td class="content">事業連携</td>
+							<td class="content">(4)踏み込んだ合意有</td>
+							<td class="content">70</td>
+							<td class="content"><a href="detail.html" class="textBold text18">表示</a></td>
+						</tr>
+						<tr class="">
+							<td class="content">提案者</td>
+							<td class="content"><a href="">株式会社Q</a></td>
+							<td class="content">加工・業務受注</td>
+							<td class="content">(5)成約に関わる基本合意有</td>
+							<td class="content">300</td>
+							<td class="content"><a href="detail.html" class="textBold text18">表示</a></td>
+						</tr>
+						<tr class="">
+							<td class="content" rowspan="2"><a href="">NE000001</a></td>
+							<td class="content" rowspan="2">量産</td>
+							<td class="content _wrap_" rowspan="2">【ニーズ】試作品Aの素材ABCの少量生産について・・・</td>
+							<td class="content" rowspan="2">XXX</td>
+							<td class="content" rowspan="2"><a href="">PR00000001</a></td>
+							<td class="content">発信者</td>
+							<td class="content"><a href="">株式会社B</a></td>
+							<td class="content">事業連携</td>
+							<td class="content">(4)踏み込んだ合意有</td>
+							<td class="content">70</td>
+							<td class="content"><a href="detail.html" class="textBold text18">表示</a></td>
+						</tr>
+						<tr class="">
+							<td class="content">提案者</td>
+							<td class="content"><a href="">株式会社D</a></td>
+							<td class="content">加工・業務受注</td>
+							<td class="content">(5)成約に関わる基本合意有</td>
+							<td class="content">300</td>
+							<td class="content"><a href="detail.html" class="textBold text18">表示</a></td>
+						</tr>
+					</table>
+				</div><!-- table-slide -->
+					
+				<p class="mt25 mb25 text13">該当件数: 365 件中 1 - 50</p>
+					
+				<ul class="pagination">
+					<li class="pagination__item">
+						<a href="" class="pagination__link btn-arrow _no-link_ _w-s_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_back_white.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">最初へ</span>
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="" class="pagination__link btn _no-link_ _w-s_">
+							<span class="__txt">前へ</span>
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="" class="pagination__link btn _black_ _w-s_">
+							<span class="__txt">次へ</span>
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="" class="pagination__link btn-arrow _black_ _w-s_">
+							<span class="__txt">最後へ</span>
+							<span class="__ico">
+								<img src="/common/img/common/ico_next.svg" alt="" class="lazyload">
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div><!-- .contents__inner -->
+
+			<div class="al_center mt40">
+				<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+					<span class="__ico"><img src="/common/img/common/ico_arrow.svg" class="lazyload" alt=""></span>
+					<span class="__txt">管理メニューに戻る</span>
+				</a>
+			</div>
+
+		</main><!-- /.contents -->
+
+		<!--============================================== footer -->
+		<!--#include virtual="/common/inc/footer.html" -->
+		<!--============================================== /footer -->
+	</div>
+
+	<!--============================================== html_foot -->
+	<!--#include virtual="/common/inc/html_foot.html" -->
+	<!--============================================== /html_foot -->
+</body>
+
+</html>

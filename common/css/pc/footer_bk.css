@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* footer */
+/* ============================================================ */
+.footer {
+	width: 100%;
+	background: #2C4660;
+	color: #fff;
+	padding: 25px 0;
+}
+
+.wrapper._gray_ .footer {
+	background: #000;
+}
+
+.wrapper._blue_ .footer {
+	background: #004DB6;
+}
+
+/* fnav
+------------------------------------------------------------ */
+.fnav {
+	margin: 0 0 20px;
+	font-size: 1.2rem;
+}
+
+.fnav__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fnav__item {
+	margin: 0 15px;
+}
+
+.fnav__link {
+	color: #fff;
+	line-height: 1.2;
+}
+
+/* footer copyright
+------------------------------------------------------------ */
+.footer-copyright small {
+	display: block;
+	font-size: 1.0rem;
+}
+
+
+/* ============================================================ */
+/* pagetop */
+/* ============================================================ */
+.pagetop {
+	text-align: right;
+	margin: 0 50px 50px 0;
+}
+
+.pagetop__link {
+	border-radius: 50px;
+	background: #000;
+	color: #fff;
+	width: 90px;
+	height: 90px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1.4rem;
+	line-height: 1.0;
+	text-decoration: none;
+}
+
+.pagetop__link .__ico {
+	margin: -5px 0 0;
+}
+
+
+
+/* ============================================================ */
+/* fixed-menu */
+/* ============================================================ */
+.fixed-menu {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	z-index: 1;
+	transform: translate(191px, -50%);
+	display: flex;
+	justify-content: flex-start;
+	transition: .4s all;
+}
+
+.fixed-menu:hover {
+	transform: translate(0, -50%);
+}
+
+.fixed-menu__btn {
+	width: 59px;
+	height: 61px;
+	background: #E2E6E9;
+	border-radius: 8px 0 0 8px;
+}
+
+.fixed-menu__btn .__link {
+	width: 39px;
+	height: 51px;
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 5px 10px;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 8px 0 0 8px;
+}
+
+.fixed-menu__btn .__txt {
+	font-size: 1.2rem;
+	margin: 2px 0 0;
+}
+
+.fixed-menu__btn .__ico {
+	transform: translate(0, 0) rotate(180deg);
+}
+
+.fixed-menu__btn .__txt::before {
+	content: "開く";
+}
+
+.fixed-menu:hover .fixed-menu__btn .__txt::before {
+	content: "閉じる";
+}
+
+.fixed-menu:hover .fixed-menu__btn .__ico {
+	transform: translate(0, 0) rotate(0deg);
+}
+
+.fixed-menu__inner {
+	background: #fff;
+	border-radius: 0 0 0 8px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+.fixed-menu__item {
+	border-top: 1px solid #000;
+	padding: 15px 0 0;
+	margin: 15px 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.fixed-menu__inner .btn {
+	min-width: 150px;
+	padding: 0;
+}
+
+.fixed-menu__inner .btn._black_ {
+	margin-bottom: 10px;
+}
+
+
+

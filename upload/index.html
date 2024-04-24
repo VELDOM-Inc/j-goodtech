@@ -1,0 +1,100 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>翻訳済データ登録｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header.html" -->
+			<!--============================================== /header -->
+
+			<h1 class="h1"><span class="__txt">翻訳済データ登録</span></h1>
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner">
+					<div class="al_right mb10">
+						<a href="/menu/" class="btn-arrow _outline_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">管理メニューに戻る</span>
+						</a>
+					</div>
+					
+					<p class="mb60">翻訳済のデータを登録してください。</p>
+					<p class="mb10"><span class="textDarkRed">登録処理実行日： 2023 &frasl; 05 &frasl; 02 15:54:32<br>
+						エラーレコード件数： 0 件</span></p>
+					
+					<div class="al_center mb10">
+						<a href="" class="btn-arrow _blue_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_download.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">エラーファイルダウンロード</span>
+						</a>
+					</div>
+					
+					<p class="mb60"><span class="textDarkRed">登録処理は正常に終了しました。処理結果メールが自動送信されますのでご確認ください。</span></p>
+
+					<div class="upload-box">
+						<div id="progress" data-init="true"></div>
+						
+						<input type="text" name="file" class="form-text _platz_ _bg-gray_" value="" placeholder="test1.csv">
+						<button type="button" class="btn-arrow _black_ mt20">
+							<span class="__ico">
+								<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">ファイルを選択</span>
+						</button>
+					</div>
+					
+					<div class="al-fc">
+						<a href="/menu/" class="btn-arrow _outline_ _m30_ _w-l_">
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+							</span>
+							<span class="__txt">管理メニューに戻る</span>
+						</a>
+						<a href="" class="btn-arrow _red_ _m30_ _w-l_">
+							<span class="__txt">翻訳済データを登録する</span>
+							<span class="__ico">
+								<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+							</span>
+						</a>
+					</div>
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer_login.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+		<script src="../common/js/jquery.lineProgressbar.js"></script>
+		<script>
+			$('#progress').LineProgressbar({
+				percentage: 70,
+				fillBackgroundColor: '#2C4660',
+				height: '45px'
+			});
+		</script>
+	</body>
+</html>

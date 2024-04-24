@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* table-slide */
+/* ============================================================ */
+.contents__inner._negotiation_ .table-slide._negotiation_ {
+	overflow: scroll;
+	max-height: 430px;
+	height: 100%;
+	width: 100%;
+	word-wrap: break-word;
+	border-collapse: collapse;
+	border: none;
+	border-top: 1px solid #c7c7c8;
+	border-bottom: 1px solid #c7c7c8;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table {
+	border-top: none;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table .ttl {
+	padding: 8px 15px;
+	border: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-left: none;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table .ttl._border_ {
+	border-bottom: 1px solid #c7c7c8;
+	border-left: 1px solid #c7c7c8;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table .content {
+	padding: 8px 15px;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-top: none;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table ._wrap_ {
+	min-width: 15em;
+	white-space: normal;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_ .table ._bg_red_ {
+	background: #FFC3C3;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ {
+	border-radius: 3px;
+	border: 4px solid #BEBEBE;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table tbody ._border_ {
+	border-bottom-color: #f1f1f1;
+	border-top: none;
+}
+
+/* table-slide _navigation_ */
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	background: #fff;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ .__arrow {
+	position: relative;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #404040;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ .__arrow::before {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	content: "";
+	width: 1px;
+	height: 5px;
+	background: #404040;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ .__ico {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 0 5px auto;
+	background: #d9d9d9;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ .__arrow._gray_ {
+	border-bottom: 1px solid #ececec;
+}
+.contents__inner._negotiation_ .table-slide._negotiation_._overall-status_ .table ._navigation_ .__arrow._gray_::before {
+	background: #ececec;
+}
+
+
+/* ============================================================ */
+/* table */
+/* ============================================================ */
+.contents__inner._negotiation_ .negotiation-table {
+	table-layout: fixed;
+	font-size: 1.5rem;
+}
+
+.contents__inner._negotiation_ .negotiation-table__ttl {
+	width:200px;
+	padding: 4px 15px 4px 0;
+	text-align: right;
+	line-height: 1.25;
+	box-sizing: border-box;
+}
+
+.contents__inner._negotiation_ .negotiation-table__input {
+	padding: 4px 0;
+	box-sizing: border-box;
+}
+
+.contents__inner._negotiation_ .negotiation-table ._va-m_ {
+	vertical-align: middle;
+}
+
+.contents__inner._negotiation_ .negotiation-table__input ._w240_ {
+	width: 220px;
+}
+
+.contents__inner._negotiation_ p._note_ {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.contents__inner._negotiation_ p._note_::before {
+	display: inline-block;
+	content: "Å¶";
+	margin-right: 5px;
+}
+
+/* ============================================================ */
+/* negotiation-schedule_counter */
+/* ============================================================ */
+.negotiation-schedule_counter {
+	display: flex;
+	align-items: center;
+}
+
+.negotiation-schedule_counter .counter-block {
+	display: flex;
+	align-items: center;
+}
+
+.negotiation-schedule_counter .counter-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.negotiation-schedule_counter .counter-box button {
+	-webkit-appearance: none;
+	appearance:none;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+.negotiation-schedule_counter .counter-box button img {
+	width: 24px;
+	height: 24px;
+}
+
+/* ============================================================ */
+/* accordion-btn */
+/* ============================================================ */
+.contents__inner._negotiation_ .accordion-btn {
+	justify-content: flex-start;
+	padding: 10px 20px;
+	border: none;
+}
+.contents__inner._negotiation_ .accordion-btn .__txt{
+	font-size: 1.8rem;
+}

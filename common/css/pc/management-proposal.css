@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* .accordion-btn */
+/* ============================================================ */
+.accordion-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 40px;
+	margin-bottom: 20px;
+	border:solid 1px #2C2F32;
+	border-radius: 4px;
+	color: #2C2F32;
+}
+.accordion-btn .__txt {
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+.accordion-btn._active_ .__ico {
+	transform: rotate(180deg);
+}
+.accordion-btn + .inr {
+	padding: 0 0 20px;
+}
+.accordion-btn + .inr table._w70_ {
+	width: 70%;
+}
+.accordion-btn + .inr table._w90_ {
+	width: 90%;
+}
+.accordion-btn + .inr .table th.table-check,
+.accordion-btn + .inr .table td.table-check {
+	padding: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+.accordion-btn + .inr .table-check-label {
+	display: block;
+}
+.accordion-btn + .inr .table-check-label .__elem {
+	opacity: 0;
+}
+.accordion-btn + .inr a.btn-arrow._light-outline_ {
+	height: 30px;
+}
+
+
+/* ============================================================ */
+/* file link */
+/* ============================================================ */
+.file-link {
+	display: block;
+	padding-top: 5px;
+	margin-top: 5px;
+	border-top: dotted 2px #555;
+}
+.file-links {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: dotted 1px #555;
+}
+
+.modal__contents .file-links  {
+	padding: 10px 17px 10px 0;
+	border-bottom: dotted 1px #000;
+}
+
+/* ============================================================ */
+/* comment area */
+/* ============================================================ */
+.comment-area {
+	max-width: 1060px;
+	margin: 40px auto 0;
+	background: #fff;
+}
+.comment-area .ttl {
+	padding: 25px 0px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	letter-spacing:2px;
+	font-size: 2.0rem;
+}
+.comment-area .inr {
+	padding: 36px 40px 60px;
+	border: solid 1px #ccc;
+	border-top: none;
+	text-align: left;
+}
+
+/* contents.cssに追記
+/* ============================================================ */
+.al_f1 {flex: 1;}
+

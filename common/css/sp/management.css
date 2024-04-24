@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .search-list */
+/* ============================================================ */
+.search-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.search-list._know_ ,
+.search-list._no-wrap_ {
+	display: block;
+}
+
+.search-list__item {
+	margin: 0 30px 0 0;
+}
+
+.search-list._know_ .search-list__item ,
+.search-list._no-wrap_ .search-list__item {
+	margin: 0 0 10px;
+}
+
+.search-list__item:last-child {
+	margin: 0;
+}
+
+.search-list._know_ .search-list__item:last-child ,
+.search-list._no-wrap_ .search-list__item:last-child {
+	margin: 0;
+}
+
+.search-box._form_ ,
+.search-box._list_ {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+.search-box._form_ .btn-arrow {
+	justify-content: flex-start;
+	padding: 0 12px 0 35px;
+	width: calc(100% - 49px);
+}
+
+
+/* ============================================================ */
+/* .search-member__table */
+/* ============================================================ */
+.search-member__table._sp-col1_ {
+	width: 100%;
+	display: block;
+}
+
+.search-member__table._sp-col1_ thead,
+.search-member__table._sp-col1_ tbody,
+.search-member__table._sp-col1_ tr,
+.search-member__table._sp-col1_ th,
+.search-member__table._sp-col1_ td {	
+	display: block;
+}
+
+.search-member__table._sp-col1_ th {
+	padding: 0 0 5px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #2C2F32;
+}
+
+.search-member__table._sp-col1_ td {
+	padding: 0 0 15px;
+}
+
+

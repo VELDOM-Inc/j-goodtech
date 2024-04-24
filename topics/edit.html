@@ -1,0 +1,831 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#" lang="ja">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>トピック編集｜ジェグテック｜J-GoodTech</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--============================================== html_head -->
+		<!--#include virtual="/common/inc/html_head.html" -->
+		<!--============================================== /html_head -->
+	</head>
+		
+	<body class="topics">
+		<div class="wrapper _blue_">
+			<!--============================================== header -->
+			<!--#include virtual="/common/inc/header_members.html" -->
+			<!--============================================== /header -->
+
+			<div class="h1 _search_">
+				<h1 class="__inner">
+					<span class="__txt">トピック編集</span>
+				</h1>
+			</div>	
+			
+			<!-- .contents -->
+			<main class="contents">
+				
+				<!-- .contents__flow -->
+				<div class="contents__flow _blue_ _invitation_ _col3_">
+					<div class="contact-flow">
+						<div class="contact-flow__list _on_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">1</span>
+							</div>
+							<p class="contact-flow__detail">トピック編集入力</p>
+						</div>
+						<div class="contact-flow__list _off_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">2</span>
+							</div>
+							<p class="contact-flow__detail">トピック編集確認</p>
+						</div>
+						<div class="contact-flow__list _off_">
+							<div class="contact-flow__number">
+								<span class="contact-flow__number__step">STEP</span>
+								<span class="contact-flow__number__txt">3</span>
+							</div>
+							<p class="contact-flow__detail">トピック編集完了</p>
+						</div>
+					</div>
+				</div>
+				<!-- /.contents__flow -->
+				
+				<!-- .contents__inner -->
+				<div class="contents__inner _contact_">
+					<div class="h2 _members_">
+						<div class="h2__inner">
+							<h2 class="__ttl">トピック編集入力</h2>
+							<a href="/topics/" class="btn-arrow _light-outline_ _w-xm_ pc_view">
+								<span class="__txt">トピック一覧に戻る</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_blueline_right.svg" alt="" class="lazyload">
+								</span>
+							</a>
+						</div>
+					</div>
+					<a href="/topics/" class="btn-arrow _light-outline_ sp_view mb30">
+						<span class="__txt">トピック一覧に戻る</span>
+						<span class="__ico">
+							<img src="/common/img/common/ico_arrow_blueline_right.svg" alt="" class="lazyload">
+						</span>
+					</a>
+					
+					<p class="mb25 pc_view"><span class="textDarkRed">※</span> 印は入力必須項目です</p>
+					
+					<form method="post" enctype="multipart/form-data" autocomplete="off" action="#form" class="h-adr">
+						<table class="table _border_ mb60 mb0_sp _pd25_ _black_ _sp-col1_">
+							<tbody class="table__body">
+								<tr>
+									<th class="_gray_ _w25_">公開種別 <span class="textDarkRed pc_view">※</span><p class="textDarkRed text12 sp_view mt5 noto">必須</p></th>
+									<td>
+										<ul class="search-list mb0">
+											<li class="search-list__item">
+												<label class="form-radio">
+													<input type="radio" value="全公開" name="koukai" id="" class="__elem" onclick="entryChange1();" checked="checked">
+													<span class="__txt">全公開</span>
+												</label>
+											</li>
+											<li class="search-list__item">
+												<label class="form-radio">
+													<input type="radio" value="限定公開" name="koukai" id="" class="__elem" onclick="entryChange1();">
+													<span class="__txt">限定公開</span>
+												</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_"><span class="label _question_ _w-xs_ mr5">?</span>トピックスカテゴリ <span class="textDarkRed pc_view">※</span><p class="textDarkRed text12 sp_view mt5 noto">必須</p></th>
+									<td>
+										<ul class="list mb10 mb15_sp">
+											<li class="list__item mb10 mb15_sp">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">告知</span>
+												</label>
+											</li>
+											<li class="list__item mb10 mb15_sp">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">プレスリリース</span>
+												</label>
+											</li>
+											<li class="list__item mb10 mb15_sp">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">イベント情報</span>
+												</label>
+											</li>
+											<li class="list__item mb0">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">ノウハウ</span>
+												</label>
+											</li>
+										</ul>
+										<p class="mb10 mb15_sp">自社の特徴的な取り組みを発信しましょう。</p>
+										<ul class="list">
+											<li class="list__item mb10 mb15_sp">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">相談・アドバイス</span>
+												</label>
+											</li>
+											<li class="list__item mb10 mb15_sp">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">その他・フリートーク</span>
+												</label>
+											</li>
+											<li class="list__item mb0">
+												<label class="form-radio">
+													<input type="radio" name="category" id="" class="__elem">
+													<span class="__txt">事務局からのお知らせ</span>
+												</label>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">検索用キーワード</th>
+									<td>
+										<a href="" class="btn _light-blue_ _w-l_ js-modal-open" data-target="modal01">
+											<span class="__txt">検索用キーワードを選択する</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">タイトル <span class="textDarkRed pc_view">※</span><p class="textDarkRed text12 sp_view mt5 noto">必須</p></th>
+									<td>
+										<input type="text" name="" class="form-text _text-black4_" value="" placeholder="ここにタイトルをご入力ください。">
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">本文 <span class="textDarkRed pc_view">※</span><p class="textDarkRed text12 sp_view mt5 noto">必須</p></th>
+									<td>
+										<textarea name="comment" cols="50" rows="4" class="form-textarea _text-gray4_ _h-xxxs_" placeholder="ここに本文をご入力ください。"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">添付資料</th>
+									<td>
+										<a href="" class="btn-arrow _light-blue_ _w-l_">
+											<span class="__ico">
+												<img src="/common/img/common/ico_file.svg" alt="" class="lazyload">
+											</span>
+											<span class="__txt">ファイルを選択する</span>
+										</a>
+									</td>
+								</tr>
+								<tr id="firstBox">
+									<th class="_gray_">非公開企業の選択</th>
+									<td>
+										<p class="mb10">JC00000000010　株式会社TEST</p>
+										<a href="" class="btn-arrow _light-blue_ _w-l_ js-modal-open" data-target="modal02">
+											<span class="__txt">非公開企業を選択する</span>
+										</a>
+									</td>
+								</tr>
+								<tr id="secondBox">
+									<th class="_gray_">公開企業の選択</th>
+									<td>
+										<p class="mb10">JC00000000010　株式会社TEST</p>
+										<a href="" class="btn-arrow _light-blue_ _w-l_ js-modal-open" data-target="modal03">
+											<span class="__txt">公開企業を選択する</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<th class="_gray_">ステータス</th>
+									<td>
+										<label class="form-check">
+											<input type="checkbox" name="" id="" class="__elem">
+											<span class="__txt">コメント受付を終了する</span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _outline_ _m12_ _w-l_ _order2_" onclick="location.href='/topics/'">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _m12_ _w-l_ _order1_" onclick="location.href='/topics/edit_confirm.html'">
+								<span class="__txt">確認</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<!-- /.contents__inner -->
+				
+			</main>
+			<!-- /.contents -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal01">
+				<div class="modal__inner _small_ _h-auto_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">タグ情報編集入力</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">検索用キーワード選択</h3>
+						
+						<p class="mb30 mb10_sp">保存ボタンをクリックするまで、編集内容は反映されません。<br>
+						トピックスの絞込みに使用するタグをご設定ください。<br>
+						※タグ数は最大5個まで設定可能です</p>
+						
+						<ul class="request-list _text16_">
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">装置・設備</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">材料</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">人材</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">技術</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">新製品</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">品質向上</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">コスト削減</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">納期短縮</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">企業連携</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">改善</span>
+								</label>
+							</li>
+							<li class="request-list__item">
+								<label class="form-check">
+									<input type="checkbox" name="" id="" class="__elem">
+									<span class="__txt">海外情報</span>
+								</label>
+							</li>
+						</ul>
+						
+						<div class="al-fc modal-btn">
+							<button type="button" class="btn-arrow _light-outline_ btn-cancel _order2_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_blueline.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _order1_">
+								<span class="__txt">保存</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal02">
+				<div class="modal__inner _small_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">トピックス非公開企業編集入力</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">トピックス 非公開企業編集入力</h3>
+						<h4 class="h2 _black-sp_">検索条件</h4>
+						<table class="table text16 _sp-col1_">
+							<tbody class="table__body">
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 wp24 wp100_sp text14_sp">JGT法人管理番号</th>
+									<td class="_no-border_ pb5 pt0 pl0 pr0">
+										<input type="text" name="" class="form-text wp60 wp100_sp" value="">
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 text14_sp">法人名</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<input type="text" name="" class="form-text wp60 wp100_sp" value="">
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 text14_sp">国</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">都道府県</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">業種（日本）</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">業種（海外）</th>
+									<td class="_no-border_ pb5 pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="al-fc mt20 mb20 mt15_sp">
+							<button type="button" class="btn-arrow _black_ _w-xl_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">検索</span>
+							</button>
+						</div>
+						
+						<div class="wp95 wp100_sp">
+							<h4 class="h2 _black-sp_">検索結果</h4>
+							<div class="al-fb _block_ mb10">
+								<p class="mb15_sp">検索結果が100件超過したため、100件まで表示します。</p>
+								<a href="" class="btn-arrow _light-blue_ _w-s_">
+									<span class="__txt">一括追加</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+							<div class="table-slide _w100_ table-batch mb40 mb15_sp _pd55_ table-block_sp _kensaku_">
+								<table class="table _slide_ _base_">
+									<thead class="table__head">
+										<tr>
+											<th class="_ws-no_ wd95">編集</th>
+											<th class="_ws-no_">JGT法人管理番号</th>
+											<th class="_ws-no_">法人名</th>
+											<th class="_ws-no_">国</th>
+											<th class="_ws-no_">業種（日本）</th>
+											<th class="_ws-no_">業種（海外）</th>
+											<th class="_ws-no_">住所</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_">農業サービス業</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_">農業サービス業</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_">農業サービス業</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_">農業サービス業</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="wp95 wp100_sp">
+							<h4 class="h2 _black-sp_">追加済みグループ</h4>
+							<div class="al-fb _block_ mb10 mb30_sp">
+								<p class="mb15_sp">保存ボタンをクリックするまで、編集内容は反映されません。</p>
+								<a href="" class="btn-arrow _outline_ _w-s_">
+									<span class="__ico">
+										<img src="/common/img/common/ico_close.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">一括削除</span>
+								</a>
+							</div>
+							<div class="table-slide table-batch mb40 _pd55_ wp88 mb15_sp table-block_sp _group_">
+								<table class="table _slide_ _base_">
+									<thead class="table__head">
+										<tr>
+											<th>編集</th>
+											<th>JGT法人管理番号</th>
+											<th>法人名</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _outline_ btn-cancel _order2_ _m30_ _w-m_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _order1_ _m30_ _w-m_ mb10_sp">
+								<span class="__txt">保存</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!-- .modal -->
+			<div class="modal" id="modal03">
+				<div class="modal__inner _small_">
+					<div class="modal-bar">
+						<div class="modal-bar__inner">
+							<div class="modal-bar__txt">トピックス公開企業編集入力</div>
+							<span class="modal-bar__btn">
+								<span class="__ico">×</span>
+							</span>
+						</div>
+					</div>		
+					
+					<div class="modal__contents">
+						<h3 class="modal-ttl">トピックス公開企業編集入力</h3>
+						<h4 class="h2 _black-sp_">検索条件</h4>
+						<table class="table text16 _sp-col1_">
+							<tbody class="table__body">
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 wp24 wp100_sp textNormal_sp">国</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">都道府県</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">業種（日本）</th>
+									<td class="_no-border_ pb5 pb15_sp pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th class="_no-border_ _va-m_ pb5 pt0 pl0 pr0 textNormal_sp">業種（海外）</th>
+									<td class="_no-border_ pb5 pt0 pl0 pr0">
+										<select class="form-select wp60 wp100_sp _text-black-sp_" name="">
+											<option value="">---</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="al-fc mt20 mb20 mt15_sp">
+							<button type="button" class="btn-arrow _black_ _w-xl_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_search.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">検索</span>
+							</button>
+						</div>
+						
+						<div class="wp95 wp100_sp">
+							<h4 class="h2 _black-sp_">検索結果</h4>
+							<div class="al-fb _block_ mb10">
+								<p class="mb15_sp">検索結果が100件超過したため、100件まで表示します。</p>
+								<a href="" class="btn-arrow _light-blue_ _w-s_">
+									<span class="__txt">一括追加</span>
+									<span class="__ico">
+										<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+									</span>
+								</a>
+							</div>
+							<div class="table-slide _w100_ table-batch mb40 mb15_sp _pd55_ table-block_sp _kensaku_">
+								<table class="table _slide_ _base_">
+									<thead class="table__head">
+										<tr>
+											<th class="_ws-no_ wd95">編集</th>
+											<th class="_ws-no_">JGT法人管理番号</th>
+											<th class="_ws-no_">法人名</th>
+											<th class="_ws-no_">国</th>
+											<th class="_ws-no_">業種（日本）</th>
+											<th class="_ws-no_">業種（海外）</th>
+											<th class="_ws-no_">住所</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order7_ _no-border-sp_ mb0_sp mt15_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">追加</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_">日本</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order4_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order5_"></td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order6_">〒160-0022 <br class="sp_view">東京都新宿区新宿六丁目27番30号新宿イーストサイドスクエア17階</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="wp95 wp100_sp">
+							<h4 class="h2 _black-sp_">追加済みグループ</h4>
+							<div class="al-fb _block_ mb10 mb30_sp">
+								<p class="mb15_sp">保存ボタンをクリックするまで、編集内容は反映されません。</p>
+								<a href="" class="btn-arrow _outline_ _w-s_">
+									<span class="__ico">
+										<img src="/common/img/common/ico_close.svg" alt="" class="lazyload">
+									</span>
+									<span class="__txt">一括削除</span>
+								</a>
+							</div>
+							<div class="table-slide table-batch mb40 _pd55_ wp88 mb15_sp table-block_sp _group_">
+								<table class="table _slide_ _base_">
+									<thead class="table__head">
+										<tr>
+											<th>編集</th>
+											<th>JGT法人管理番号</th>
+											<th>法人名</th>
+										</tr>
+									</thead>
+									<tbody class="table__body">
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+										<tr>
+											<td class="_va-m_ _bottom-border_ _white2_ _order3_ _no-border-sp_ mb0_sp">
+												<a href="" class="btn _outline_ _w-xxxs_">
+													<span class="__txt">削除</span>
+												</a>
+											</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order2_">JC0000000000001</td>
+											<td class="_va-m_ _bottom-border_ _white2_ _order1_ _no-border-sp_">テストA株式会社</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="al-fc">
+							<button type="button" class="btn-arrow _outline_ btn-cancel _order2_ _m30_ _w-m_">
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow.svg" alt="" class="lazyload">
+								</span>
+								<span class="__txt">キャンセル</span>
+							</button>
+							<button type="button" class="btn-arrow _red_ _order1_ _m30_ _w-m_ mb10_sp">
+								<span class="__txt">保存</span>
+								<span class="__ico">
+									<img src="/common/img/common/ico_arrow_right.svg" alt="" class="lazyload">
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal__bg"></div>
+			</div>
+			<!-- /.modal -->
+			
+			<!--============================================== footer -->
+			<!--#include virtual="/common/inc/footer.html" -->
+			<!--============================================== /footer -->
+		</div>
+
+		<!--============================================== html_foot -->
+		<!--#include virtual="/common/inc/html_foot.html" -->
+		<!--============================================== /html_foot -->
+		<script src="/common/js/modal.js"></script>
+		
+		<script>		
+			//ラジオボタン切り替え
+			function entryChange1(){
+				radio = document.getElementsByName('koukai') 
+				if(radio[0].checked) {
+				document.getElementById('firstBox').style.display = "";
+				document.getElementById('secondBox').style.display = "none";
+				}else if(radio[1].checked) {
+				document.getElementById('firstBox').style.display = "none";
+				document.getElementById('secondBox').style.display = "";
+				}
+				}
+				window.onload = entryChange1;
+		</script>
+	</body>
+</html>

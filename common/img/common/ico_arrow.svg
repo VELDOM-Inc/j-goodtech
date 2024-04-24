@@ -1,0 +1,10 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<mask id="mask0_9268_8292" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+<rect id="Bounding box" x="0.257812" y="0.53125" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_9268_8292)">
+<path id="chevron_left" d="M14.2578 18.5312L8.25781 12.5312L14.2578 6.53125L15.6578 7.93125L11.0578 12.5312L15.6578 17.1313L14.2578 18.5312Z" fill="#2C2F32"/>
+</g>
+</g>
+</svg>

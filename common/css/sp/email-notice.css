@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* ============================================================ */
+/* table */
+/* ============================================================ */
+.email-notice_table .table__head {
+	display: none;
+}
+
+.email-notice_table .table__body td {
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+}
+
+.email-notice_label {
+	padding: 5px 15px;
+	margin: 0 10px 0 0;
+	border-radius: 7px;
+	border: 1px solid #65686F;
+	font-size: 1.2rem;
+	line-height: 1;
+	min-width: 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+
+.email-notice__address {
+	display: flex;
+	align-items: flex-start;
+}
+
+.email-notice__txt {
+	width: calc(100% - 58px);
+}
+
+.email-notice__ico {
+	width: 19px;
+	display: inline-block;
+}
+
+.email-notice_txt p {
+	margin-bottom: 1em;
+}

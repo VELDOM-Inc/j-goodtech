@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .setup-bar */
+/* ============================================================ */
+.setup-bar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.setup-bar__name {
+	width: 50%;
+}
+
+.setup-bar__ttl {
+	font-size: 3.2rem;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 0 0 5px;
+}
+
+.setup-bar__menu {
+	width: 50%;
+	font-size: 1.8rem;
+	text-align: right;
+}
+
+.setup-bar__help {
+	margin: 0 0 3px;
+}
+
+.setup-bar__list {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	margin: 0 0 3px;
+}
+
+.setup-bar__item {
+	margin: 0 8px;
+}
+
+.setup-bar__item:last-child {
+	margin: 0 0 0 8px;
+}
+
+.setup-bar__item .__ico {
+	margin: 0 5px 0 0;
+}
+
+/* ============================================================ */
+/* .contents__body */
+/* ============================================================ */
+.contents__body._setup_ {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* ============================================================ */
+/* .setup-btn */
+/* ============================================================ */
+.setup-btn {
+	margin: 60px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ============================================================ */
+/* .address-list */
+/* ============================================================ */
+.address-list {
+	display: flex;
+	align-items: center;
+}
+
+.address-list__item {
+	/*margin: 0 10px 0 0;*/
+}
+
+.address-list__item:last-child {
+	margin: 0;
+}
+
+.address-list__item._ttl_ {
+	width: 20%;
+}
+
+.address-list__item._detail_ {
+	width: 80%;
+}
+
+.address-list__item._flex_ {
+	display: flex;
+	align-items: center;
+}
+
+/* ============================================================ */
+/* .list-none */
+/* ============================================================ */
+.list-none__item._setup_ {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

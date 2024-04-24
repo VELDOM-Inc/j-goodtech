@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* ============================================================ */
+/* .index-visual */
+/* ============================================================ */
+.index-visual {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 9px 0;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+.index-visual__inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.index-visual__item {
+	margin: 0 15px;
+}
+
+.index-visual__item .__img {
+	width: 100%;
+}
+
+.index-visual__bg::after {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	display: inline-block;
+	background: url("/common/img/search/bg_ttl_search.jpg") center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 240px;
+	content: "";
+	z-index: -1;
+}
+
+/* ============================================================ */
+/* .index-box */
+/* ============================================================ */
+.index-box {
+	margin: 0 auto 40px;
+	background: #fff;
+	max-width: 1060px;
+}
+
+.index-ttl {
+	font-size: 2.0rem;
+	padding: 15px;
+	line-height: 1.6;
+	background: #333;
+	text-align: center;
+	color: #fff;
+	border-left: none;
+	position: relative;
+}
+
+.index-ttl .btn-arrow {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translate(0, -50%);
+}
+
+.index-box__inner {
+	padding: 35px 10px;
+	text-align: left;
+}
+
+.index-box__inner._search_ {
+	padding: 0 40px 40px;
+}
+
+/* ============================================================ */
+/* .index-topics */
+/* ============================================================ */
+.index-topics .box {
+	padding: 20px 5px;
+	margin: 0 0 40px;
+}
+
+.index-topics__list {
+}
+
+.index-topics__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 5px;
+}
+
+.index-topics__link {
+	margin: 0 10px;
+}
+
+.index-topics__txt {
+	margin: 0 10px 0 0;
+}
+
+/* ============================================================ */
+/* .index-needs */
+/* ============================================================ */
+.index-needs .needs-index__list {
+	margin: 0 -3px;
+}
+
+.index-needs .needs-index__item {
+	width: calc((100% - 12px) / 2);
+	margin: 0 3px 20px;
+}
+
+.index-needs .needs-recommend__label {
+}
+
+
+/* ============================================================ */
+/* .index-attend */
+/* ============================================================ */
+.index-attend .box {
+	padding: 10px 0;
+	margin: 0 0 20px;
+}
+
+.index-attend__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -2px -20px;
+}
+
+.index-attend__item {
+	width: calc((100% - 30px) / 3);
+	margin: 0 5px 20px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	background: #fff;
+}
+
+.index-attend__ttl {
+	background: #004DB6;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	font-size: 1.4rem;
+}
+
+.index-attend__link {
+	padding: 15px 20px 20px;
+	display: block;
+	text-decoration: none;
+}
+
+.index-attend__link .__ttl {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.4;
+	text-decoration: underline;
+}
+
+.index-attend__link .__sub {
+	font-size: 1.4rem;
+	text-decoration: underline;
+	margin: 0 0 10px;
+}
+
+.index-attend__link .__user {
+	color: #BBB;
+	font-size: 1.4rem;
+	font-style: normal;
+}
+
+.index-attend__date {
+	background: #F3F3F3;
+	padding: 10px;
+	color: #7A7A7A;
+	font-size: 1.4rem;
+}
+
+
+/* ============================================================ */
+/* .index-search */
+/* ============================================================ */
+.index-box__inner._search-input_ {
+	padding: 40px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.index-box__inner._search-input_ .box {
+	padding: 25px 15px;
+}
+
+.index-search__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -10px 15px;
+}
+
+.index-search__item {
+	position: relative;
+	width: calc((100% - 60px) / 3);
+	margin: 0 10px;
+	background: #F3F3F3;
+}
+
+.index-search__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.index-search__link .__img {
+	height: 210px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.index-search__link .__img .__thumbnail {
+	width: 100%;
+	height: auto;
+}
+
+.index-search__link .__ttl {
+	padding: 20px;
+	background: #333;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.index-search__link .__txt {
+	padding: 15px 15px 40px;
+	color: #0067B3;
+	line-height: 1.4;
+}
+
+.index-search-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 20px;
+}
+
+.index-search-dots__item {
+	margin: 0 10px;
+}
+
+.index-search-dots__item._on_ .index-search-dots__link::before {
+	background: #666;
+}
+
+.index-search-dots__link {
+	position: relative;
+	font-size: 0;
+  line-height: 0;
+	display: block;
+}
+
+.index-search-dots__link::before {
+	background: #D0D0D0;
+	border-radius: 50px;
+	content: "";
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.index-search__comment {
+	background: url("/common/img/index/ico_comment.png") 0 0 no-repeat;
+	padding: 0 0 0 40px;
+	font-size: 1.4rem;
+}
